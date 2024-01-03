@@ -124,6 +124,8 @@ namespace Project_OOP
         {
             usc_HT_ThongTin_Tk info = new usc_HT_ThongTin_Tk(loginAccount);
             this.Controls.Add(info);
+            info.Dock = DockStyle.Fill;
+            info.BringToFront();
         }
     }
 }

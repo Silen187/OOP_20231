@@ -72,6 +72,13 @@ namespace Project_OOP.DAO
             return null;
 
         }
+        public bool UpdateAccount(int user_id, string displayName, string sex, string city, string SDT, string CCCD, DateTime Birth)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("exec USP_Change_Info @userID , @Birth , @displayName , @sex , @city , @SDT , @CCCD", new object[] { user_id, Birth, displayName, sex, city, SDT, CCCD });
+
+            return result > 0;
+        }
+
     }
 }
 
