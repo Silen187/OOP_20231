@@ -61,7 +61,6 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="DAO\InfoDAO.cs" />
     <Compile Include="DTO\InfoDTO.cs" />
     <Compile Include="fDangNhap.cs">
       <SubType>Form</SubType>

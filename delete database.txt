@@ -1,3 +1,4 @@
+
 delete from dbo.parking_area
 delete from dbo.parking_level
 delete from dbo.parking_slot
@@ -10,3 +11,4 @@ delete from dbo.admin
 delete from dbo.employees
 delete from dbo.monthly_subscription
 delete from dbo.transactions
+delete from vehicle
