@@ -127,5 +127,13 @@ namespace Project_OOP
             info.Dock = DockStyle.Fill;
             info.BringToFront();
         }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            usc_HT_DoiMK f = new usc_HT_DoiMK(loginAccount);
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
     }
 }

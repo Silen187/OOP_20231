@@ -27,6 +27,7 @@ namespace Project_OOP
                 string userName = guna2TextBox1.Text;
                 string passWord = guna2TextBox2.Text;
                 int userID = Login(userName, passWord);
+
                 InfoDTO loginAccount = AccountDAO.Instance.GetAccountByUserID(userID);
                 if (userID != -1)
                 {
@@ -87,6 +88,14 @@ namespace Project_OOP
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            usc_HT_DangKy f = new usc_HT_DangKy();
+            this.Hide();
+            f.Show();
+            this.Show();
         }
     }
 }

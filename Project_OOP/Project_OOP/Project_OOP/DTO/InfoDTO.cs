@@ -9,7 +9,7 @@ namespace Project_OOP.DTO
 {
     public class InfoDTO
     {
-        public InfoDTO(string id, string name, DateTime Birth, string age, string City, string SDT, string sex, string CCCD, string role_name)
+        public InfoDTO(string password, string id, string name, DateTime Birth, string age, string City, string SDT, string sex, string CCCD, string role_name, string username)
         {
             this.ID = id;
             this.Name = name;
@@ -20,6 +20,8 @@ namespace Project_OOP.DTO
             this.sex = sex;
             this.CCCD = CCCD;
             this.role_name = role_name;
+            this.username = username;
+            this.password = password;
         }
 
         public InfoDTO(DataRow row)
@@ -33,6 +35,8 @@ namespace Project_OOP.DTO
             this.sex = row["Giới_tính"].ToString();
             this.CCCD = row["CCCD"].ToString();
             this.role_name = row["Mã_chức_vụ"].ToString();
+            this.username = row["Tên_đăng_nhập"].ToString();
+            this.password = row["Password"].ToString();
         }
 
         public string ID1 { get => ID; set => ID = value; }
@@ -44,6 +48,8 @@ namespace Project_OOP.DTO
         public string Sex { get => sex; set => sex = value; }
         public string CCCD1 { get => CCCD; set => CCCD = value; }
         public string Role_name { get => role_name; set => role_name = value; }
+        public string Username { get => username; set => username = value; }
+        public string Password { get => password; set => password = value; }
 
         private string ID;
         private string Name;
@@ -54,5 +60,7 @@ namespace Project_OOP.DTO
         private string sex;
         private string CCCD;
         private string role_name;
+        private string username;
+        private string password;
     }
 }

@@ -79,6 +79,11 @@ namespace Project_OOP.DAO
             return result > 0;
         }
 
+        public bool UpdatePassWordAccount(string username, string old_password, string new_password)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("USP_UpdatePassword @userName , @oldpassword , @newpassword", new object[] { username, old_password, new_password });
+            return result > 0;
+        }
     }
 }
 

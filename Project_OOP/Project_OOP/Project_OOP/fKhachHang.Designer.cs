@@ -165,6 +165,7 @@
             this.btnDoiMK.Size = new System.Drawing.Size(230, 35);
             this.btnDoiMK.TabIndex = 6;
             this.btnDoiMK.Text = "Đổi mật khẩu";
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // guna2Button19
             // 

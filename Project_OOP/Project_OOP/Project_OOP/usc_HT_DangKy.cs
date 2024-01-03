@@ -21,5 +21,10 @@ namespace Project_OOP
         {
 
         }
+
+        private void usc_HT_DangKy_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
