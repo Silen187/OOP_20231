@@ -104,3 +104,39 @@ C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\D
 C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
 C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb
 C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang_ThongTinTK.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe.config
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.pdb
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\FontAwesome.Sharp.dll
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Guna.UI2.dll
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.AssemblyReference.cache
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fDangNhap.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang_ThongTinTK.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fNhanVien.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemChucVu.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_DangKyVeXe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NhaXe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_SuCo.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_VeXe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuNgay.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuThang.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_LuongNhanVien.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_SuCo.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ChucVu.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhanVien.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhaXe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhanVien.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhaXe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NguoiDung.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_VeXe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DangKy.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DoiMK.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_ThongTin_Tk.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fQuanLy.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.Properties.Resources.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.GenerateResource.cache
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CoreCompileInputs.cache
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComplete
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb

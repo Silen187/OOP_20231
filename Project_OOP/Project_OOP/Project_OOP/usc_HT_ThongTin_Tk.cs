@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using Project_OOP.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,46 @@ namespace Project_OOP
 {
     public partial class usc_HT_ThongTin_Tk : UserControl
     {
-        public usc_HT_ThongTin_Tk()
+        private InfoDTO loginAccount;
+
+        public InfoDTO LoginAccount
+        {
+            get { return loginAccount; }
+            set { loginAccount = value; ChangeAccount(loginAccount); }
+        }
+        void ChangeAccount(InfoDTO acc)
+        {
+            guna2TextBox1.Text = acc.ID1;
+            guna2TextBox2.Text = acc.Name1;
+            guna2DateTimePicker1.Value = (DateTime)acc.Birth1;
+            if (acc.Sex == "female")
+            {
+                comboBox1.Text = "Nữ";
+            }
+            else
+            {
+                comboBox1.Text = "Nam";
+            }
+            comboBox2.Text = acc.City1;
+            guna2TextBox6.Text = acc.SDT1;
+            comboBox3.Text = acc.Role_name;
+            if (acc.Role_name == "admin")
+            {
+                comboBox4.Text = "Quản lý";
+            }
+            else if (acc.Role_name == "employee")
+            {
+                comboBox4.Text = "Nhân viên";
+            }
+            else
+            {
+                comboBox4.Text = "Người dùng";
+            }
+        }
+        public usc_HT_ThongTin_Tk(InfoDTO acc)
         {
             InitializeComponent();
+            LoginAccount = acc;
         }
         void Load_info()
         {

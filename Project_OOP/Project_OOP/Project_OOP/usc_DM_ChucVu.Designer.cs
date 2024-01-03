@@ -448,6 +448,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "usc_DM_ChucVu";
             this.Size = new System.Drawing.Size(904, 627);
+            this.Load += new System.EventHandler(this.btnThemCV_Click);
             this.guna2GroupBox1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);

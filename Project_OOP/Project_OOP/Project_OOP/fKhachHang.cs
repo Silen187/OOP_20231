@@ -118,10 +118,12 @@ namespace Project_OOP
 
         private void btnThongTinTK_Click(object sender, EventArgs e)
         {
-            fKhachHang_ThongTinTK f = new fKhachHang_ThongTinTK(LoginAccount);
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            Load_info();
+        }
+        void Load_info()
+        {
+            usc_HT_ThongTin_Tk info = new usc_HT_ThongTin_Tk(loginAccount);
+            this.Controls.Add(info);
         }
     }
 }
