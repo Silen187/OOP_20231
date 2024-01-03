@@ -1,0 +1,12 @@
+delete from dbo.parking_area
+delete from dbo.parking_level
+delete from dbo.parking_slot
+delete from dbo.ticket_pass
+delete from dbo.permissions
+delete from dbo.users
+delete from dbo.info
+delete from dbo.customers
+delete from dbo.admin
+delete from dbo.employees
+delete from dbo.monthly_subscription
+delete from dbo.transactions

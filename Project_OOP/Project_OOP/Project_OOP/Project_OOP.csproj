@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D7A3F98-EFC0-4167-9C3B-AD390E58E88E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_OOP</RootNamespace>
+    <AssemblyName>Project_OOP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\InfoDAO.cs" />
+    <Compile Include="DTO\InfoDTO.cs" />
+    <Compile Include="fDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhachHang_ThongTinTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachHang_ThongTinTK.Designer.cs">
+      <DependentUpon>fKhachHang_ThongTinTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachHang.Designer.cs">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanVien.Designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanLy.Designer.cs">
+      <DependentUpon>fQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usc_DM_ChucVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_DM_ChucVu.Designer.cs">
+      <DependentUpon>usc_DM_ChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_DM_NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_DM_NhanVien.Designer.cs">
+      <DependentUpon>usc_DM_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_DM_NhaXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_DM_NhaXe.Designer.cs">
+      <DependentUpon>usc_DM_NhaXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_DM_ThemNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_DM_ThemNhanVien.Designer.cs">
+      <DependentUpon>usc_DM_ThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_DM_ThemNhaXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_DM_ThemNhaXe.Designer.cs">
+      <DependentUpon>usc_DM_ThemNhaXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_DM_NguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_DM_NguoiDung.Designer.cs">
+      <DependentUpon>usc_DM_NguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_DM_VeXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_DM_VeXe.Designer.cs">
+      <DependentUpon>usc_DM_VeXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_HT_DangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_HT_DangKy.Designer.cs">
+      <DependentUpon>usc_HT_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_HT_DoiMK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_HT_DoiMK.Designer.cs">
+      <DependentUpon>usc_HT_DoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_HT_ThongTin_Tk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_HT_ThongTin_Tk.Designer.cs">
+      <DependentUpon>usc_HT_ThongTin_Tk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_DM_ThemChucVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_DM_ThemChucVu.Designer.cs">
+      <DependentUpon>usc_DM_ThemChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_QL_DangKyVeXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_QL_DangKyVeXe.Designer.cs">
+      <DependentUpon>usc_QL_DangKyVeXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_QL_NhaXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_QL_NhaXe.Designer.cs">
+      <DependentUpon>usc_QL_NhaXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_QL_SuCo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_QL_SuCo.Designer.cs">
+      <DependentUpon>usc_QL_SuCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_QL_VeXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_QL_VeXe.Designer.cs">
+      <DependentUpon>usc_QL_VeXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_TK_DoanhThuNgay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_TK_DoanhThuNgay.Designer.cs">
+      <DependentUpon>usc_TK_DoanhThuNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_TK_DoanhThuThang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_TK_DoanhThuThang.Designer.cs">
+      <DependentUpon>usc_TK_DoanhThuThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_TK_LuongNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_TK_LuongNhanVien.Designer.cs">
+      <DependentUpon>usc_TK_LuongNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_TK_SuCo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_TK_SuCo.Designer.cs">
+      <DependentUpon>usc_TK_SuCo.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\icons8-user-100.png" />
+    <EmbeddedResource Include="fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhachHang_ThongTinTK.resx">
+      <DependentUpon>fKhachHang_ThongTinTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhachHang.resx">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_DM_ThemChucVu.resx">
+      <DependentUpon>usc_DM_ThemChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_QL_DangKyVeXe.resx">
+      <DependentUpon>usc_QL_DangKyVeXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_QL_NhaXe.resx">
+      <DependentUpon>usc_QL_NhaXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_QL_SuCo.resx">
+      <DependentUpon>usc_QL_SuCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_QL_VeXe.resx">
+      <DependentUpon>usc_QL_VeXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_TK_DoanhThuNgay.resx">
+      <DependentUpon>usc_TK_DoanhThuNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_TK_DoanhThuThang.resx">
+      <DependentUpon>usc_TK_DoanhThuThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_TK_LuongNhanVien.resx">
+      <DependentUpon>usc_TK_LuongNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_TK_SuCo.resx">
+      <DependentUpon>usc_TK_SuCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\icons8-delete-48.png" />
+    <None Include="Resources\icons8-fix-50.png" />
+    <None Include="Resources\icons8-update-50.png" />
+    <None Include="Resources\icons8-search-48.png" />
+    <None Include="Resources\icons8-add-32.png" />
+    <None Include="Resources\icons8-register-96.png" />
+    <None Include="Resources\icons8-eye-48.png" />
+    <None Include="Resources\Screenshot 2023-12-30 213808.png" />
+    <None Include="Resources\icons8-save-30.png" />
+    <None Include="Resources\icons8-user-96.png" />
+    <EmbeddedResource Include="usc_DM_ChucVu.resx">
+      <DependentUpon>usc_DM_ChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_DM_NhanVien.resx">
+      <DependentUpon>usc_DM_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_DM_NhaXe.resx">
+      <DependentUpon>usc_DM_NhaXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_DM_ThemNhanVien.resx">
+      <DependentUpon>usc_DM_ThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_DM_ThemNhaXe.resx">
+      <DependentUpon>usc_DM_ThemNhaXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_DM_NguoiDung.resx">
+      <DependentUpon>usc_DM_NguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_DM_VeXe.resx">
+      <DependentUpon>usc_DM_VeXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_HT_DangKy.resx">
+      <DependentUpon>usc_HT_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_HT_DoiMK.resx">
+      <DependentUpon>usc_HT_DoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_HT_ThongTin_Tk.resx">
+      <DependentUpon>usc_HT_ThongTin_Tk.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\icons8-bars-50 %281%29.png" />
+    <None Include="Resources\icons8-circle-301.png" />
+    <None Include="Resources\icons8-circle-30.png" />
+    <None Include="Resources\icons8-graph-report-script-50.png" />
+    <None Include="Resources\icons8-manage-50.png" />
+    <None Include="Resources\icons8-category-50.png" />
+    <None Include="Resources\icons8-system-50.png" />
+    <None Include="Resources\icons8-menu-squared-50.png" />
+    <None Include="Resources\icons8-bars-50.png" />
+    <EmbeddedResource Include="fQuanLy.resx">
+      <DependentUpon>fQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-garage-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

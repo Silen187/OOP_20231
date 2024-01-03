@@ -1,0 +1,106 @@
+F:\code C#\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe.config
+F:\code C#\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe
+F:\code C#\Project_OOP\Project_OOP\bin\Debug\Project_OOP.pdb
+F:\code C#\Project_OOP\Project_OOP\bin\Debug\Guna.UI2.dll
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.AssemblyReference.cache
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.Properties.Resources.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.GenerateResource.cache
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CoreCompileInputs.cache
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComplete
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb
+F:\code C#\Project_OOP\Project_OOP\bin\Debug\FontAwesome.Sharp.dll
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_ThongTin_Tk.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fQuanLy.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DoiMK.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DangKy.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhanVien.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhanVien.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhaXe.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhaXe.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NguoiDung.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_VeXe.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemChucVu.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ChucVu.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NhaXe.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_DangKyVeXe.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_VeXe.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_SuCo.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuNgay.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuThang.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_SuCo.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_LuongNhanVien.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fDangNhap.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fNhanVien.resources
+F:\code C#\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe.config
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.pdb
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Guna.UI2.dll
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.AssemblyReference.cache
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fDangNhap.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fNhanVien.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemChucVu.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_DangKyVeXe.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NhaXe.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_SuCo.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_VeXe.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuNgay.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuThang.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_LuongNhanVien.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_SuCo.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ChucVu.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhanVien.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhaXe.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhanVien.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhaXe.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NguoiDung.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_VeXe.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DangKy.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DoiMK.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_ThongTin_Tk.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fQuanLy.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.Properties.Resources.resources
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.GenerateResource.cache
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CoreCompileInputs.cache
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComplete
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
+C:\Users\thaib\OneDrive\Documents\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe.config
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.pdb
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Guna.UI2.dll
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.AssemblyReference.cache
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fDangNhap.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fNhanVien.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemChucVu.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_DangKyVeXe.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NhaXe.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_SuCo.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_VeXe.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuNgay.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuThang.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_LuongNhanVien.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_SuCo.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ChucVu.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhanVien.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhaXe.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhanVien.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhaXe.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NguoiDung.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_VeXe.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DangKy.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DoiMK.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_ThongTin_Tk.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fQuanLy.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.Properties.Resources.resources
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.GenerateResource.cache
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CoreCompileInputs.cache
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComplete
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb
+C:\Users\thaib\OneDrive\Máy tính\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang_ThongTinTK.resources
