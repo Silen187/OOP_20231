@@ -140,3 +140,4 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CoreComp
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComplete
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fXacNhan.resources

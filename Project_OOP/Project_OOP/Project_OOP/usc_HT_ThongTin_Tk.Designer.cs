@@ -208,7 +208,6 @@
             // 
             this.guna2DateTimePicker1.BorderColor = System.Drawing.SystemColors.ControlLight;
             this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Enabled = false;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
             this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.White;
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Verdana", 12F);

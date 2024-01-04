@@ -232,6 +232,7 @@
             this.guna2Button15.Size = new System.Drawing.Size(230, 35);
             this.guna2Button15.TabIndex = 7;
             this.guna2Button15.Text = "Lịch sử nạp tiền";
+            this.guna2Button15.Click += new System.EventHandler(this.guna2Button15_Click);
             // 
             // guna2Button11
             // 
@@ -318,6 +319,7 @@
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "fKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hệ thống quản lý nhà xe";
             this.sidebar.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

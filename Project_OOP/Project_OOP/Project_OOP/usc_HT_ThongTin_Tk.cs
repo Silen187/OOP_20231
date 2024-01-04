@@ -34,9 +34,13 @@ namespace Project_OOP
             {
                 comboBox1.Text = "Nữ";
             }
-            else
+            else if (acc.Sex == "male")
             {
                 comboBox1.Text = "Nam";
+            }
+            else
+            {
+                comboBox1.Text = "Khác";
             }
             comboBox2.Text = acc.City1;
             guna2TextBox6.Text = acc.SDT1;
@@ -69,8 +73,8 @@ namespace Project_OOP
             string city = comboBox2.Text;
             string SDT = guna2TextBox6.Text;
             string CCCD = guna2TextBox4.Text;
-            if (AccountDAO.Instance.UpdateAccount(this.user_id, displayName, sex, city, SDT, CCCD, Birth) == true)
-                MessageBox.Show("Cập nhật thành công");
+            fXacNhan f = new fXacNhan(this.user_id, displayName, sex, city, SDT, CCCD, Birth);
+            f.ShowDialog();
         }
         private int user_id;
         public int User_id { get => user_id; set => user_id = value; }

@@ -84,6 +84,17 @@ namespace Project_OOP.DAO
             int result = DataProvider.Instance.ExecuteNonQuery("USP_UpdatePassword @userName , @oldpassword , @newpassword", new object[] { username, old_password, new_password });
             return result > 0;
         }
+        public bool input_password_change(int user_id, string password)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("USP_INPUTPASSWORDCHECK @user_id , @password", new object[] { user_id, password });
+            return result.Rows.Count > 0;
+        }
+
+        public DataTable History_Money(int user_id, DateTime start_date, DateTime end_date)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery()
+            
+        }
     }
 }
 

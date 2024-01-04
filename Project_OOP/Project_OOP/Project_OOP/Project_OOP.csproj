@@ -92,6 +92,12 @@
     <Compile Include="fQuanLy.Designer.cs">
       <DependentUpon>fQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="fXacNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXacNhan.Designer.cs">
+      <DependentUpon>fXacNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="usc_DM_ChucVu.cs">
@@ -160,6 +166,12 @@
     <Compile Include="usc_DM_ThemChucVu.Designer.cs">
       <DependentUpon>usc_DM_ThemChucVu.cs</DependentUpon>
     </Compile>
+    <Compile Include="usc_LichSuNapTien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_LichSuNapTien.Designer.cs">
+      <DependentUpon>usc_LichSuNapTien.cs</DependentUpon>
+    </Compile>
     <Compile Include="usc_QL_DangKyVeXe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -222,8 +234,14 @@
     <EmbeddedResource Include="fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fXacNhan.resx">
+      <DependentUpon>fXacNhan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usc_DM_ThemChucVu.resx">
       <DependentUpon>usc_DM_ThemChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_LichSuNapTien.resx">
+      <DependentUpon>usc_LichSuNapTien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usc_QL_DangKyVeXe.resx">
       <DependentUpon>usc_QL_DangKyVeXe.cs</DependentUpon>

@@ -92,10 +92,7 @@ namespace Project_OOP
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            usc_HT_DangKy f = new usc_HT_DangKy();
-            this.Hide();
-            f.Show();
-            this.Show();
+            
         }
     }
 }

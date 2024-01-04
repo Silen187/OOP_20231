@@ -135,5 +135,10 @@ namespace Project_OOP
             f.Dock = DockStyle.Fill;
             f.BringToFront();
         }
+
+        private void guna2Button15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
