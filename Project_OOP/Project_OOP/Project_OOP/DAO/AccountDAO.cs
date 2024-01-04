@@ -92,8 +92,41 @@ namespace Project_OOP.DAO
 
         public DataTable History_Money(int user_id, DateTime start_date, DateTime end_date)
         {
-            DataTable result = DataProvider.Instance.ExecuteQuery()
+
+            DataTable result = DataProvider.Instance.ExecuteQuery("USP_HistoryMoney @user_id , @start_date , @end_date", new object[] {user_id , start_date, end_date});
+            return result;
             
+        }
+        public DataTable History_Entry(int user_id, DateTime start_date, DateTime end_date)
+        {
+
+            DataTable result = DataProvider.Instance.ExecuteQuery("USP_HistoryEntry @user_id , @start_date , @end_date", new object[] { user_id, start_date, end_date });
+            return result;
+
+        }
+
+        public DataTable Salary_Pass(int user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("USP_SALARYPASS @userid", new object[] { user_id });
+            return result;
+        }
+
+        public TicketInfoDTO GetTicketInfoByUserID(int user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("VIEW_TICKET_INFO @userid", new object[] { user_id });
+            return new TicketInfoDTO(result.Rows[0]);
+        }
+
+        public List<TicketInfoDTO> LoadTicketList(List<int> userid_list)
+        {
+            List<TicketInfoDTO> TicketList = new List<TicketInfoDTO>();
+            foreach(int user_id in userid_list)
+            {
+                DataTable ticket_table = DataProvider.Instance.ExecuteQuery("VIEW_TICKET_INFO @userid", new object[] {user_id});
+                TicketInfoDTO ticket = new TicketInfoDTO(ticket_table.Rows[0]);
+                TicketList.Add(ticket);
+            }
+            return TicketList;
         }
     }
 }

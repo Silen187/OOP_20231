@@ -141,3 +141,10 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComp
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fXacNhan.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuNapTien.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuRaVao.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuNhanLuong.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_ThongTinVe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_XemToanBoVe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb

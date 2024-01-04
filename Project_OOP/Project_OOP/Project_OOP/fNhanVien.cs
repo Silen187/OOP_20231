@@ -24,7 +24,7 @@ namespace Project_OOP
         public fNhanVien(InfoDTO acc)
         {
             InitializeComponent();
-            this.LoginAccount = acc;
+            LoginAccount = acc;
             label1.Text = "Xin chào - Nhân viên " + acc.Name1;
         }
 
@@ -143,6 +143,38 @@ namespace Project_OOP
         private void guna2Button9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button17_Click(object sender, EventArgs e)
+        {
+            usc_LichSuNhanLuong f = new usc_LichSuNhanLuong(int.Parse(loginAccount.ID1));
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            usc_ThongTinVe f = new usc_ThongTinVe(int.Parse(loginAccount.ID1));
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            usc_XemToanBoVe f = new usc_XemToanBoVe();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            usc_DM_NhaXe f = new usc_DM_NhaXe();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
         }
     }
 }

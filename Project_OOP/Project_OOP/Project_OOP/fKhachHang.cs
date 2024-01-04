@@ -24,7 +24,7 @@ namespace Project_OOP
         public fKhachHang(InfoDTO acc)
         {
             InitializeComponent();
-            this.LoginAccount = acc;
+            LoginAccount = acc;
             label1.Text = "Xin chào - Khách hàng " + acc.Name1;
         }
         bool sidebarExpand = true;
@@ -138,7 +138,18 @@ namespace Project_OOP
 
         private void guna2Button15_Click(object sender, EventArgs e)
         {
+            usc_LichSuNapTien f = new usc_LichSuNapTien(int.Parse(loginAccount.ID1));
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
 
+        private void guna2Button11_Click(object sender, EventArgs e)
+        {
+            usc_LichSuRaVao f = new usc_LichSuRaVao(int.Parse(loginAccount.ID1));
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
         }
     }
 }

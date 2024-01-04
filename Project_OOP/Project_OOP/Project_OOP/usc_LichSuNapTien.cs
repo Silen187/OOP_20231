@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_OOP.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,25 +13,45 @@ namespace Project_OOP
 {
     public partial class usc_LichSuNapTien : UserControl
     {
-        public usc_LichSuNapTien()
+        public usc_LichSuNapTien(int userID)
         {
             InitializeComponent();
+            User_id = userID;
         }
+        private int user_id;
+
+        public int User_id { get => user_id; set => user_id = value; }
 
         private void guna2DateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 
         }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Show_History_Money();
-        }
         void Show_History_Money()
         {
-            DateTime start_date = guna2DateTimePicker2.Value.Date;
-            DateTime end_date = guna2DateTimePicker1.Value.Date;
+            DateTime start_date = guna2DateTimePicker2.Value;
+            DateTime end_date = guna2DateTimePicker1.Value;
+            if (start_date.Date <= end_date.Date)
+            {
+                DataTable data = AccountDAO.Instance.History_Money(user_id, start_date, end_date);
+                if (data.Rows.Count > 0)
+                {
+                    dataGridView1.DataSource = data;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Giá trị ngày không hợp lệ!");
+            }
+        }
 
+        private void usc_LichSuNapTien_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            Show_History_Money();
         }
     }
 }

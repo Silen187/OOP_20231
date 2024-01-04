@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>C:\Users\thaib\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -61,7 +64,9 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\ZoneDAO.cs" />
     <Compile Include="DTO\InfoDTO.cs" />
+    <Compile Include="DTO\TicketInfoDTO.cs" />
     <Compile Include="fDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +177,18 @@
     <Compile Include="usc_LichSuNapTien.Designer.cs">
       <DependentUpon>usc_LichSuNapTien.cs</DependentUpon>
     </Compile>
+    <Compile Include="usc_LichSuRaVao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_LichSuRaVao.Designer.cs">
+      <DependentUpon>usc_LichSuRaVao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_LichSuNhanLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_LichSuNhanLuong.Designer.cs">
+      <DependentUpon>usc_LichSuNhanLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="usc_QL_DangKyVeXe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,6 +212,12 @@
     </Compile>
     <Compile Include="usc_QL_VeXe.Designer.cs">
       <DependentUpon>usc_QL_VeXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_ThongTinVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_ThongTinVe.Designer.cs">
+      <DependentUpon>usc_ThongTinVe.cs</DependentUpon>
     </Compile>
     <Compile Include="usc_TK_DoanhThuNgay.cs">
       <SubType>UserControl</SubType>
@@ -220,6 +243,15 @@
     <Compile Include="usc_TK_SuCo.Designer.cs">
       <DependentUpon>usc_TK_SuCo.cs</DependentUpon>
     </Compile>
+    <Compile Include="usc_XemToanBoVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_XemToanBoVe.Designer.cs">
+      <DependentUpon>usc_XemToanBoVe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="usc_XemToanBoVe.resx">
+      <DependentUpon>usc_XemToanBoVe.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Resources\eye.jpg" />
     <None Include="Resources\icons8-user-100.png" />
     <EmbeddedResource Include="fDangNhap.resx">
@@ -243,6 +275,12 @@
     <EmbeddedResource Include="usc_LichSuNapTien.resx">
       <DependentUpon>usc_LichSuNapTien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="usc_LichSuNhanLuong.resx">
+      <DependentUpon>usc_LichSuNhanLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_LichSuRaVao.resx">
+      <DependentUpon>usc_LichSuRaVao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usc_QL_DangKyVeXe.resx">
       <DependentUpon>usc_QL_DangKyVeXe.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usc_QL_VeXe.resx">
       <DependentUpon>usc_QL_VeXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_ThongTinVe.resx">
+      <DependentUpon>usc_ThongTinVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usc_TK_DoanhThuNgay.resx">
       <DependentUpon>usc_TK_DoanhThuNgay.cs</DependentUpon>

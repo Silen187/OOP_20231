@@ -251,6 +251,7 @@
             this.guna2Button11.Size = new System.Drawing.Size(230, 35);
             this.guna2Button11.TabIndex = 8;
             this.guna2Button11.Text = "Lịch sử ra vào bến";
+            this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
             // 
             // panel1
             // 
