@@ -208,6 +208,7 @@
     <Compile Include="usc_TK_SuCo.Designer.cs">
       <DependentUpon>usc_TK_SuCo.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\eye.jpg" />
     <None Include="Resources\icons8-user-100.png" />
     <EmbeddedResource Include="fDangNhap.resx">
       <DependentUpon>fDangNhap.cs</DependentUpon>

@@ -1,0 +1,16 @@
+delete from dbo.salary_pass /*ok*/
+delete from dbo.parking_area /*ok*/
+delete from dbo.parking_level /*ok */
+delete from dbo.parking_slot /*ok*/
+delete from dbo.ticket_pass  /*ok*/
+delete from dbo.permissions /*ok*/
+delete from dbo.users /*ok*/
+delete from dbo.info /*ok*/
+delete from dbo.customers /*ok*/
+delete from dbo.admin /*ok*/
+delete from dbo.employees /*ok*/
+delete from dbo.monthly_subscription /*ok*/
+delete from dbo.transactions /*ok*/
+delete from dbo.vehicle /*ok*/
+delete from dbo.type_transaction_description /*ok*/
+delete from dbo.typecard_description /*ok*/

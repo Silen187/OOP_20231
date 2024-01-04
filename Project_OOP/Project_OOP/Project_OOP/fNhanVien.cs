@@ -123,5 +123,26 @@ namespace Project_OOP
                 }
             }
         }
+
+        private void btnThongTinTK_Click(object sender, EventArgs e)
+        {
+            usc_HT_ThongTin_Tk f = new usc_HT_ThongTin_Tk(loginAccount);
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            usc_HT_DoiMK f = new usc_HT_DoiMK(loginAccount);
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

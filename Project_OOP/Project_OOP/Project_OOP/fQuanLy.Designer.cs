@@ -83,7 +83,7 @@
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(230, 687);
+            this.sidebar.Size = new System.Drawing.Size(230, 770);
             this.sidebar.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -109,7 +109,7 @@
             this.menuHeThong.Controls.Add(this.guna2Button19);
             this.menuHeThong.Location = new System.Drawing.Point(3, 3);
             this.menuHeThong.Name = "menuHeThong";
-            this.menuHeThong.Size = new System.Drawing.Size(230, 35);
+            this.menuHeThong.Size = new System.Drawing.Size(230, 175);
             this.menuHeThong.TabIndex = 5;
             // 
             // btnHeThong
@@ -214,9 +214,9 @@
             this.menuDanhMuc.Controls.Add(this.guna2Button5);
             this.menuDanhMuc.Controls.Add(this.guna2Button6);
             this.menuDanhMuc.Controls.Add(this.guna2Button7);
-            this.menuDanhMuc.Location = new System.Drawing.Point(3, 44);
+            this.menuDanhMuc.Location = new System.Drawing.Point(3, 184);
             this.menuDanhMuc.Name = "menuDanhMuc";
-            this.menuDanhMuc.Size = new System.Drawing.Size(230, 35);
+            this.menuDanhMuc.Size = new System.Drawing.Size(230, 175);
             this.menuDanhMuc.TabIndex = 6;
             // 
             // guna2Button2
@@ -337,9 +337,9 @@
             this.menuQuanLy.Controls.Add(this.guna2Button9);
             this.menuQuanLy.Controls.Add(this.guna2Button10);
             this.menuQuanLy.Controls.Add(this.guna2Button13);
-            this.menuQuanLy.Location = new System.Drawing.Point(3, 85);
+            this.menuQuanLy.Location = new System.Drawing.Point(3, 365);
             this.menuQuanLy.Name = "menuQuanLy";
-            this.menuQuanLy.Size = new System.Drawing.Size(230, 35);
+            this.menuQuanLy.Size = new System.Drawing.Size(230, 146);
             this.menuQuanLy.TabIndex = 7;
             // 
             // guna2Button8
@@ -423,9 +423,9 @@
             this.menuThongKe.Controls.Add(this.guna2Button16);
             this.menuThongKe.Controls.Add(this.guna2Button17);
             this.menuThongKe.Controls.Add(this.guna2Button18);
-            this.menuThongKe.Location = new System.Drawing.Point(3, 126);
+            this.menuThongKe.Location = new System.Drawing.Point(3, 517);
             this.menuThongKe.Name = "menuThongKe";
-            this.menuThongKe.Size = new System.Drawing.Size(230, 35);
+            this.menuThongKe.Size = new System.Drawing.Size(230, 175);
             this.menuThongKe.TabIndex = 8;
             // 
             // guna2Button14
@@ -610,7 +610,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 687);
+            this.ClientSize = new System.Drawing.Size(1134, 770);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

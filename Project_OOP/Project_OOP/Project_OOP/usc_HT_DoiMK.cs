@@ -81,7 +81,7 @@ namespace Project_OOP
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            guna2TextBox3.UseSystemPasswordChar = true;
+            guna2TextBox3.UseSystemPasswordChar = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -92,6 +92,11 @@ namespace Project_OOP
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             guna2TextBox4.UseSystemPasswordChar = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            guna2TextBox5.UseSystemPasswordChar = false;
         }
     }
 }
