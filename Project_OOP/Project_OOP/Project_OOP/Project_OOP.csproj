@@ -73,12 +73,6 @@
     <Compile Include="fDangNhap.Designer.cs">
       <DependentUpon>fDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="fKhachHang_ThongTinTK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fKhachHang_ThongTinTK.Designer.cs">
-      <DependentUpon>fKhachHang_ThongTinTK.cs</DependentUpon>
-    </Compile>
     <Compile Include="fKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,9 +250,6 @@
     <None Include="Resources\icons8-user-100.png" />
     <EmbeddedResource Include="fDangNhap.resx">
       <DependentUpon>fDangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fKhachHang_ThongTinTK.resx">
-      <DependentUpon>fKhachHang_ThongTinTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fKhachHang.resx">
       <DependentUpon>fKhachHang.cs</DependentUpon>

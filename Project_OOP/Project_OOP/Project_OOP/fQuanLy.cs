@@ -36,7 +36,10 @@ namespace Project_OOP
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-
+            usc_HT_DoiMK f = new usc_HT_DoiMK(loginAccount);
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
         }
 
         bool menuExpand1 = false;
@@ -184,6 +187,14 @@ namespace Project_OOP
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             sidebarTransition.Start();
+        }
+
+        private void btnThongTinTK_Click(object sender, EventArgs e)
+        {
+            usc_HT_ThongTin_Tk f = new usc_HT_ThongTin_Tk(loginAccount);
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
         }
     }
 }

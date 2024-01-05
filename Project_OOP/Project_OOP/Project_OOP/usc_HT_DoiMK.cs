@@ -19,6 +19,10 @@ namespace Project_OOP
         {
             InitializeComponent();
             LoginAccount = acc;
+            if (acc.Role_name == "admin")
+            {
+                guna2TextBox2.Enabled = true;
+            }
         }
 
         private InfoDTO loginAccount;

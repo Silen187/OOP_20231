@@ -176,5 +176,13 @@ namespace Project_OOP
             f.Dock = DockStyle.Fill;
             f.BringToFront();
         }
+
+        private void guna2Button13_Click(object sender, EventArgs e)
+        {
+            usc_QL_SuCo f = new usc_QL_SuCo();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
     }
 }

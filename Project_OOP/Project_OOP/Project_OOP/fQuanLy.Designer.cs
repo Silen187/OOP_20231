@@ -149,6 +149,7 @@
             this.btnThongTinTK.TabIndex = 7;
             this.btnThongTinTK.Text = "Thông tin tài khoản";
             this.btnThongTinTK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnThongTinTK.Click += new System.EventHandler(this.btnThongTinTK_Click);
             // 
             // btnDoiMK
             // 

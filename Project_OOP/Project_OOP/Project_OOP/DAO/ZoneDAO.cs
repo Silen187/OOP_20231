@@ -56,5 +56,12 @@ namespace Project_OOP.DAO
             DataTable result = DataProvider.Instance.ExecuteQuery("COUNT_VEHICLE @level_name", new object[] { level_name });
             return result;
         }
+        public DataRow Tim_SuCo(string transaction_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("GET_SUCO_BY_ID @transaction_id", new object[] {int.Parse(transaction_id)});
+            if (result.Rows.Count > 0)
+            { return result.Rows[0]; }
+            else { return null; }
+        }
     }
 }

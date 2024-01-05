@@ -111,7 +111,6 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\FontAwesome.Sharp.dll
 E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Guna.UI2.dll
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.AssemblyReference.cache
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fDangNhap.resources
-E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang_ThongTinTK.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fNhanVien.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemChucVu.resources

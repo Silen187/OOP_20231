@@ -60,10 +60,10 @@ namespace Project_OOP
             int khuB = ZoneDAO.Instance.count_empty_slot("B%");
             int khuC = ZoneDAO.Instance.count_empty_slot("C%");
             int khuD = ZoneDAO.Instance.count_empty_slot("D%");
-            guna2Button1.Text = "Khu A - Đang sử dụng " + khuA + "/4000";
-            guna2Button2.Text = "Khu B - Đang sử dụng " + khuB + "/4000";
-            guna2Button3.Text = "Khu C - Đang sử dụng " + khuC + "/4000";
-            guna2Button4.Text = "Khu D - Đang sử dụng " + khuD + "/4000";
+            guna2Button1.Text = "Khu A - Đang sử dụng " + khuA + "/3600";
+            guna2Button2.Text = "Khu B - Đang sử dụng " + khuB + "/3600";
+            guna2Button3.Text = "Khu C - Đang sử dụng " + khuC + "/3600";
+            guna2Button4.Text = "Khu D - Đang sử dụng " + khuD + "/3600";
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
@@ -231,6 +231,11 @@ namespace Project_OOP
             string level_name = guna2Button11.Text.Split(' ')[1];
             DataTable data = ZoneDAO.Instance.Get_Count_Vehicle(level_name);
             Fill_Car_Bike(data);
+        }
+
+        private void usc_DM_NhaXe_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
