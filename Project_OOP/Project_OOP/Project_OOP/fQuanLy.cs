@@ -196,5 +196,13 @@ namespace Project_OOP
             f.Dock = DockStyle.Fill;
             f.BringToFront();
         }
+
+        private void guna2Button11_Click(object sender, EventArgs e)
+        {
+            usc_HT_DangKy f = new usc_HT_DangKy();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
     }
 }

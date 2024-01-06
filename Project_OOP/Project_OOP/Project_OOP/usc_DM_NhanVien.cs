@@ -29,13 +29,13 @@ namespace Project_OOP
 
         private void btnThemNV_Click(object sender, EventArgs e)
         {
-            usc_DM_ThemNhanVien a = new usc_DM_ThemNhanVien();
+            /*usc_DM_ThemNhanVien a = new usc_DM_ThemNhanVien();
             // Thêm User Control vào Form chứa nó
             this.Controls.Add(a);
             // Đặt vị trí và kích thước cho User Control
             a.Dock = DockStyle.Fill;
             // Hiển thị User Control lên trước cùng
-            a.BringToFront();
+            a.BringToFront();*/
         }
     }
 }

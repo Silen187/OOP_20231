@@ -7,6 +7,7 @@ using System.Linq;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Project_OOP.DAO
@@ -127,6 +128,57 @@ namespace Project_OOP.DAO
                 TicketList.Add(ticket);
             }
             return TicketList;
+        }
+
+        public bool CHECK_TRUNGLAP_USERNAME(string username)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("CHECK_TRUNGLAP_USERNAME @username", new object[] { username });
+            if (result.Rows.Count > 0)
+            { return true; }
+            return false;
+        }
+
+        public bool CHECK_TRUNGLAP_TICKET(string ticket_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT * FROM monthly_subscription WHERE ticket_id = '" + ticket_id + "'");
+            if (result.Rows.Count > 0)
+            { return true; }
+            return false;
+        }
+
+        public void ADD_ADMIN(string username, string password, string name, DateTime Birth, string sex, string city, string contact_number, DateTime register_date, string salary_level, string STK, string Bank, string CCCD)
+        {
+            int Age = DateTime.Now.Year - Birth.Year;
+            DataTable result = DataProvider.Instance.ExecuteQuery("ADD_USER @username , @password", new object[] { username, password });
+            int user_id = int.Parse(result.Rows[0]["user_id"].ToString());
+            DataTable result2 = DataProvider.Instance.ExecuteQuery("ADD_ADMIN @user_id , @start_date , @salary_level", new object[] { user_id, register_date, int.Parse(salary_level) });
+            DataTable result3 = DataProvider.Instance.ExecuteQuery("ADD_INFO @user_id , @name , @Birth , @Age , @City , @contact_number , @role_id , @sex , @CCCD , @STK , @Bank", new object[] {user_id, name, Birth, Age, city, contact_number, 3, sex, CCCD, STK, Bank});
+        }
+
+        public void ADD_EMPLOYEE(string username, string password, string name, DateTime Birth, string sex, string city, string contact_number, DateTime register_date, string salary_level, string STK, string Bank, string CCCD, string level_name, string ticket_id)
+        {
+            int Age = DateTime.Now.Year - Birth.Year;
+            DataTable result = DataProvider.Instance.ExecuteQuery("ADD_USER @username , @password", new object[] { username, password });
+            int user_id = int.Parse(result.Rows[0]["user_id"].ToString());
+            DataTable result2 = DataProvider.Instance.ExecuteQuery("ADD_EMPLOYEE @user_id , @start_date , @salary_level , @level_name", new object[] { user_id, register_date, int.Parse(salary_level), level_name });
+            DataTable result3 = DataProvider.Instance.ExecuteQuery("ADD_INFO @user_id , @name , @Birth , @Age , @City , @contact_number , @role_id , @sex , @CCCD , @STK , @Bank", new object[] { user_id, name, Birth, Age, city, contact_number, 2, sex, CCCD, STK, Bank });
+            DataTable result4 = DataProvider.Instance.ExecuteQuery("ADD_TICKET_EMPLOYEE_CUSTOMER @user_id , @ticket_id , @type_card", new object[] { user_id, ticket_id, 1 });
+        }
+        public void ADD_CUSTOMER(string username, string password, string name, DateTime Birth, string sex, string city, string contact_number, DateTime register_date, string STK, string Bank, string CCCD, string ticket_id)
+        {
+            int Age = DateTime.Now.Year - Birth.Year;
+            DataTable result = DataProvider.Instance.ExecuteQuery("ADD_USER @username , @password", new object[] { username, password });
+            int user_id = int.Parse(result.Rows[0]["user_id"].ToString());
+            DataTable result2 = DataProvider.Instance.ExecuteQuery("ADD_CUSTOMER @user_id , @start_date", new object[] { user_id, register_date});
+            DataTable result3 = DataProvider.Instance.ExecuteQuery("ADD_INFO @user_id , @name , @Birth , @Age , @City , @contact_number , @role_id , @sex , @CCCD , @STK , @Bank", new object[] { user_id, name, Birth, Age, city, contact_number, 1, sex, CCCD, STK, Bank });
+            DataTable result4 = DataProvider.Instance.ExecuteQuery("ADD_TICKET_EMPLOYEE_CUSTOMER @user_id , @ticket_id , @type_card", new object[] { user_id, ticket_id, 3 });
+        }
+        public bool CHECK_TRUNGLAP_CCCD(string CCCD)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT * FROM info WHERE CCCD = '" + CCCD + "'");
+            if (result.Rows.Count > 0)
+            { return true; }
+            return false;
         }
     }
 }

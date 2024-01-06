@@ -63,5 +63,16 @@ namespace Project_OOP.DAO
             { return result.Rows[0]; }
             else { return null; }
         }
+
+        public List<string> level_name_list()
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT DISTINCT * FROM parking_level");
+            List<string> list = new List<string>();
+            foreach (DataRow row in result.Rows)
+            {
+                list.Add(row["level_name"].ToString());
+            }
+            return list;
+        }
     }
 }
