@@ -204,5 +204,38 @@ namespace Project_OOP
             f.Dock = DockStyle.Fill;
             f.BringToFront();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            usc_DM_NhanVien f = new usc_DM_NhanVien();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            usc_XemToanBoVe f = new usc_XemToanBoVe();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            usc_DM_NhaXe f = new usc_DM_NhaXe();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button6_Click_1(object sender, EventArgs e)
+        {
+            usc_DM_NguoiDung f = new usc_DM_NguoiDung();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
     }
 }

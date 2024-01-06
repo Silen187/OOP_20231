@@ -65,6 +65,7 @@
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\ZoneDAO.cs" />
+    <Compile Include="DTO\EmployeeInfoDTO.cs" />
     <Compile Include="DTO\InfoDTO.cs" />
     <Compile Include="DTO\TicketInfoDTO.cs" />
     <Compile Include="fDangNhap.cs">

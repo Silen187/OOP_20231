@@ -258,6 +258,7 @@
             this.guna2Button3.TabIndex = 7;
             this.guna2Button3.Text = "Danh sách nhân viên";
             this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button4
             // 
@@ -276,6 +277,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(230, 35);
             this.guna2Button4.TabIndex = 6;
             this.guna2Button4.Text = " Danh sách nhà xe";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button5
             // 
@@ -294,6 +296,7 @@
             this.guna2Button5.Size = new System.Drawing.Size(230, 35);
             this.guna2Button5.TabIndex = 8;
             this.guna2Button5.Text = "Danh sách vé xe";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button6
             // 
@@ -313,6 +316,7 @@
             this.guna2Button6.TabIndex = 9;
             this.guna2Button6.Text = "Danh sách người dùng";
             this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click_1);
             // 
             // guna2Button7
             // 

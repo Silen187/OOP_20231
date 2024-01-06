@@ -207,10 +207,7 @@ namespace Project_OOP
         {
             List<string> list_level_name = new List<string>();
             list_level_name = ZoneDAO.Instance.level_name_list();
-            foreach (string item in list_level_name)
-            {
-                comboBox3.Items.Add(item);
-            }
+            comboBox3.DataSource = list_level_name;
         }
     }
 }

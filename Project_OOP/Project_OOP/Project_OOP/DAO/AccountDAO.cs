@@ -73,9 +73,9 @@ namespace Project_OOP.DAO
             return null;
 
         }
-        public bool UpdateAccount(int user_id, string displayName, string sex, string city, string SDT, string CCCD, DateTime Birth)
+        public bool UpdateAccount(int user_id, string displayName, string sex, string city, string SDT, string CCCD, DateTime Birth, string STK, string Bank)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery("exec USP_Change_Info @userID , @Birth , @displayName , @sex , @city , @SDT , @CCCD", new object[] { user_id, Birth, displayName, sex, city, SDT, CCCD });
+            int result = DataProvider.Instance.ExecuteNonQuery("exec USP_Change_Info @userID , @Birth , @displayName , @sex , @city , @SDT , @CCCD , @STK , @Bank", new object[] { user_id, Birth, displayName, sex, city, SDT, CCCD, STK, Bank });
 
             return result > 0;
         }
@@ -179,6 +179,34 @@ namespace Project_OOP.DAO
             if (result.Rows.Count > 0)
             { return true; }
             return false;
+        }
+        public List<string> GetBank()
+        {
+            List<string> Bank = new List<string>();
+            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT DISTINCT(Bank) FROM info");
+            foreach (DataRow row in result.Rows)
+            {
+                Bank.Add(row["Bank"].ToString());
+            }
+            return Bank;
+        }
+
+        internal List<EmployeeInfoDTO> GetEmployeeInFoByLevel(string level_name)
+        {
+            List<EmployeeInfoDTO> employee_info = new List<EmployeeInfoDTO>();
+            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT * FROM employees LEFT JOIN info on employees.user_id = info.user_id LEFT JOIN monthly_subscription ON employees.user_id = monthly_subscription.person_id WHERE level_area = '" + level_name + "'");
+            foreach (DataRow row in result.Rows)
+            {
+                EmployeeInfoDTO employee_dto = new EmployeeInfoDTO(row);
+                employee_info.Add(employee_dto);
+            }
+            return employee_info;
+        }
+        public EmployeeInfoDTO GetEmployeeInFoByEmployeeID(int employee_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT * FROM employees LEFT JOIN info on employees.user_id = info.user_id LEFT JOIN monthly_subscription ON employees.user_id = monthly_subscription.person_id WHERE employee_id ='" + employee_id +"'" );
+            EmployeeInfoDTO employee_dto = new EmployeeInfoDTO(result.Rows[0]);
+            return employee_dto;
         }
     }
 }

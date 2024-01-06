@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_OOP.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -66,11 +67,11 @@ namespace Project_OOP.DAO
 
         public List<string> level_name_list()
         {
-            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT DISTINCT * FROM parking_level");
+            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT DISTINCT(level_area) FROM employees");
             List<string> list = new List<string>();
             foreach (DataRow row in result.Rows)
             {
-                list.Add(row["level_name"].ToString());
+                list.Add(row["level_area"].ToString());
             }
             return list;
         }

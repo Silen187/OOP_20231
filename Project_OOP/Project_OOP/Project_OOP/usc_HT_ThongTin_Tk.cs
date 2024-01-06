@@ -58,6 +58,7 @@ namespace Project_OOP
                 comboBox4.Text = "Người dùng";
             }
             guna2TextBox4.Text = acc.CCCD1;
+            guna2TextBox5.Text = acc.STK1;
         }
         public usc_HT_ThongTin_Tk(InfoDTO acc)
         {
@@ -73,7 +74,9 @@ namespace Project_OOP
             string city = comboBox2.Text;
             string SDT = guna2TextBox6.Text;
             string CCCD = guna2TextBox4.Text;
-            fXacNhan f = new fXacNhan(this.user_id, displayName, sex, city, SDT, CCCD, Birth);
+            string STK = guna2TextBox5.Text;
+            string Bank = comboBox5.Text;
+            fXacNhan f = new fXacNhan(this.user_id, displayName, sex, city, SDT, CCCD, Birth, STK, Bank);
             f.ShowDialog();
         }
         private int user_id;
@@ -101,7 +104,8 @@ namespace Project_OOP
 
         private void usc_HT_ThongTin_Tk_Load(object sender, EventArgs e)
         {
-            
+            comboBox5.DataSource = AccountDAO.Instance.GetBank();
+            comboBox5.Text = loginAccount.Bank1;
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)

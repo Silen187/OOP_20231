@@ -65,8 +65,8 @@ namespace Project_OOP
             guna2TextBox9.Text = ticketAccount.User_id.ToString();
             guna2TextBox12.Text = ticketAccount.Name;
             guna2TextBox6.Text = ticketAccount.Ticket_id.ToString();
-            guna2TextBox5.Text = ticketAccount.Start_date;
-            guna2TextBox8.Text = ticketAccount.End_date;
+            guna2DateTimePicker1.Text = ticketAccount.Start_date;
+            guna2DateTimePicker4.Text = ticketAccount.End_date;
             guna2TextBox4.Text = ticketAccount.Money.ToString();
             guna2TextBox15.Text = ticketAccount.Type_card.ToString();
         }
@@ -108,6 +108,9 @@ namespace Project_OOP
 
         }
 
-        
+        private void usc_XemToanBoVe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

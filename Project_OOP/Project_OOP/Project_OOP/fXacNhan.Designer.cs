@@ -135,6 +135,7 @@
             this.Name = "fXacNhan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Xác nhận";
+            this.Load += new System.EventHandler(this.fXacNhan_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
