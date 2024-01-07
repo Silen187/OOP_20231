@@ -243,6 +243,11 @@ namespace Project_OOP.DAO
             DataTable result = DataProvider.Instance.ExecuteQuery("SEARCH_SALARY_DATE @start , @end", new object[] { start, end });
             return result;
         }
+        public DataTable Get_AllSalaryByDate(DateTime start, DateTime end, int user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("SEARCH_SALARY_DATE @start , @end", new object[] { start, end });
+            return result;
+        }
     }
 }
 

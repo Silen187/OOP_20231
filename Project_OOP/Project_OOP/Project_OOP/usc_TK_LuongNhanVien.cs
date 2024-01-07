@@ -31,9 +31,39 @@ namespace Project_OOP
             {
                 DataTable dt = AccountDAO.Instance.Get_AllSalaryByDate(ngay_bat_dau, ngay_ket_thuc);
                 dataGridView1.DataSource = dt;
-                int totalSalary = dt.AsEnumerable()
-                .Where(row => row.Field<string>("Loại vé") == "Vé dùng một lần")
-                .Sum(row => row.Field<int>("Số tiền"));
+                string totalSalaryAdmin = dt.AsEnumerable()
+                .Where(row => row.Field<string>("Chức vụ") == "Quản lý")
+                .Sum(row => row.Field<int>("Lương")/1000000).ToString();
+
+                string totalSalaryEmployee = dt.AsEnumerable()
+                .Where(row => row.Field<string>("Chức vụ") == "Nhân viên")
+                .Sum(row => row.Field<int>("Lương")/1000000).ToString();
+
+                string totalSalary = dt.AsEnumerable().Sum(row => row.Field<int>("Lương")/1000000).ToString();
+
+                int totalrowCountAdmin = dt.Select("[Chức vụ] = 'Quản lý'").Length;
+                int totalrowCountEmployee = dt.Select("[Chức vụ] = 'Nhân viên'").Length;
+                try
+                {
+                    string Average_admin_salary = (int.Parse(totalSalaryAdmin) / totalrowCountAdmin).ToString();
+                    string Average_Employee_Salary = (int.Parse(totalSalaryEmployee) / totalrowCountEmployee).ToString();
+                    guna2TextBox5.Text = Average_admin_salary + " Triệu";
+                    guna2TextBox6.Text = Average_Employee_Salary + " Triệu";
+                }
+                catch
+                {
+
+                }
+                 
+                guna2TextBox4.Text = totalSalary.ToString() + " Triệu";
+                guna2TextBox3.Text = totalSalaryAdmin.ToString() + " Triệu";
+                guna2TextBox7.Text = totalSalaryEmployee.ToString() + " Triệu";
+
+                guna2TextBox1.Text = totalrowCountAdmin.ToString();
+                guna2TextBox2.Text = totalrowCountEmployee.ToString();
+
+
+
             }    
 
         }
