@@ -16,7 +16,7 @@ namespace Project_OOP
         public usc_DM_NhaXe()
         {
             InitializeComponent();
-            Load_Zone();
+            Load_Zone();   
         }
 
         private void guna2TextBox3_TextChanged(object sender, EventArgs e)
@@ -34,16 +34,6 @@ namespace Project_OOP
 
         }
 
-        private void btnThemNX_Click(object sender, EventArgs e)
-        {
-            usc_DM_ThemNhaXe a = new usc_DM_ThemNhaXe();
-            // Thêm User Control vào Form chứa nó
-            this.Controls.Add(a);
-            // Đặt vị trí và kích thước cho User Control
-            a.Dock = DockStyle.Fill;
-            // Hiển thị User Control lên trước cùng
-            a.BringToFront();
-        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

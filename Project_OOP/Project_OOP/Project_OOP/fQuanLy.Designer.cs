@@ -46,8 +46,6 @@
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.menuQuanLy = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
             this.menuThongKe = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
@@ -340,8 +338,6 @@
             // 
             this.menuQuanLy.BackColor = System.Drawing.Color.Black;
             this.menuQuanLy.Controls.Add(this.guna2Button8);
-            this.menuQuanLy.Controls.Add(this.guna2Button9);
-            this.menuQuanLy.Controls.Add(this.guna2Button10);
             this.menuQuanLy.Controls.Add(this.guna2Button13);
             this.menuQuanLy.Location = new System.Drawing.Point(3, 365);
             this.menuQuanLy.Name = "menuQuanLy";
@@ -367,42 +363,6 @@
             this.guna2Button8.Text = "Quản lý";
             this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
-            // guna2Button9
-            // 
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button9.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button9.ForeColor = System.Drawing.Color.White;
-            this.guna2Button9.Image = global::Project_OOP.Properties.Resources.icons8_circle_301;
-            this.guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button9.Location = new System.Drawing.Point(0, 35);
-            this.guna2Button9.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button9.TabIndex = 7;
-            this.guna2Button9.Text = "Quản lý xe";
-            // 
-            // guna2Button10
-            // 
-            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button10.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button10.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button10.ForeColor = System.Drawing.Color.White;
-            this.guna2Button10.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button10.Location = new System.Drawing.Point(0, 70);
-            this.guna2Button10.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button10.TabIndex = 6;
-            this.guna2Button10.Text = "Quản lý vé xe";
-            // 
             // guna2Button13
             // 
             this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -414,7 +374,7 @@
             this.guna2Button13.ForeColor = System.Drawing.Color.White;
             this.guna2Button13.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
             this.guna2Button13.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button13.Location = new System.Drawing.Point(0, 105);
+            this.guna2Button13.Location = new System.Drawing.Point(0, 35);
             this.guna2Button13.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Button13.Name = "guna2Button13";
             this.guna2Button13.Size = new System.Drawing.Size(230, 35);
@@ -471,6 +431,7 @@
             this.guna2Button15.TabIndex = 7;
             this.guna2Button15.Text = "Doanh thu theo ngày";
             this.guna2Button15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button15.Click += new System.EventHandler(this.guna2Button15_Click);
             // 
             // guna2Button16
             // 
@@ -490,6 +451,7 @@
             this.guna2Button16.TabIndex = 6;
             this.guna2Button16.Text = "Doanh thu theo tháng";
             this.guna2Button16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
             // 
             // guna2Button17
             // 
@@ -508,6 +470,7 @@
             this.guna2Button17.Size = new System.Drawing.Size(230, 35);
             this.guna2Button17.TabIndex = 8;
             this.guna2Button17.Text = "Lương nhân viên";
+            this.guna2Button17.Click += new System.EventHandler(this.guna2Button17_Click);
             // 
             // guna2Button18
             // 
@@ -657,8 +620,6 @@
         private System.Windows.Forms.Timer menuDMTransition;
         private System.Windows.Forms.FlowLayoutPanel menuQuanLy;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Button guna2Button13;
         private System.Windows.Forms.Timer menuQLTransition;
         private System.Windows.Forms.FlowLayoutPanel menuThongKe;

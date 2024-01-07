@@ -75,5 +75,10 @@ namespace Project_OOP.DAO
             }
             return list;
         }
+        public DataTable GetHistoryByDay(DateTime start_day, DateTime end_day)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("GET_HISTORY_BY_DATE @start , @end", new object[] { start_day, end_day });
+            return result;
+        }
     }
 }

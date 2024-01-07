@@ -18,6 +18,9 @@ namespace Project_OOP
         {
             InitializeComponent();
         }
+        private string user_id;
+
+        public string User_id { get => user_id; set => user_id = value; }
 
         private void guna2GroupBox1_Click(object sender, EventArgs e)
         {
@@ -50,6 +53,11 @@ namespace Project_OOP
         private void guna2Button1_Click(object sender, EventArgs e)
         {
 
+            usc_SuaNhanVien f = new usc_SuaNhanVien(guna2TextBox9.Text);
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
@@ -59,10 +67,17 @@ namespace Project_OOP
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            string name = comboBox1.Text;
-            string employee_id = comboBox2.Text;
-            string level_name = comboBox3.Text;
-            Show_Employee(int.Parse(employee_id));
+            try
+            {
+                string name = comboBox1.Text;
+                string employee_id = comboBox2.Text;
+                string level_name = comboBox3.Text;
+                Show_Employee(int.Parse(employee_id));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã có lỗi xảy ra " + ex.Message);
+            }
         }
 
         private void comboBox3_SelectedValueChanged(object sender, EventArgs e)
@@ -103,6 +118,28 @@ namespace Project_OOP
             guna2TextBox1.Text = info.STK1.ToString();
             guna2TextBox14.Text = info.Bank.ToString();
             guna2TextBox15.Text = info.CCCD1.ToString();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn xóa nhân viên này ?", "Xác nhận", MessageBoxButtons.YesNo);
+
+            // Kiểm tra kết quả từ MessageBox
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    User_id = DataProvider.Instance.ExecuteQuery("SELECT user_id AS uid FROM employees WHERE employee_id = " + guna2TextBox9.Text).Rows[0]["uid"].ToString();
+                    // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien
+                    AccountDAO.Instance.DeleteEmployee(User_id);
+                    MessageBox.Show("Xóa thành công");
+                }
+                // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Đã có lỗi xảy ra " + ex.Message);
+                }
+            }
         }
     }
 }

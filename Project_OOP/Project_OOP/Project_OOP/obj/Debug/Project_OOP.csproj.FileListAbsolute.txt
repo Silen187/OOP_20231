@@ -114,10 +114,7 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fDangNhap.resou
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fNhanVien.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemChucVu.resources
-E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_DangKyVeXe.resources
-E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NhaXe.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_SuCo.resources
-E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_VeXe.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuNgay.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuThang.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_LuongNhanVien.resources
@@ -125,10 +122,7 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_SuCo.res
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ChucVu.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhanVien.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhaXe.resources
-E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhanVien.resources
-E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemNhaXe.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NguoiDung.resources
-E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_VeXe.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DangKy.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DoiMK.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_ThongTin_Tk.resources
@@ -147,3 +141,7 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_ThongTinVe.
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_XemToanBoVe.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
 E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNhanVien.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NapTienVe.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNguoiDung.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemUser.resources

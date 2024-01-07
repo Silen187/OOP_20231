@@ -216,7 +216,7 @@ namespace Project_OOP
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            usc_XemToanBoVe f = new usc_XemToanBoVe();
+            usc_XemToanBoVe f = new usc_XemToanBoVe("3");
             this.Controls.Add(f);
             f.Dock = DockStyle.Fill;
             f.BringToFront();
@@ -233,6 +233,35 @@ namespace Project_OOP
         private void guna2Button6_Click_1(object sender, EventArgs e)
         {
             usc_DM_NguoiDung f = new usc_DM_NguoiDung();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2Button15_Click(object sender, EventArgs e)
+        {
+            usc_TK_DoanhThuNgay f = new usc_TK_DoanhThuNgay();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button16_Click(object sender, EventArgs e)
+        {
+            usc_TK_DoanhThuThang f = new usc_TK_DoanhThuThang();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button17_Click(object sender, EventArgs e)
+        {
+            usc_TK_LuongNhanVien f = new usc_TK_LuongNhanVien();
             this.Controls.Add(f);
             f.Dock = DockStyle.Fill;
             f.BringToFront();

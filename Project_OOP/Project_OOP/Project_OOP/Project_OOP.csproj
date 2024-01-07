@@ -118,29 +118,17 @@
     <Compile Include="usc_DM_NhaXe.Designer.cs">
       <DependentUpon>usc_DM_NhaXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="usc_DM_ThemNhanVien.cs">
+    <Compile Include="usc_DM_ThemUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usc_DM_ThemNhanVien.Designer.cs">
-      <DependentUpon>usc_DM_ThemNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="usc_DM_ThemNhaXe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="usc_DM_ThemNhaXe.Designer.cs">
-      <DependentUpon>usc_DM_ThemNhaXe.cs</DependentUpon>
+    <Compile Include="usc_DM_ThemUser.Designer.cs">
+      <DependentUpon>usc_DM_ThemUser.cs</DependentUpon>
     </Compile>
     <Compile Include="usc_DM_NguoiDung.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="usc_DM_NguoiDung.Designer.cs">
       <DependentUpon>usc_DM_NguoiDung.cs</DependentUpon>
-    </Compile>
-    <Compile Include="usc_DM_VeXe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="usc_DM_VeXe.Designer.cs">
-      <DependentUpon>usc_DM_VeXe.cs</DependentUpon>
     </Compile>
     <Compile Include="usc_HT_DangKy.cs">
       <SubType>UserControl</SubType>
@@ -184,17 +172,11 @@
     <Compile Include="usc_LichSuNhanLuong.Designer.cs">
       <DependentUpon>usc_LichSuNhanLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="usc_QL_DangKyVeXe.cs">
+    <Compile Include="usc_QL_NapTienVe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usc_QL_DangKyVeXe.Designer.cs">
-      <DependentUpon>usc_QL_DangKyVeXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="usc_QL_NhaXe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="usc_QL_NhaXe.Designer.cs">
-      <DependentUpon>usc_QL_NhaXe.cs</DependentUpon>
+    <Compile Include="usc_QL_NapTienVe.Designer.cs">
+      <DependentUpon>usc_QL_NapTienVe.cs</DependentUpon>
     </Compile>
     <Compile Include="usc_QL_SuCo.cs">
       <SubType>UserControl</SubType>
@@ -202,11 +184,17 @@
     <Compile Include="usc_QL_SuCo.Designer.cs">
       <DependentUpon>usc_QL_SuCo.cs</DependentUpon>
     </Compile>
-    <Compile Include="usc_QL_VeXe.cs">
+    <Compile Include="usc_SuaNguoiDung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usc_QL_VeXe.Designer.cs">
-      <DependentUpon>usc_QL_VeXe.cs</DependentUpon>
+    <Compile Include="usc_SuaNguoiDung.Designer.cs">
+      <DependentUpon>usc_SuaNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_SuaNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_SuaNhanVien.Designer.cs">
+      <DependentUpon>usc_SuaNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="usc_ThongTinVe.cs">
       <SubType>UserControl</SubType>
@@ -244,6 +232,12 @@
     <Compile Include="usc_XemToanBoVe.Designer.cs">
       <DependentUpon>usc_XemToanBoVe.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="usc_SuaNguoiDung.resx">
+      <DependentUpon>usc_SuaNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_SuaNhanVien.resx">
+      <DependentUpon>usc_SuaNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usc_XemToanBoVe.resx">
       <DependentUpon>usc_XemToanBoVe.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,17 +267,11 @@
     <EmbeddedResource Include="usc_LichSuRaVao.resx">
       <DependentUpon>usc_LichSuRaVao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usc_QL_DangKyVeXe.resx">
-      <DependentUpon>usc_QL_DangKyVeXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="usc_QL_NhaXe.resx">
-      <DependentUpon>usc_QL_NhaXe.cs</DependentUpon>
+    <EmbeddedResource Include="usc_QL_NapTienVe.resx">
+      <DependentUpon>usc_QL_NapTienVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usc_QL_SuCo.resx">
       <DependentUpon>usc_QL_SuCo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="usc_QL_VeXe.resx">
-      <DependentUpon>usc_QL_VeXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usc_ThongTinVe.resx">
       <DependentUpon>usc_ThongTinVe.cs</DependentUpon>
@@ -319,17 +307,11 @@
     <EmbeddedResource Include="usc_DM_NhaXe.resx">
       <DependentUpon>usc_DM_NhaXe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usc_DM_ThemNhanVien.resx">
-      <DependentUpon>usc_DM_ThemNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="usc_DM_ThemNhaXe.resx">
-      <DependentUpon>usc_DM_ThemNhaXe.cs</DependentUpon>
+    <EmbeddedResource Include="usc_DM_ThemUser.resx">
+      <DependentUpon>usc_DM_ThemUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usc_DM_NguoiDung.resx">
       <DependentUpon>usc_DM_NguoiDung.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="usc_DM_VeXe.resx">
-      <DependentUpon>usc_DM_VeXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usc_HT_DangKy.resx">
       <DependentUpon>usc_HT_DangKy.cs</DependentUpon>

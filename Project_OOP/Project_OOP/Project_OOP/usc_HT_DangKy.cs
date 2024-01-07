@@ -40,7 +40,7 @@ namespace Project_OOP
         {
             if (this.Tag != null)
             {
-                usc_DM_ThemNhanVien f = this.Tag as usc_DM_ThemNhanVien;
+                usc_DM_ThemUser f = this.Tag as usc_DM_ThemUser;
                 this.Controls.Add(f);
                 f.Dock = DockStyle.Fill;
                 f.BringToFront();
@@ -58,7 +58,7 @@ namespace Project_OOP
                     if (guna2TextBox4.Text == guna2TextBox5.Text && guna2TextBox5.Text != "")
                     {
                         string password = guna2TextBox5.Text;
-                        usc_DM_ThemNhanVien f = new usc_DM_ThemNhanVien(user_name, password);
+                        usc_DM_ThemUser f = new usc_DM_ThemUser(user_name, password);
                         this.Controls.Add(f);
                         f.Dock = DockStyle.Fill;
                         f.BringToFront();
@@ -69,6 +69,11 @@ namespace Project_OOP
                     }
                 }
             }
+
+        }
+
+        private void usc_HT_DangKy_Load(object sender, EventArgs e)
+        {
 
         }
     }

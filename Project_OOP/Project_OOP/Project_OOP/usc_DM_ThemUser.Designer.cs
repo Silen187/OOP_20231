@@ -1,6 +1,6 @@
 ﻿namespace Project_OOP
 {
-    partial class usc_DM_ThemNhanVien
+    partial class usc_DM_ThemUser
     {
         /// <summary> 
         /// Required designer variable.

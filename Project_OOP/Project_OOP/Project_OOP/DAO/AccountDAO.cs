@@ -8,6 +8,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Project_OOP.DAO
@@ -94,9 +95,9 @@ namespace Project_OOP.DAO
         public DataTable History_Money(int user_id, DateTime start_date, DateTime end_date)
         {
 
-            DataTable result = DataProvider.Instance.ExecuteQuery("USP_HistoryMoney @user_id , @start_date , @end_date", new object[] {user_id , start_date, end_date});
+            DataTable result = DataProvider.Instance.ExecuteQuery("USP_HistoryMoney @user_id , @start_date , @end_date", new object[] { user_id, start_date, end_date });
             return result;
-            
+
         }
         public DataTable History_Entry(int user_id, DateTime start_date, DateTime end_date)
         {
@@ -121,9 +122,9 @@ namespace Project_OOP.DAO
         public List<TicketInfoDTO> LoadTicketList(List<int> userid_list)
         {
             List<TicketInfoDTO> TicketList = new List<TicketInfoDTO>();
-            foreach(int user_id in userid_list)
+            foreach (int user_id in userid_list)
             {
-                DataTable ticket_table = DataProvider.Instance.ExecuteQuery("VIEW_TICKET_INFO @userid", new object[] {user_id});
+                DataTable ticket_table = DataProvider.Instance.ExecuteQuery("VIEW_TICKET_INFO @userid", new object[] { user_id });
                 TicketInfoDTO ticket = new TicketInfoDTO(ticket_table.Rows[0]);
                 TicketList.Add(ticket);
             }
@@ -152,7 +153,7 @@ namespace Project_OOP.DAO
             DataTable result = DataProvider.Instance.ExecuteQuery("ADD_USER @username , @password", new object[] { username, password });
             int user_id = int.Parse(result.Rows[0]["user_id"].ToString());
             DataTable result2 = DataProvider.Instance.ExecuteQuery("ADD_ADMIN @user_id , @start_date , @salary_level", new object[] { user_id, register_date, int.Parse(salary_level) });
-            DataTable result3 = DataProvider.Instance.ExecuteQuery("ADD_INFO @user_id , @name , @Birth , @Age , @City , @contact_number , @role_id , @sex , @CCCD , @STK , @Bank", new object[] {user_id, name, Birth, Age, city, contact_number, 3, sex, CCCD, STK, Bank});
+            DataTable result3 = DataProvider.Instance.ExecuteQuery("ADD_INFO @user_id , @name , @Birth , @Age , @City , @contact_number , @role_id , @sex , @CCCD , @STK , @Bank", new object[] { user_id, name, Birth, Age, city, contact_number, 3, sex, CCCD, STK, Bank });
         }
 
         public void ADD_EMPLOYEE(string username, string password, string name, DateTime Birth, string sex, string city, string contact_number, DateTime register_date, string salary_level, string STK, string Bank, string CCCD, string level_name, string ticket_id)
@@ -169,7 +170,7 @@ namespace Project_OOP.DAO
             int Age = DateTime.Now.Year - Birth.Year;
             DataTable result = DataProvider.Instance.ExecuteQuery("ADD_USER @username , @password", new object[] { username, password });
             int user_id = int.Parse(result.Rows[0]["user_id"].ToString());
-            DataTable result2 = DataProvider.Instance.ExecuteQuery("ADD_CUSTOMER @user_id , @start_date", new object[] { user_id, register_date});
+            DataTable result2 = DataProvider.Instance.ExecuteQuery("ADD_CUSTOMER @user_id , @start_date", new object[] { user_id, register_date });
             DataTable result3 = DataProvider.Instance.ExecuteQuery("ADD_INFO @user_id , @name , @Birth , @Age , @City , @contact_number , @role_id , @sex , @CCCD , @STK , @Bank", new object[] { user_id, name, Birth, Age, city, contact_number, 1, sex, CCCD, STK, Bank });
             DataTable result4 = DataProvider.Instance.ExecuteQuery("ADD_TICKET_EMPLOYEE_CUSTOMER @user_id , @ticket_id , @type_card", new object[] { user_id, ticket_id, 3 });
         }
@@ -204,9 +205,43 @@ namespace Project_OOP.DAO
         }
         public EmployeeInfoDTO GetEmployeeInFoByEmployeeID(int employee_id)
         {
-            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT * FROM employees LEFT JOIN info on employees.user_id = info.user_id LEFT JOIN monthly_subscription ON employees.user_id = monthly_subscription.person_id WHERE employee_id ='" + employee_id +"'" );
+            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT * FROM employees LEFT JOIN info on employees.user_id = info.user_id LEFT JOIN monthly_subscription ON employees.user_id = monthly_subscription.person_id WHERE employee_id ='" + employee_id + "'");
             EmployeeInfoDTO employee_dto = new EmployeeInfoDTO(result.Rows[0]);
             return employee_dto;
+        }
+        public void UpdateEmployeeByEmployeeID(string employee_id, string name, string SDT, string salary_level, string STK, string Bank, string CCCD, string level_name, string password)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("UPDATE_EMPLOYEE_users @employee_id , @password", new object[] { int.Parse(employee_id), password });
+            DataTable result2 = DataProvider.Instance.ExecuteQuery("UPDATE employees SET level_area = @levelname , salary_level = @salarylevel WHERE employee_id = @employeeid", new object[] { level_name, salary_level, int.Parse(employee_id) });
+            DataTable result3 = DataProvider.Instance.ExecuteQuery("UPDATE_EMPLOYEE_INFO @employee_id , @name , @SDT , @STK , @bank , @CCCD", new object[] { int.Parse(employee_id), name, SDT, STK, Bank, CCCD });
+        }
+        public void DeleteEmployee(object user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("DELETE FROM employees WHERE user_id = " + user_id);
+            DataTable result4 = DataProvider.Instance.ExecuteQuery("DELETE FROM salary_pass WHERE user_id = " + user_id);
+            DataTable result3 = DataProvider.Instance.ExecuteQuery("DELETE FROM info WHERE user_id = " + user_id);
+            DataTable result5 = DataProvider.Instance.ExecuteQuery("DELETE FROM monthly_subscription WHERE person_id = " + user_id);
+            DataTable result2 = DataProvider.Instance.ExecuteQuery("DELETE FROM users WHERE user_id = " + user_id);
+        }
+        public void UpdateTicketMoney(string ticket_id, int money)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("UPDATE monthly_subscription SET money = money + @money WHERE ticket_id = @ticketid", new object[] { money, ticket_id });
+        }
+        public void Delete_Customer(int user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("DELETE FROM customers WHERE user_id = " + user_id);
+            DataTable result2 = DataProvider.Instance.ExecuteQuery("DELETE FROM info WHERE user_id = " + user_id);
+            DataTable result5 = DataProvider.Instance.ExecuteQuery("DELETE FROM monthly_subscription WHERE person_id = " + user_id);
+            DataTable result3 = DataProvider.Instance.ExecuteQuery("DELETE FROM users WHERE user_id = " + user_id);
+        }
+        public void UpdateTicket()
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("UPDATE monthly_subscription SET type_card = 3 , start_date = NULL , end_date = NULL WHERE type_card = 2 AND end_date < @now", new object[] { DateTime.Now });
+        }
+        public DataTable Get_AllSalaryByDate(DateTime start, DateTime end)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("SEARCH_SALARY_DATE @start , @end", new object[] { start, end });
+            return result;
         }
     }
 }

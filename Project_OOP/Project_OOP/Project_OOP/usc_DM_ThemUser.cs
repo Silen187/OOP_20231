@@ -14,9 +14,9 @@ using System.Xml.Linq;
 
 namespace Project_OOP
 {
-    public partial class usc_DM_ThemNhanVien : UserControl
+    public partial class usc_DM_ThemUser : UserControl
     {
-        public usc_DM_ThemNhanVien(string user_name, string pass_word)
+        public usc_DM_ThemUser(string user_name, string pass_word)
         {
             InitializeComponent();
             this.user_name = user_name;
@@ -156,6 +156,7 @@ namespace Project_OOP
             ComboBox cb = sender as ComboBox;
             if (cb.Text == "Quản lý")
             {
+                comboBox3.Text = "";
                 guna2TextBox1.Text = "Admin";
                 guna2TextBox3.Enabled = false;
                 guna2Button2.Enabled = false;
@@ -172,6 +173,7 @@ namespace Project_OOP
             }
             else if (cb.Text == "Người dùng")
             {
+                comboBox3.Text = "";
                 guna2TextBox1.Text = "Customer";
                 guna2TextBox3.Enabled = true;
                 guna2Button2.Enabled = true;
