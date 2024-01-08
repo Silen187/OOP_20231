@@ -1,4 +1,5 @@
-﻿using Project_OOP.DAO;
+﻿using Guna.UI2.WinForms;
+using Project_OOP.DAO;
 using Project_OOP.DTO;
 using System;
 using System.Collections.Generic;
@@ -247,6 +248,39 @@ namespace Project_OOP.DAO
         {
             DataTable result = DataProvider.Instance.ExecuteQuery("SEARCH_SALARY_DATE @start , @end", new object[] { start, end });
             return result;
+        }
+        public DataTable Get_AllSalaryByDateUserID(DateTime start, DateTime end, int user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("SEARCH_SALARY_DATEID @user_id , @start , @end", new object[] { user_id, start, end });
+            return result;
+        }
+        public DataTable Get_AllSuCo(DateTime start, DateTime end)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("GET_ISSUEDATE @start , @end", new object[] { start, end });
+            return result;
+        }
+        public DataTable Get_AllSuCo_UserID(DateTime start, DateTime end, int user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("GET_ISSUEDATE_ID @user_id , @start , @end", new object[] { user_id, start, end });
+            return result;
+        }
+        public void ADD_TRANSACTION_TYPE6(string zone, string level, string ticket_id, string name, string vehicle, string vehicle_id, string money, DateTime ngay, string user_id_did, string description)
+        {
+            string level_name = zone + level;
+            int type_vehicle;
+            if (vehicle == "Car")
+            {
+                type_vehicle = 1;
+            }
+            else if (vehicle == "Bike")
+            {
+                type_vehicle = 2;
+            }
+            else
+            {
+                type_vehicle = 3;
+            }
+            DataTable result = DataProvider.Instance.ExecuteQuery("insert into transactions(ticket_id, transaction_time, renueve, description, type, vehicle_id, type_vehicle, user_id_did, level_name) VALUES( @ticket_id , @ngay , @money , @description , 6 , @vehicle_id , @type_vehicle , @user_id_did , @level_name )", new object[] {ticket_id, ngay, int.Parse(money), description, vehicle_id, type_vehicle, int.Parse(user_id_did), level_name });
         }
     }
 }

@@ -184,5 +184,17 @@ namespace Project_OOP
             f.Dock = DockStyle.Fill;
             f.BringToFront();
         }
+
+        private void guna2Button19_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo);
+
+            // Kiểm tra kết quả từ MessageBox
+            if (result == DialogResult.Yes)
+            {
+                // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien
+                this.Close();
+            }
+        }
     }
 }

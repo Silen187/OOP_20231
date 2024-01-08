@@ -61,9 +61,21 @@ namespace Project_OOP
 
                 guna2TextBox1.Text = totalrowCountAdmin.ToString();
                 guna2TextBox2.Text = totalrowCountEmployee.ToString();
+            }
+            else
+            {
+                try
+                {
+                    int user_id = int.Parse(guna2TextBox13.Text);
+                    DataTable dt = AccountDAO.Instance.Get_AllSalaryByDateUserID(ngay_bat_dau, ngay_ket_thuc, user_id);
+                    dataGridView1.DataSource = dt;
+                    string totalSalary = dt.AsEnumerable().Sum(row => row.Field<int>("Lương") / 1000000).ToString();
+                    guna2TextBox4.Text = totalSalary + " Triệu";
+                }
+                catch 
+                { 
 
-
-
+                }
             }    
 
         }

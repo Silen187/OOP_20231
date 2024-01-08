@@ -13,10 +13,18 @@ namespace Project_OOP
 {
     public partial class usc_QL_SuCo : UserControl
     {
-        public usc_QL_SuCo()
+        public usc_QL_SuCo(string user_id = null)
         {
             InitializeComponent();
+            if (user_id != null)
+            {
+                guna2Button1.Visible = true;
+                User_id = user_id;
+            }
         }
+        private string user_id;
+
+        public string User_id { get => user_id; set => user_id = value; }
 
         private void btnThemSuCo_Click(object sender, EventArgs e)
         {
@@ -51,6 +59,14 @@ namespace Project_OOP
         private void guna2TextBox5_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            usc_ThemSuCo f = new usc_ThemSuCo(User_id);
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
         }
     }
 }

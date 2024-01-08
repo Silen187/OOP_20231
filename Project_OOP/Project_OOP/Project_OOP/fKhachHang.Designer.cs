@@ -184,6 +184,7 @@
             this.guna2Button19.Size = new System.Drawing.Size(230, 35);
             this.guna2Button19.TabIndex = 10;
             this.guna2Button19.Text = "Đăng xuất";
+            this.guna2Button19.Click += new System.EventHandler(this.guna2Button19_Click);
             // 
             // menuThongKe
             // 

@@ -32,29 +32,10 @@
             this.sidebar = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.menuHeThong = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnHeThong = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThongTinTK = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDoiMK = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button19 = new Guna.UI2.WinForms.Guna2Button();
             this.menuDanhMuc = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.menuQuanLy = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
             this.menuThongKe = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button17 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button18 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -63,6 +44,25 @@
             this.menuQLTransition = new System.Windows.Forms.Timer(this.components);
             this.menuTKTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.btnHeThong = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThongTinTK = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDoiMK = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button19 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button17 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button18 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.sidebar.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuHeThong.SuspendLayout();
@@ -109,6 +109,109 @@
             this.menuHeThong.Name = "menuHeThong";
             this.menuHeThong.Size = new System.Drawing.Size(230, 175);
             this.menuHeThong.TabIndex = 5;
+            // 
+            // menuDanhMuc
+            // 
+            this.menuDanhMuc.BackColor = System.Drawing.Color.Black;
+            this.menuDanhMuc.Controls.Add(this.guna2Button2);
+            this.menuDanhMuc.Controls.Add(this.guna2Button3);
+            this.menuDanhMuc.Controls.Add(this.guna2Button4);
+            this.menuDanhMuc.Controls.Add(this.guna2Button5);
+            this.menuDanhMuc.Controls.Add(this.guna2Button6);
+            this.menuDanhMuc.Controls.Add(this.guna2Button7);
+            this.menuDanhMuc.Location = new System.Drawing.Point(3, 184);
+            this.menuDanhMuc.Name = "menuDanhMuc";
+            this.menuDanhMuc.Size = new System.Drawing.Size(230, 175);
+            this.menuDanhMuc.TabIndex = 6;
+            // 
+            // menuQuanLy
+            // 
+            this.menuQuanLy.BackColor = System.Drawing.Color.Black;
+            this.menuQuanLy.Controls.Add(this.guna2Button8);
+            this.menuQuanLy.Controls.Add(this.guna2Button13);
+            this.menuQuanLy.Location = new System.Drawing.Point(3, 365);
+            this.menuQuanLy.Name = "menuQuanLy";
+            this.menuQuanLy.Size = new System.Drawing.Size(230, 146);
+            this.menuQuanLy.TabIndex = 7;
+            // 
+            // menuThongKe
+            // 
+            this.menuThongKe.BackColor = System.Drawing.Color.Black;
+            this.menuThongKe.Controls.Add(this.guna2Button14);
+            this.menuThongKe.Controls.Add(this.guna2Button15);
+            this.menuThongKe.Controls.Add(this.guna2Button16);
+            this.menuThongKe.Controls.Add(this.guna2Button17);
+            this.menuThongKe.Controls.Add(this.guna2Button18);
+            this.menuThongKe.Location = new System.Drawing.Point(3, 517);
+            this.menuThongKe.Name = "menuThongKe";
+            this.menuThongKe.Size = new System.Drawing.Size(230, 175);
+            this.menuThongKe.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(230, 60);
+            this.panel1.TabIndex = 0;
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.Controls.Add(this.label1);
+            this.panelTitleBar.Controls.Add(this.guna2HtmlLabel1);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(904, 60);
+            this.panelTitleBar.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(537, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(270, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Xin chào: Quản Lý - Lê Đình Thi";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Maroon;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(17, 19);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(355, 34);
+            this.guna2HtmlLabel1.TabIndex = 0;
+            this.guna2HtmlLabel1.Text = "HỆ THỐNG NHÀ GỬI XE";
+            // 
+            // menuHTTransition
+            // 
+            this.menuHTTransition.Interval = 5;
+            this.menuHTTransition.Tick += new System.EventHandler(this.menuHTTransition_Tick);
+            // 
+            // menuDMTransition
+            // 
+            this.menuDMTransition.Interval = 5;
+            this.menuDMTransition.Tick += new System.EventHandler(this.menuDMTransistion_Tick);
+            // 
+            // menuQLTransition
+            // 
+            this.menuQLTransition.Interval = 5;
+            this.menuQLTransition.Tick += new System.EventHandler(this.menuQLTransition_Tick);
+            // 
+            // menuTKTransition
+            // 
+            this.menuTKTransition.Interval = 5;
+            this.menuTKTransition.Tick += new System.EventHandler(this.menuTKTransition_Tick);
+            // 
+            // sidebarTransition
+            // 
+            this.sidebarTransition.Interval = 1;
+            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
             // btnHeThong
             // 
@@ -204,20 +307,7 @@
             this.guna2Button19.Size = new System.Drawing.Size(230, 35);
             this.guna2Button19.TabIndex = 10;
             this.guna2Button19.Text = "Đăng xuất";
-            // 
-            // menuDanhMuc
-            // 
-            this.menuDanhMuc.BackColor = System.Drawing.Color.Black;
-            this.menuDanhMuc.Controls.Add(this.guna2Button2);
-            this.menuDanhMuc.Controls.Add(this.guna2Button3);
-            this.menuDanhMuc.Controls.Add(this.guna2Button4);
-            this.menuDanhMuc.Controls.Add(this.guna2Button5);
-            this.menuDanhMuc.Controls.Add(this.guna2Button6);
-            this.menuDanhMuc.Controls.Add(this.guna2Button7);
-            this.menuDanhMuc.Location = new System.Drawing.Point(3, 184);
-            this.menuDanhMuc.Name = "menuDanhMuc";
-            this.menuDanhMuc.Size = new System.Drawing.Size(230, 175);
-            this.menuDanhMuc.TabIndex = 6;
+            this.guna2Button19.Click += new System.EventHandler(this.guna2Button19_Click);
             // 
             // guna2Button2
             // 
@@ -334,16 +424,6 @@
             this.guna2Button7.TabIndex = 10;
             this.guna2Button7.Text = "Danh sách chức vụ";
             // 
-            // menuQuanLy
-            // 
-            this.menuQuanLy.BackColor = System.Drawing.Color.Black;
-            this.menuQuanLy.Controls.Add(this.guna2Button8);
-            this.menuQuanLy.Controls.Add(this.guna2Button13);
-            this.menuQuanLy.Location = new System.Drawing.Point(3, 365);
-            this.menuQuanLy.Name = "menuQuanLy";
-            this.menuQuanLy.Size = new System.Drawing.Size(230, 146);
-            this.menuQuanLy.TabIndex = 7;
-            // 
             // guna2Button8
             // 
             this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -380,19 +460,7 @@
             this.guna2Button13.Size = new System.Drawing.Size(230, 35);
             this.guna2Button13.TabIndex = 8;
             this.guna2Button13.Text = "Quản lý sự cố";
-            // 
-            // menuThongKe
-            // 
-            this.menuThongKe.BackColor = System.Drawing.Color.Black;
-            this.menuThongKe.Controls.Add(this.guna2Button14);
-            this.menuThongKe.Controls.Add(this.guna2Button15);
-            this.menuThongKe.Controls.Add(this.guna2Button16);
-            this.menuThongKe.Controls.Add(this.guna2Button17);
-            this.menuThongKe.Controls.Add(this.guna2Button18);
-            this.menuThongKe.Location = new System.Drawing.Point(3, 517);
-            this.menuThongKe.Name = "menuThongKe";
-            this.menuThongKe.Size = new System.Drawing.Size(230, 175);
-            this.menuThongKe.TabIndex = 8;
+            this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
             // 
             // guna2Button14
             // 
@@ -489,15 +557,7 @@
             this.guna2Button18.Size = new System.Drawing.Size(230, 35);
             this.guna2Button18.TabIndex = 9;
             this.guna2Button18.Text = "Sự cố";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.guna2Button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 60);
-            this.panel1.TabIndex = 0;
+            this.guna2Button18.Click += new System.EventHandler(this.guna2Button18_Click);
             // 
             // guna2Button1
             // 
@@ -517,63 +577,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(40, 40);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.Controls.Add(this.label1);
-            this.panelTitleBar.Controls.Add(this.guna2HtmlLabel1);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(904, 60);
-            this.panelTitleBar.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(537, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Xin chào: Quản Lý - Lê Đình Thi";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Maroon;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(17, 19);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(355, 34);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "HỆ THỐNG NHÀ GỬI XE";
-            // 
-            // menuHTTransition
-            // 
-            this.menuHTTransition.Interval = 5;
-            this.menuHTTransition.Tick += new System.EventHandler(this.menuHTTransition_Tick);
-            // 
-            // menuDMTransition
-            // 
-            this.menuDMTransition.Interval = 5;
-            this.menuDMTransition.Tick += new System.EventHandler(this.menuDMTransistion_Tick);
-            // 
-            // menuQLTransition
-            // 
-            this.menuQLTransition.Interval = 5;
-            this.menuQLTransition.Tick += new System.EventHandler(this.menuQLTransition_Tick);
-            // 
-            // menuTKTransition
-            // 
-            this.menuTKTransition.Interval = 5;
-            this.menuTKTransition.Tick += new System.EventHandler(this.menuTKTransition_Tick);
-            // 
-            // sidebarTransition
-            // 
-            this.sidebarTransition.Interval = 1;
-            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
             // fQuanLy
             // 

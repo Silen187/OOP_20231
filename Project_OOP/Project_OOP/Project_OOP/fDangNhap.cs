@@ -79,10 +79,10 @@ namespace Project_OOP
 
         private void fDangNhap_FormClosing(object sender, FormClosingEventArgs e)
         {
-            /*if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
             {
                 e.Cancel = true;
-            }*/
+            }
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)

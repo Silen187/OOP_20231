@@ -145,3 +145,4 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNhanVien
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NapTienVe.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNguoiDung.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemUser.resources
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_ThemSuCo.resources

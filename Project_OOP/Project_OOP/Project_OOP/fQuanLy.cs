@@ -31,7 +31,6 @@ namespace Project_OOP
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             menuHTTransition.Start();
-            
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
@@ -265,6 +264,34 @@ namespace Project_OOP
             this.Controls.Add(f);
             f.Dock = DockStyle.Fill;
             f.BringToFront();
+        }
+
+        private void guna2Button13_Click(object sender, EventArgs e)
+        {
+            usc_QL_SuCo f = new usc_QL_SuCo(loginAccount.ID1.ToString());
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button18_Click(object sender, EventArgs e)
+        {
+            usc_TK_SuCo f = new usc_TK_SuCo();
+            this.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
+        }
+
+        private void guna2Button19_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo);
+
+            // Kiểm tra kết quả từ MessageBox
+            if (result == DialogResult.Yes)
+            {
+                // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien
+                this.Close();
+            }
         }
     }
 }

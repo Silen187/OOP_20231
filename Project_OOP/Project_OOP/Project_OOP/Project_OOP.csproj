@@ -196,6 +196,12 @@
     <Compile Include="usc_SuaNhanVien.Designer.cs">
       <DependentUpon>usc_SuaNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="usc_ThemSuCo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_ThemSuCo.Designer.cs">
+      <DependentUpon>usc_ThemSuCo.cs</DependentUpon>
+    </Compile>
     <Compile Include="usc_ThongTinVe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usc_SuaNhanVien.resx">
       <DependentUpon>usc_SuaNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_ThemSuCo.resx">
+      <DependentUpon>usc_ThemSuCo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usc_XemToanBoVe.resx">
       <DependentUpon>usc_XemToanBoVe.cs</DependentUpon>
