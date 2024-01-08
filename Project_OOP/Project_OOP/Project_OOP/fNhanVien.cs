@@ -1,4 +1,5 @@
-﻿using Project_OOP.DTO;
+﻿using Guna.UI2.WinForms;
+using Project_OOP.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,29 @@ namespace Project_OOP
             LoginAccount = acc;
             label1.Text = "Xin chào - Nhân viên " + acc.Name1;
         }
+        private void ResetOtherButtonFillColors(Guna.UI2.WinForms.Guna2Button currentButton)
+        {
+            // Danh sách các tên nút cần bỏ qua
+            List<string> excludedButtonNames = new List<string> { "btnHeThong", "guna2Button14", };
 
+            foreach (Control ctrl in flowLayoutPanel1.Controls)
+            {
+                if (ctrl is FlowLayoutPanel panel)
+                {
+                    foreach (Control innerCtrl in panel.Controls)
+                    {
+                        if (innerCtrl is Guna.UI2.WinForms.Guna2Button button && button != currentButton)
+                        {
+                            // Kiểm tra tên của nút và chỉ thay đổi màu fill nếu không phải là các nút cần bỏ qua
+                            if (!excludedButtonNames.Contains(button.Name))
+                            {
+                                button.FillColor = Color.DimGray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         private void btnHeThong_Click(object sender, EventArgs e)
         {
 
@@ -107,7 +130,7 @@ namespace Project_OOP
             if (menuExpand4 == false)
             {
                 menuThongKe.Height += 10;
-                if (menuThongKe.Height >= 70)
+                if (menuThongKe.Height >= 210)
                 {
                     menuTKTransition.Stop();
                     menuExpand4 = true;
@@ -127,16 +150,20 @@ namespace Project_OOP
         private void btnThongTinTK_Click(object sender, EventArgs e)
         {
             usc_HT_ThongTin_Tk f = new usc_HT_ThongTin_Tk(loginAccount);
-            this.Controls.Add(f);
+            btnThongTinTK.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnThongTinTK);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
         private void btnDoiMK_Click(object sender, EventArgs e)
         {
             usc_HT_DoiMK f = new usc_HT_DoiMK(loginAccount);
-            this.Controls.Add(f);
+            btnDoiMK.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnDoiMK);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
@@ -148,40 +175,50 @@ namespace Project_OOP
         private void guna2Button17_Click(object sender, EventArgs e)
         {
             usc_LichSuNhanLuong f = new usc_LichSuNhanLuong(int.Parse(loginAccount.ID1));
-            this.Controls.Add(f);
+            guna2Button17.FillColor = Color.Red;
+            ResetOtherButtonFillColors(guna2Button17);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             usc_ThongTinVe f = new usc_ThongTinVe(int.Parse(loginAccount.ID1));
-            this.Controls.Add(f);
+            guna2Button5.FillColor = Color.Red;
+            ResetOtherButtonFillColors(guna2Button5);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            usc_XemToanBoVe f = new usc_XemToanBoVe();
-            this.Controls.Add(f);
+            usc_XemToanBoVe f = new usc_XemToanBoVe(int.Parse(loginAccount.ID1));
+            guna2Button2.FillColor = Color.Red;
+            ResetOtherButtonFillColors(guna2Button2);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             usc_DM_NhaXe f = new usc_DM_NhaXe();
-            this.Controls.Add(f);
+            guna2Button4.FillColor = Color.Red;
+            ResetOtherButtonFillColors(guna2Button4);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
         private void guna2Button13_Click(object sender, EventArgs e)
         {
             usc_QL_SuCo f = new usc_QL_SuCo();
-            this.Controls.Add(f);
+            guna2Button13.FillColor = Color.Red;
+            ResetOtherButtonFillColors(guna2Button13);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
@@ -195,6 +232,11 @@ namespace Project_OOP
                 // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien
                 this.Close();
             }
+        }
+
+        private void pnlMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -117,7 +117,11 @@ namespace Project_OOP.DAO
         public TicketInfoDTO GetTicketInfoByUserID(int user_id)
         {
             DataTable result = DataProvider.Instance.ExecuteQuery("VIEW_TICKET_INFO @userid", new object[] { user_id });
-            return new TicketInfoDTO(result.Rows[0]);
+            if (result.Rows.Count > 0)
+            {
+                return new TicketInfoDTO(result.Rows[0]);
+            }
+            return null;
         }
 
         public List<TicketInfoDTO> LoadTicketList(List<int> userid_list)

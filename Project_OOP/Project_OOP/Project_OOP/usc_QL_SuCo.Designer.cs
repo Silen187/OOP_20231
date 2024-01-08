@@ -84,8 +84,7 @@
             // 
             // guna2GroupBox1
             // 
-            this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GroupBox1.Controls.Add(this.guna2Button1);
             this.guna2GroupBox1.Controls.Add(this.panel11);
             this.guna2GroupBox1.Controls.Add(this.btnThemSuCo);
@@ -98,10 +97,11 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(839, 335);
             this.guna2GroupBox1.TabIndex = 14;
             this.guna2GroupBox1.Text = "Thông tin sự cố";
+            this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // guna2Button1
             // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button1.BorderRadius = 5;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -167,7 +167,7 @@
             // 
             // btnThemSuCo
             // 
-            this.btnThemSuCo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemSuCo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThemSuCo.BorderRadius = 5;
             this.btnThemSuCo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThemSuCo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -325,6 +325,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel7);
@@ -603,6 +604,7 @@
             // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.Controls.Add(this.guna2TextBox5);
             this.panel9.Controls.Add(this.guna2HtmlLabel9);
             this.panel9.Location = new System.Drawing.Point(17, 341);
@@ -659,6 +661,7 @@
             this.Name = "usc_QL_SuCo";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Size = new System.Drawing.Size(904, 627);
+            this.Load += new System.EventHandler(this.usc_QL_SuCo_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();

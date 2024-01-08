@@ -14,13 +14,15 @@ namespace Project_OOP
 {
     public partial class usc_DM_NhanVien : UserControl
     {
-        public usc_DM_NhanVien()
+        public usc_DM_NhanVien(string user_admin_id)
         {
             InitializeComponent();
+            User_admin_id = int.Parse(user_admin_id);
         }
         private string user_id;
-
+        private int user_admin_id;
         public string User_id { get => user_id; set => user_id = value; }
+        public int User_admin_id { get => user_admin_id; set => user_admin_id = value; }
 
         private void guna2GroupBox1_Click(object sender, EventArgs e)
         {
@@ -52,11 +54,17 @@ namespace Project_OOP
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
-            usc_SuaNhanVien f = new usc_SuaNhanVien(guna2TextBox9.Text);
-            this.Controls.Add(f);
-            f.Dock = DockStyle.Fill;
-            f.BringToFront();
+            try
+            {
+                usc_SuaNhanVien f = new usc_SuaNhanVien(guna2TextBox9.Text, guna2TextBox6.Text, User_admin_id);
+                this.Controls.Add(f);
+                f.Dock = DockStyle.Fill;
+                f.BringToFront();
+            }
+            catch
+            {
+                MessageBox.Show("Đã có lỗi xảy ra");
+            };
 
         }
 
@@ -129,9 +137,11 @@ namespace Project_OOP
             {
                 try
                 {
+                    string ticket_id = guna2TextBox6.Text;
                     User_id = DataProvider.Instance.ExecuteQuery("SELECT user_id AS uid FROM employees WHERE employee_id = " + guna2TextBox9.Text).Rows[0]["uid"].ToString();
                     // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien
                     AccountDAO.Instance.DeleteEmployee(User_id);
+                    DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , N'Xóa nhân viên', 4 , @user_id_did );", new object[] {ticket_id, DateTime.Now, User_admin_id});
                     MessageBox.Show("Xóa thành công");
                 }
                 // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien

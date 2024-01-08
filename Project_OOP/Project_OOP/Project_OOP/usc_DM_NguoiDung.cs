@@ -14,15 +14,18 @@ namespace Project_OOP
 {
     public partial class usc_DM_NguoiDung : UserControl
     {
-        public usc_DM_NguoiDung()
+        public usc_DM_NguoiDung(string user_admin_id)
         {
             InitializeComponent();
+            User_admin_id = int.Parse(user_admin_id);
         }
         private InfoDTO account;
         private TicketInfoDTO ticket;
+        private int user_admin_id;
 
         public InfoDTO Account { get => account; set => account = value; }
         public TicketInfoDTO Ticket { get => ticket; set => ticket = value; }
+        public int User_admin_id { get => user_admin_id; set => user_admin_id = value; }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
@@ -99,7 +102,7 @@ namespace Project_OOP
         {
             try
             {
-                usc_SuaNguoiDung f = new usc_SuaNguoiDung(Ticket, Account);
+                usc_SuaNguoiDung f = new usc_SuaNguoiDung(Ticket, Account, User_admin_id);
                 this.Controls.Add(f);
                 f.Dock = DockStyle.Fill;
                 f.BringToFront();
@@ -120,6 +123,7 @@ namespace Project_OOP
                 try
                 {
                     AccountDAO.Instance.Delete_Customer(user_id);
+                    DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , N'Xóa người dùng' , 4 , @user_id_did );", new object[] { Ticket.Ticket_id, DateTime.Now, User_admin_id });
                     MessageBox.Show("Xóa thành công");
                 }
                 catch

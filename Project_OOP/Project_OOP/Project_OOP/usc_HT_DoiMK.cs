@@ -19,10 +19,6 @@ namespace Project_OOP
         {
             InitializeComponent();
             LoginAccount = acc;
-            if (acc.Role_name == "admin")
-            {
-                guna2TextBox2.Enabled = true;
-            }
         }
 
         private InfoDTO loginAccount;
@@ -46,6 +42,7 @@ namespace Project_OOP
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             UpdatePassWord();
+            
         }
         void UpdatePassWord()
         {
@@ -70,8 +67,27 @@ namespace Project_OOP
                     }
                     else
                     {
+                        
                         if (AccountDAO.Instance.UpdatePassWordAccount(loginAccount.Username, oldPass, newPass) == true)
                         {
+                            int user_id = int.Parse(loginAccount.ID1);
+                            if (loginAccount.Role_name == "customer")
+                            {
+                                TicketInfoDTO ticket = AccountDAO.Instance.GetTicketInfoByUserID(user_id);
+                                string ticket_id = ticket.Ticket_id;
+                                DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type) VALUES( @ticket_id , @transaction_time , N'Thay đổi mật khẩu người dùng', 2);", new object[] { ticket_id, DateTime.Now });
+                            }    
+                            else if (loginAccount.Role_name == "employee")
+                            {
+                                TicketInfoDTO ticket = AccountDAO.Instance.GetTicketInfoByUserID(user_id);
+                                string ticket_id = ticket.Ticket_id;
+                                DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type) VALUES( @ticket_id , @transaction_time , N'Thay đổi mật khẩu nhân viên', 3);", new object[] { ticket_id, DateTime.Now });
+                            }    
+                            else if (loginAccount.Role_name == "admin")
+                            {
+                                DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(transaction_time, description, type, user_id_did) VALUES( @transaction_time , N'Thay đổi mật khẩu quản lý', 4 , @user_id );", new object[] { DateTime.Now, user_id });
+                            }
+                                
                             MessageBox.Show("Cập nhật mật khẩu thành công");
                         }
                     }
@@ -101,6 +117,24 @@ namespace Project_OOP
         private void button1_Click(object sender, EventArgs e)
         {
             guna2TextBox5.UseSystemPasswordChar = false;
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            guna2TextBox5.UseSystemPasswordChar = !guna2TextBox5.UseSystemPasswordChar;
+            guna2TextBox5.PasswordChar = '\0';
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            guna2TextBox3.UseSystemPasswordChar = !guna2TextBox3.UseSystemPasswordChar;
+            guna2TextBox3.PasswordChar = '\0';
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            guna2TextBox4.UseSystemPasswordChar = !guna2TextBox4.UseSystemPasswordChar;
+            guna2TextBox4.PasswordChar = '\0';
         }
     }
 }

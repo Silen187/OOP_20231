@@ -238,6 +238,7 @@
     <Compile Include="usc_XemToanBoVe.Designer.cs">
       <DependentUpon>usc_XemToanBoVe.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\icons8-check-50.png" />
     <EmbeddedResource Include="usc_SuaNguoiDung.resx">
       <DependentUpon>usc_SuaNguoiDung.cs</DependentUpon>
     </EmbeddedResource>

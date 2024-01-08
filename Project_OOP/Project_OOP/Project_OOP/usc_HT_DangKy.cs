@@ -76,5 +76,28 @@ namespace Project_OOP
         {
 
         }
+
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            guna2TextBox5.UseSystemPasswordChar = !guna2TextBox5.UseSystemPasswordChar;
+            guna2TextBox5.PasswordChar = '\0';
+            
+        }
+
+        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            guna2TextBox4.UseSystemPasswordChar = !guna2TextBox4.UseSystemPasswordChar;
+            guna2TextBox4.PasswordChar = '\0';
+        }
     }
 }

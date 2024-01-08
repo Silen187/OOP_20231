@@ -53,7 +53,7 @@ namespace Project_OOP
             {
                 comboBox4.Text = "Nhân viên";
             }
-            else
+            else if (acc.Role_name == "customer")
             {
                 comboBox4.Text = "Người dùng";
             }
@@ -66,7 +66,7 @@ namespace Project_OOP
             LoginAccount = acc;
             this.user_id = int.Parse(acc.ID1);
         }
-        void UpdateAccountInfo()
+        void UpdateAccountInfo(string role_name)
         {
             DateTime Birth = guna2DateTimePicker1.Value;
             string displayName = guna2TextBox2.Text;
@@ -76,7 +76,7 @@ namespace Project_OOP
             string CCCD = guna2TextBox4.Text;
             string STK = guna2TextBox5.Text;
             string Bank = comboBox5.Text;
-            fXacNhan f = new fXacNhan(this.user_id, displayName, sex, city, SDT, CCCD, Birth, STK, Bank);
+            fXacNhan f = new fXacNhan(role_name, this.user_id, displayName, sex, city, SDT, CCCD, Birth, STK, Bank);
             f.ShowDialog();
         }
         private int user_id;
@@ -120,7 +120,7 @@ namespace Project_OOP
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            UpdateAccountInfo();
+            UpdateAccountInfo(loginAccount.Role_name);
         }
 
 

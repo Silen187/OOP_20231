@@ -146,3 +146,86 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NapTienV
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNguoiDung.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemUser.resources
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_ThemSuCo.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe.config
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.pdb
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\FontAwesome.Sharp.dll
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Guna.UI2.dll
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.AssemblyReference.cache
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNguoiDung.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNhanVien.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_ThemSuCo.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_XemToanBoVe.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fDangNhap.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fNhanVien.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fXacNhan.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemChucVu.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuNapTien.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuNhanLuong.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuRaVao.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NapTienVe.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_SuCo.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_ThongTinVe.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuNgay.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuThang.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_LuongNhanVien.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_SuCo.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ChucVu.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhanVien.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhaXe.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemUser.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NguoiDung.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DangKy.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DoiMK.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_ThongTin_Tk.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fQuanLy.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.Properties.Resources.resources
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.GenerateResource.cache
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CoreCompileInputs.cache
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComplete
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
+F:\New folder\final\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe.config
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.exe
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Project_OOP.pdb
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\FontAwesome.Sharp.dll
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Guna.UI2.dll
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.AssemblyReference.cache
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNguoiDung.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_SuaNhanVien.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_ThemSuCo.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_XemToanBoVe.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fDangNhap.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fKhachHang.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fNhanVien.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fXacNhan.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemChucVu.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuNapTien.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuNhanLuong.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuRaVao.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_NapTienVe.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_QL_SuCo.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_ThongTinVe.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuNgay.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_DoanhThuThang.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_LuongNhanVien.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_TK_SuCo.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ChucVu.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhanVien.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NhaXe.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_ThemUser.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_DM_NguoiDung.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DangKy.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_DoiMK.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_HT_ThongTin_Tk.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.fQuanLy.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.Properties.Resources.resources
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.GenerateResource.cache
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CoreCompileInputs.cache
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComplete
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
+E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb

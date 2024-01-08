@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -76,8 +74,8 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GroupBox2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -93,42 +91,20 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2GroupBox1
-            // 
-            this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GroupBox1.Controls.Add(this.dataGridView1);
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(27, 247);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(863, 377);
-            this.guna2GroupBox1.TabIndex = 18;
-            this.guna2GroupBox1.Text = "Bảng tổng hợp vào ra";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 44);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(853, 329);
-            this.dataGridView1.TabIndex = 26;
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GroupBox2.Controls.Add(this.flowLayoutPanel3);
             this.guna2GroupBox2.Controls.Add(this.groupBox1);
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox2.Location = new System.Drawing.Point(27, 3);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(863, 238);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(863, 225);
             this.guna2GroupBox2.TabIndex = 17;
             this.guna2GroupBox2.Text = "Tổng kết doanh thu";
             // 
@@ -708,7 +684,7 @@
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(135, 21);
             this.guna2DateTimePicker1.TabIndex = 22;
-            this.guna2DateTimePicker1.Value = new System.DateTime(1996, 2, 6, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Value = new System.DateTime(2003, 2, 6, 0, 0, 0, 0);
             // 
             // guna2Button3
             // 
@@ -777,6 +753,34 @@
             this.guna2DateTimePicker2.TabIndex = 6;
             this.guna2DateTimePicker2.Value = new System.DateTime(1996, 2, 6, 0, 0, 0, 0);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(5, 44);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(853, 342);
+            this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // guna2GroupBox1
+            // 
+            this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox1.Controls.Add(this.dataGridView1);
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(27, 234);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.Size = new System.Drawing.Size(863, 390);
+            this.guna2GroupBox1.TabIndex = 18;
+            this.guna2GroupBox1.Text = "Bảng tổng hợp vào ra";
+            // 
             // usc_TK_DoanhThuThang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -787,8 +791,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "usc_TK_DoanhThuThang";
             this.Size = new System.Drawing.Size(904, 627);
-            this.guna2GroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.guna2GroupBox2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -817,14 +819,13 @@
             this.panel12.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel1;
@@ -871,5 +872,7 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
     }
 }

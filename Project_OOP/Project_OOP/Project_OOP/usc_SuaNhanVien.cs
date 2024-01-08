@@ -13,8 +13,10 @@ namespace Project_OOP
 {
     public partial class usc_SuaNhanVien : UserControl
     {
-        public usc_SuaNhanVien(string employee_id)
+        public usc_SuaNhanVien(string employee_id, string ticket_id, int admin_id)
         {
+            Admin_id = admin_id;
+            Ticket_id = ticket_id;
             InitializeComponent();
             employeeid = employee_id;
             User_id = DataProvider.Instance.ExecuteQuery("SELECT user_id AS uid FROM employees WHERE employee_id = " + employee_id).Rows[0]["uid"].ToString();
@@ -26,15 +28,18 @@ namespace Project_OOP
         {
 
         }
+        private string ticket_id;
         private string employeeid;
         private string user_name;
         private string pass_word;
         private string user_id;
-
+        private int admin_id;
         public string Employeeid { get => employeeid; set => employeeid = value; }
         public string User_name { get => user_name; set => user_name = value; }
         public string Pass_word { get => pass_word; set => pass_word = value; }
         public string User_id { get => user_id; set => user_id = value; }
+        public string Ticket_id { get => ticket_id; set => ticket_id = value; }
+        public int Admin_id { get => admin_id; set => admin_id = value; }
 
         private void usc_SuaNhanVien_Load(object sender, EventArgs e)
         {
@@ -49,17 +54,18 @@ namespace Project_OOP
         {
             try
             {
-                string name = guna2TextBox12.Text;
-                string SDT = guna2TextBox8.Text;
-                string salary_level = guna2TextBox4.Text;
-                string STK = guna2TextBox1.Text;
-                string Bank = comboBox5.Text;
-                string CCCD = guna2TextBox15.Text;
-                string level_name = comboBox1.Text;
-                string password = guna2TextBox6.Text;
-                AccountDAO.Instance.UpdateEmployeeByEmployeeID(employeeid, name, SDT, salary_level, STK, Bank, CCCD, level_name, password);
-                MessageBox.Show("Cập nhật thành công");
-                this.Parent.Controls.Remove(this);
+            string name = guna2TextBox12.Text;
+            string SDT = guna2TextBox8.Text;
+            string salary_level = guna2TextBox4.Text;
+            string STK = guna2TextBox1.Text;
+            string Bank = comboBox5.Text;
+            string CCCD = guna2TextBox15.Text;
+            string level_name = comboBox1.Text;
+            string password = guna2TextBox6.Text;
+            AccountDAO.Instance.UpdateEmployeeByEmployeeID(employeeid, name, SDT, salary_level, STK, Bank, CCCD, level_name, password);
+            DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , N'Thay đổi thông tin nhân viên' , 4 , @user_id_did );", new object[] {Ticket_id, DateTime.Now, Admin_id});
+            MessageBox.Show("Cập nhật thành công");
+            this.Parent.Controls.Remove(this);
             }
             catch (Exception ex)
             {

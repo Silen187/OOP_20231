@@ -23,8 +23,7 @@ namespace Project_OOP
             DateTime ngay = guna2DateTimePicker2.Value;
             DateTime startOfDay = ngay.Date;
             DateTime endOfDay = startOfDay.AddDays(1).AddMilliseconds(-1);
-            MessageBox.Show(startOfDay.ToString());
-            MessageBox.Show(endOfDay.ToString());
+           
             DataTable result = ZoneDAO.Instance.GetHistoryByDay(startOfDay, endOfDay);
             dataGridView1.DataSource = result;
 

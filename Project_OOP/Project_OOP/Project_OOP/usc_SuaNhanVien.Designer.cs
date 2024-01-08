@@ -48,6 +48,7 @@
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox15 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -59,6 +60,7 @@
             this.guna2TextBox17 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -90,8 +92,6 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -117,6 +117,7 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.panel11);
@@ -412,6 +413,15 @@
             this.panel19.Size = new System.Drawing.Size(433, 47);
             this.panel19.TabIndex = 22;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.AllowDrop = true;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(183, 11);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(247, 26);
+            this.comboBox1.TabIndex = 11;
+            // 
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
@@ -566,6 +576,15 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(433, 47);
             this.panel14.TabIndex = 12;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.AllowDrop = true;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(183, 11);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(247, 26);
+            this.comboBox5.TabIndex = 10;
             // 
             // guna2HtmlLabel18
             // 
@@ -970,6 +989,7 @@
             // 
             // guna2CirclePictureBox1
             // 
+            this.guna2CirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CirclePictureBox1.Image = global::Project_OOP.Properties.Resources.icons8_user_96;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(107, 177);
@@ -983,7 +1003,7 @@
             // 
             // guna2HtmlLabel9
             // 
-            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(292, 10);
@@ -995,6 +1015,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button1.BorderRadius = 5;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -1011,6 +1032,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button2.BorderRadius = 5;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -1025,24 +1047,6 @@
             this.guna2Button2.TabIndex = 26;
             this.guna2Button2.Text = "Trở về";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.AllowDrop = true;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(183, 11);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(247, 26);
-            this.comboBox5.TabIndex = 10;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.AllowDrop = true;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(183, 11);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(247, 26);
-            this.comboBox1.TabIndex = 11;
             // 
             // usc_SuaNhanVien
             // 

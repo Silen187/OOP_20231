@@ -13,13 +13,15 @@ namespace Project_OOP
 {
     public partial class usc_QL_NapTienVe : UserControl
     {
-        public usc_QL_NapTienVe(string ticket_id, string name, string type_card)
+        public usc_QL_NapTienVe(string ticket_id, string name, string type_card, int user_admin_id)
         {
             InitializeComponent();
             this.ticket_id = ticket_id;
             this.name = name;
             this.type_card = type_card;
+            User_admin_id = user_admin_id;
         }
+        private int user_admin_id;
         private string ticket_id;
         private string name;
         private string type_card;
@@ -27,7 +29,7 @@ namespace Project_OOP
         public string Ticket_id { get => ticket_id; set => ticket_id = value; }
         public string Name1 { get => name; set => name = value; }
         public string Type_card { get => type_card; set => type_card = value; }
-
+        public int User_admin_id { get => user_admin_id; set => user_admin_id = value; }
 
         private void usc_QL_NapTienVe_Load(object sender, EventArgs e)
         {
@@ -42,6 +44,7 @@ namespace Project_OOP
             {
                 int money = int.Parse(comboBox4.Text);
                 AccountDAO.Instance.UpdateTicketMoney(Ticket_id, money);
+                DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, renueve, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , @renueve , N'Nạp tiền', 4, @user_id_did );", new object[] {ticket_id, DateTime.Now, money, User_admin_id });
                 MessageBox.Show("Nạp tiền thành công");
                 this.Parent.Controls.Remove(this);
             }

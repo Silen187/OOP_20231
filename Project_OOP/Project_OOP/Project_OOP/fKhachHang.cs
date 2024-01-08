@@ -27,6 +27,30 @@ namespace Project_OOP
             LoginAccount = acc;
             label1.Text = "Xin chào - Khách hàng " + acc.Name1;
         }
+
+        private void ResetOtherButtonFillColors(Guna.UI2.WinForms.Guna2Button currentButton)
+        {
+            // Danh sách các tên nút cần bỏ qua
+            List<string> excludedButtonNames = new List<string> { "btnHeThong", "guna2Button14" };
+
+            foreach (Control ctrl in flowLayoutPanel1.Controls)
+            {
+                if (ctrl is FlowLayoutPanel panel)
+                {
+                    foreach (Control innerCtrl in panel.Controls)
+                    {
+                        if (innerCtrl is Guna.UI2.WinForms.Guna2Button button && button != currentButton)
+                        {
+                            // Kiểm tra tên của nút và chỉ thay đổi màu fill nếu không phải là các nút cần bỏ qua
+                            if (!excludedButtonNames.Contains(button.Name))
+                            {
+                                button.FillColor = Color.DimGray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         bool sidebarExpand = true;
         private void sidebarTransition_Tick(object sender, EventArgs e)
         {
@@ -36,7 +60,7 @@ namespace Project_OOP
                 if (sidebarExpand)
                 {
                     sidebar.Width -= 10;
-                    if (sidebar.Width <= 55)
+                    if (sidebar.Width <= 105)
                     {
                         sidebarExpand = false;
                         sidebarTransition.Stop();
@@ -119,36 +143,45 @@ namespace Project_OOP
         private void btnThongTinTK_Click(object sender, EventArgs e)
         {
             Load_info();
+
         }
         void Load_info()
         {
             usc_HT_ThongTin_Tk info = new usc_HT_ThongTin_Tk(loginAccount);
-            this.Controls.Add(info);
+            btnThongTinTK.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnThongTinTK);
             info.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(info);
             info.BringToFront();
         }
 
         private void btnDoiMK_Click(object sender, EventArgs e)
         {
             usc_HT_DoiMK f = new usc_HT_DoiMK(loginAccount);
-            this.Controls.Add(f);
+            btnDoiMK.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnDoiMK);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
         private void guna2Button15_Click(object sender, EventArgs e)
         {
             usc_LichSuNapTien f = new usc_LichSuNapTien(int.Parse(loginAccount.ID1));
-            this.Controls.Add(f);
+            guna2Button15.FillColor = Color.Red;
+            ResetOtherButtonFillColors(guna2Button15);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 
         private void guna2Button11_Click(object sender, EventArgs e)
         {
             usc_LichSuRaVao f = new usc_LichSuRaVao(int.Parse(loginAccount.ID1));
-            this.Controls.Add(f);
+            guna2Button11.FillColor = Color.Red;
+            ResetOtherButtonFillColors(guna2Button11);
             f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
             f.BringToFront();
         }
 

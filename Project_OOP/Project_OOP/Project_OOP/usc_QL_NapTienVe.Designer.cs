@@ -55,7 +55,7 @@
             // 
             // guna2HtmlLabel9
             // 
-            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(322, 53);
@@ -68,8 +68,7 @@
             // 
             // guna2GroupBox1
             // 
-            this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GroupBox1.Controls.Add(this.flowLayoutPanel1);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
@@ -264,7 +263,7 @@
             // 
             // btnDangKyVeXe
             // 
-            this.btnDangKyVeXe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDangKyVeXe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDangKyVeXe.BorderRadius = 5;
             this.btnDangKyVeXe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDangKyVeXe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -282,7 +281,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThoat.BorderRadius = 5;
             this.btnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

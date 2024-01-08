@@ -96,7 +96,7 @@
             // 
             // guna2HtmlLabel9
             // 
-            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(296, 16);
@@ -109,6 +109,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Controls.Add(this.panel8);
             this.flowLayoutPanel1.Controls.Add(this.panel9);
@@ -646,7 +647,7 @@
             // 
             // btnThemNV
             // 
-            this.btnThemNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThemNV.BorderRadius = 5;
             this.btnThemNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -666,7 +667,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThoat.BorderRadius = 5;
             this.btnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -686,6 +687,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button2.BorderRadius = 5;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -694,15 +696,16 @@
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Image = global::Project_OOP.Properties.Resources.icons8_check_50;
             this.guna2Button2.Location = new System.Drawing.Point(856, 254);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(30, 30);
             this.guna2Button2.TabIndex = 18;
-            this.guna2Button2.Text = "Đăng ký";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel2.Controls.Add(this.panel2);
             this.flowLayoutPanel2.Controls.Add(this.panel3);
             this.flowLayoutPanel2.Controls.Add(this.panel4);
@@ -801,7 +804,7 @@
             this.guna2HtmlLabel14.TabIndex = 0;
             this.guna2HtmlLabel14.Text = "Số tài khoản :";
             // 
-            // usc_DM_ThemNhanVien
+            // usc_DM_ThemUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -813,7 +816,7 @@
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "usc_DM_ThemNhanVien";
+            this.Name = "usc_DM_ThemUser";
             this.Size = new System.Drawing.Size(904, 627);
             this.Load += new System.EventHandler(this.usc_DM_ThemNhanVien_Load);
             this.flowLayoutPanel1.ResumeLayout(false);

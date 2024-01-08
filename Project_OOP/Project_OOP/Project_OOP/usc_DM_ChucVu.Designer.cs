@@ -67,7 +67,7 @@
             // 
             // guna2HtmlLabel9
             // 
-            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(296, 28);
@@ -80,8 +80,7 @@
             // 
             // guna2GroupBox1
             // 
-            this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GroupBox1.Controls.Add(this.guna2Button4);
             this.guna2GroupBox1.Controls.Add(this.guna2Button1);
             this.guna2GroupBox1.Controls.Add(this.btnThemCV);
@@ -309,8 +308,7 @@
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GroupBox2.Controls.Add(this.guna2Button3);
             this.guna2GroupBox2.Controls.Add(this.flowLayoutPanel3);
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);

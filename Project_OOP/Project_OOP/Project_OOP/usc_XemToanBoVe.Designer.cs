@@ -507,7 +507,7 @@
             // 
             // guna2HtmlLabel9
             // 
-            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(291, 18);
@@ -519,7 +519,7 @@
             // 
             // guna2HtmlLabel5
             // 
-            this.guna2HtmlLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(254, 535);
@@ -531,6 +531,7 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel2.AutoScroll = true;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(13, 114);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -539,7 +540,7 @@
             // 
             // guna2HtmlLabel12
             // 
-            this.guna2HtmlLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel12.Location = new System.Drawing.Point(164, 76);
@@ -551,7 +552,7 @@
             // 
             // guna2HtmlLabel13
             // 
-            this.guna2HtmlLabel13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel13.Location = new System.Drawing.Point(567, 76);
@@ -563,6 +564,7 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.panel1);
             this.panel5.Controls.Add(this.panel6);
@@ -712,6 +714,7 @@
             // 
             // panel11
             // 
+            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.guna2TextBox12);
             this.panel11.Controls.Add(this.guna2HtmlLabel15);
@@ -847,6 +850,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button1.BorderRadius = 5;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -863,6 +867,7 @@
             // 
             // guna2TextBox1
             // 
+            this.guna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2TextBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.guna2TextBox1.BorderRadius = 10;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -886,7 +891,7 @@
             // 
             // guna2HtmlLabel1
             // 
-            this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(13, 432);
@@ -899,6 +904,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button2.BorderRadius = 5;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -916,6 +922,7 @@
             // 
             // guna2Button3
             // 
+            this.guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button3.BorderRadius = 5;
             this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

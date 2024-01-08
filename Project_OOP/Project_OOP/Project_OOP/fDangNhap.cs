@@ -1,4 +1,5 @@
-﻿using Project_OOP.DAO;
+﻿using Guna.UI2.WinForms;
+using Project_OOP.DAO;
 using Project_OOP.DTO;
 using System;
 using System.Collections.Generic;
@@ -92,7 +93,8 @@ namespace Project_OOP
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            
+            guna2TextBox2.UseSystemPasswordChar = !guna2TextBox2.UseSystemPasswordChar;
+            guna2TextBox2.PasswordChar = '\0';
         }
     }
 }

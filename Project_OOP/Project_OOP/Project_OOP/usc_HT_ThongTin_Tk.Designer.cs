@@ -98,6 +98,7 @@
             // 
             // guna2TextBox1
             // 
+            this.guna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2TextBox1.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "QL1";
@@ -122,6 +123,7 @@
             // 
             // guna2HtmlLabel1
             // 
+            this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(8, 13);
@@ -165,6 +167,7 @@
             // 
             // guna2TextBox2
             // 
+            this.guna2TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2TextBox2.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "Lê Đình Thi";
@@ -187,6 +190,7 @@
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 13);
@@ -209,6 +213,7 @@
             // 
             // guna2HtmlLabel3
             // 
+            this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(8, 13);
@@ -221,7 +226,7 @@
             // guna2DateTimePicker1
             // 
             this.guna2DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.White;
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
             this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.White;
@@ -248,6 +253,7 @@
             // comboBox1
             // 
             this.comboBox1.AllowDrop = true;
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Nam",
@@ -261,6 +267,7 @@
             // 
             // guna2HtmlLabel4
             // 
+            this.guna2HtmlLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(8, 13);
@@ -356,6 +363,7 @@
             // 
             // guna2HtmlLabel5
             // 
+            this.guna2HtmlLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(8, 13);

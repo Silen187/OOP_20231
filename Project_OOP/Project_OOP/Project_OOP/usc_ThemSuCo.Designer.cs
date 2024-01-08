@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -65,7 +66,6 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -84,8 +84,7 @@
             // 
             // guna2GroupBox1
             // 
-            this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GroupBox1.Controls.Add(this.btnThoat);
             this.guna2GroupBox1.Controls.Add(this.guna2Button1);
             this.guna2GroupBox1.Controls.Add(this.panel11);
@@ -99,9 +98,29 @@
             this.guna2GroupBox1.TabIndex = 14;
             this.guna2GroupBox1.Text = "Thêm";
             // 
+            // btnThoat
+            // 
+            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThoat.BorderRadius = 5;
+            this.btnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThoat.FillColor = System.Drawing.Color.Red;
+            this.btnThoat.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.Image = global::Project_OOP.Properties.Resources.icons8_add_32;
+            this.btnThoat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThoat.Location = new System.Drawing.Point(455, 281);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(162, 41);
+            this.btnThoat.TabIndex = 23;
+            this.btnThoat.Text = "Trở về";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // guna2Button1
             // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button1.BorderRadius = 5;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -301,6 +320,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel7);
@@ -553,6 +573,7 @@
             // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.Controls.Add(this.guna2TextBox5);
             this.panel9.Controls.Add(this.guna2HtmlLabel9);
             this.panel9.Location = new System.Drawing.Point(17, 341);
@@ -595,26 +616,6 @@
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(78, 20);
             this.guna2HtmlLabel9.TabIndex = 0;
             this.guna2HtmlLabel9.Text = "Ghi chú :";
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThoat.BorderRadius = 5;
-            this.btnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThoat.FillColor = System.Drawing.Color.Red;
-            this.btnThoat.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Image = global::Project_OOP.Properties.Resources.icons8_add_32;
-            this.btnThoat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThoat.Location = new System.Drawing.Point(455, 281);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(162, 41);
-            this.btnThoat.TabIndex = 23;
-            this.btnThoat.Text = "Trở về";
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // usc_ThemSuCo
             // 

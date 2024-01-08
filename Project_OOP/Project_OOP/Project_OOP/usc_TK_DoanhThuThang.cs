@@ -24,8 +24,7 @@ namespace Project_OOP
             DateTime ngay_ket_thuc = guna2DateTimePicker1.Value;
             DateTime start_Day = ngay_bat_dau.Date;
             DateTime end_Day = ngay_ket_thuc.Date;
-            MessageBox.Show(start_Day.ToString());
-            MessageBox.Show(end_Day.ToString());
+            
             DataTable result = ZoneDAO.Instance.GetHistoryByDay(start_Day, end_Day);
 
             dataGridView1.DataSource = result;
@@ -66,6 +65,11 @@ namespace Project_OOP
             guna2TextBox6.Text = totalrowCountWithCarCustomer.ToString();
             guna2TextBox9.Text = totalrowCountWithBikeCustomer.ToString();
             guna2TextBox12.Text = totalrowCountWithBicycleCustomer.ToString();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

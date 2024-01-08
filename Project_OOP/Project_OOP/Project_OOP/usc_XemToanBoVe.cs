@@ -15,15 +15,19 @@ namespace Project_OOP
 {
     public partial class usc_XemToanBoVe : UserControl
     {
-        public usc_XemToanBoVe(string permission = null)
+        public usc_XemToanBoVe(int user_admin_id, string permission = null)
         {
             InitializeComponent();
             if (permission == "3" ) 
             {
                 guna2Button2.Visible = true;
                 guna2Button3.Visible = true;
+                User_admin_id = user_admin_id;
             }
         }
+        private int User_admin_id;
+
+        public int User_admin_id1 { get => User_admin_id; set => User_admin_id = value; }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
@@ -137,7 +141,7 @@ namespace Project_OOP
             string ticket_id = guna2TextBox6.Text;
             string name = guna2TextBox12.Text;
             string type_card = guna2TextBox15.Text;
-            usc_QL_NapTienVe f = new usc_QL_NapTienVe(ticket_id, name, type_card);
+            usc_QL_NapTienVe f = new usc_QL_NapTienVe(ticket_id, name, type_card, User_admin_id);
             this.Controls.Add(f);
             f.Dock = DockStyle.Fill;
             f.BringToFront();
@@ -158,9 +162,10 @@ namespace Project_OOP
                     {
                         try
                         {
+                            
                             DataTable dt = DataProvider.Instance.ExecuteQuery("UPDATE monthly_subscription SET money = money + @money , start_date = @start , end_date = @end , monthly_subscription.type_card = 2 WHERE ticket_id = @ticket_id AND type_card = 3", new object[] { -100000, DateTime.Now, DateTime.Now.AddDays(30), ticket_id });
+                            DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, renueve, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , -100000 , N'Đăng ký tháng' , 4 , @user_id_did )", new object[] { ticket_id, DateTime.Now, User_admin_id });
                             MessageBox.Show("Đăng ký vé tháng thành công");
-
                         }
                         catch (Exception ex)
                         {

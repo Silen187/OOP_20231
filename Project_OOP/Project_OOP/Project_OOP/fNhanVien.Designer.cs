@@ -51,6 +51,7 @@
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuHeThong.SuspendLayout();
@@ -90,7 +91,7 @@
             this.menuHeThong.Controls.Add(this.guna2Button19);
             this.menuHeThong.Location = new System.Drawing.Point(3, 3);
             this.menuHeThong.Name = "menuHeThong";
-            this.menuHeThong.Size = new System.Drawing.Size(230, 136);
+            this.menuHeThong.Size = new System.Drawing.Size(230, 35);
             this.menuHeThong.TabIndex = 6;
             // 
             // btnHeThong
@@ -179,9 +180,9 @@
             this.menuThongKe.Controls.Add(this.guna2Button2);
             this.menuThongKe.Controls.Add(this.guna2Button4);
             this.menuThongKe.Controls.Add(this.guna2Button13);
-            this.menuThongKe.Location = new System.Drawing.Point(3, 145);
+            this.menuThongKe.Location = new System.Drawing.Point(3, 44);
             this.menuThongKe.Name = "menuThongKe";
-            this.menuThongKe.Size = new System.Drawing.Size(230, 221);
+            this.menuThongKe.Size = new System.Drawing.Size(230, 35);
             this.menuThongKe.TabIndex = 9;
             // 
             // guna2Button14
@@ -373,11 +374,21 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "HỆ THỐNG NHÀ GỬI XE";
             // 
+            // pnlMain
+            // 
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(230, 60);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(904, 627);
+            this.pnlMain.TabIndex = 4;
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
+            // 
             // fNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 687);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.sidebar);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -420,5 +431,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button13;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.Panel pnlMain;
     }
 }

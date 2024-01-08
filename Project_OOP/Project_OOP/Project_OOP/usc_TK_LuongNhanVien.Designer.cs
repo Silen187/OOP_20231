@@ -77,7 +77,7 @@
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GroupBox2.Controls.Add(this.flowLayoutPanel3);
             this.guna2GroupBox2.Controls.Add(this.groupBox1);
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -513,23 +513,26 @@
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
             this.guna2DateTimePicker2.Size = new System.Drawing.Size(154, 30);
             this.guna2DateTimePicker2.TabIndex = 6;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 12, 30, 21, 15, 23, 183);
+            this.guna2DateTimePicker2.Value = new System.DateTime(2003, 12, 30, 21, 15, 0, 0);
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(5, 44);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(843, 343);
             this.dataGridView1.TabIndex = 27;
             // 
             // guna2GroupBox1
             // 
-            this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2GroupBox1.Controls.Add(this.dataGridView1);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;

@@ -16,17 +16,23 @@ namespace Project_OOP
 {
     public partial class usc_SuaNguoiDung : UserControl
     {
-        public usc_SuaNguoiDung(TicketInfoDTO ticket, InfoDTO account)
+        public usc_SuaNguoiDung(TicketInfoDTO ticket, InfoDTO account, int user_admin_id)
         {
             InitializeComponent();
             Load_info(ticket, account);
             Old_pass = account.Password;
             Old_CCCD = account.CCCD1;
+            User_admin_id = user_admin_id;
+            Ticket = ticket;
         }
+        private TicketInfoDTO ticket;
+        private int user_admin_id;
         private string old_pass;
         private string old_CCCD;
         public string Old_pass { get => old_pass; set => old_pass = value; }
         public string Old_CCCD { get => old_CCCD; set => old_CCCD = value; }
+        public int User_admin_id { get => user_admin_id; set => user_admin_id = value; }
+        public TicketInfoDTO Ticket { get => ticket; set => ticket = value; }
 
         private void usc_SuaNguoiDung_Load(object sender, EventArgs e)
         {
@@ -78,6 +84,7 @@ namespace Project_OOP
                     DateTime birth = guna2DateTimePicker1.Value;
                     AccountDAO.Instance.UpdateAccount(user_id, name, sex, city, SDT, CCCD, birth, STK, Bank);
                     AccountDAO.Instance.UpdatePassWordAccount(username, Old_pass, password);
+                    DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , N'Thay đổi thông tin người dùng' , 4 , @user_id_did );", new object[] {Ticket.Ticket_id, DateTime.Now, User_admin_id });
                     MessageBox.Show("Cập nhật thành công");
                     this.Parent.Controls.Remove(this);
                 }

@@ -68,5 +68,15 @@ namespace Project_OOP
             f.Dock = DockStyle.Fill;
             f.BringToFront();
         }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usc_QL_SuCo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
