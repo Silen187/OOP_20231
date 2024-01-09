@@ -31,7 +31,7 @@ namespace Project_OOP
         private void ResetOtherButtonFillColors(Guna.UI2.WinForms.Guna2Button currentButton)
         {
             // Danh sách các tên nút cần bỏ qua
-            List<string> excludedButtonNames = new List<string> { "btnHeThong", "guna2Button14", };
+            List<string> excludedButtonNames = new List<string> { "btnHeThong", "guna2Button14", "guna2Button8" };
 
             foreach (Control ctrl in flowLayoutPanel1.Controls)
             {
@@ -61,7 +61,7 @@ namespace Project_OOP
             if (menuExpand1 == false)
             {
                 menuHeThong.Height += 10;
-                if (menuHeThong.Height >= 140)
+                if (menuHeThong.Height >= 175)
                 {
                     menuHTTransition.Stop();
                     menuExpand1 = true;
@@ -130,7 +130,7 @@ namespace Project_OOP
             if (menuExpand4 == false)
             {
                 menuThongKe.Height += 10;
-                if (menuThongKe.Height >= 210)
+                if (menuThongKe.Height >= 70)
                 {
                     menuTKTransition.Stop();
                     menuExpand4 = true;
@@ -237,6 +237,33 @@ namespace Project_OOP
         private void pnlMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        bool menuExpand3=false;
+        private void menuQLTransition_Tick(object sender, EventArgs e)
+        {
+            if (menuExpand3 == false)
+            {
+                menuQuanLy.Height += 10;
+                if (menuQuanLy.Height >= 140)
+                {
+                    menuQLTransition.Stop();
+                    menuExpand3 = true;
+                }
+            }
+            else
+            {
+                menuQuanLy.Height -= 10;
+                if (menuQuanLy.Height <= 35)
+                {
+                    menuQLTransition.Stop();
+                    menuExpand3 = false;
+                }
+            }
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            menuQLTransition.Start();
         }
     }
 }
