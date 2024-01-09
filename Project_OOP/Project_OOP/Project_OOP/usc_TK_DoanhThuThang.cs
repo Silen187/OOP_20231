@@ -1,4 +1,5 @@
 ﻿using Project_OOP.DAO;
+using Project_OOP.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,15 +9,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Markup;
 
 namespace Project_OOP
 {
     public partial class usc_TK_DoanhThuThang : UserControl
     {
-        public usc_TK_DoanhThuThang()
+        public usc_TK_DoanhThuThang(int user_admin_id)
         {
             InitializeComponent();
+            User_admin_id = user_admin_id;
         }
+        private DataTable dt;
+        private int user_admin_id;
+
+        public DataTable Dt { get => dt; set => dt = value; }
+        public int User_admin_id { get => user_admin_id; set => user_admin_id = value; }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -26,6 +34,7 @@ namespace Project_OOP
             DateTime end_Day = ngay_ket_thuc.Date;
             
             DataTable result = ZoneDAO.Instance.GetHistoryByDay(start_Day, end_Day);
+            Dt = result;
 
             dataGridView1.DataSource = result;
 
@@ -70,6 +79,18 @@ namespace Project_OOP
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            string start_date = guna2DateTimePicker2.Text;
+            string end_date = guna2DateTimePicker1.Text;
+            DataTable data = Dt;
+            int admin_id = AccountDAO.Instance.GetAdmin_ID_By_UserID(User_admin_id);
+            string doanhthu_string = "Thống kê doanh thu từ " + start_date + " đến " + end_date;
+
+            Excel_Export.Instance.ExportDoanhThu(data, "Báo cáo doanh thu", doanhthu_string);
+            DataProvider.Instance.ExecuteQuery("INSERT INTO reports (start_date, end_date, admin_id, report_description) VALUES ( @start_date , @end_date , @admin_id , N'" + doanhthu_string + "');", new object[] { start_date, end_date, admin_id });
         }
     }
 }

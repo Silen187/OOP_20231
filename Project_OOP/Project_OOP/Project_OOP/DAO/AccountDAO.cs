@@ -286,6 +286,11 @@ namespace Project_OOP.DAO
             }
             DataTable result = DataProvider.Instance.ExecuteQuery("insert into transactions(ticket_id, transaction_time, renueve, description, type, vehicle_id, type_vehicle, user_id_did, level_name) VALUES( @ticket_id , @ngay , @money , @description , 6 , @vehicle_id , @type_vehicle , @user_id_did , @level_name )", new object[] {ticket_id, ngay, int.Parse(money), description, vehicle_id, type_vehicle, int.Parse(user_id_did), level_name });
         }
+        public int GetAdmin_ID_By_UserID(int user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery(" SELECT * FROM admin WHERE user_id = @user_id ", new object[] { user_id });
+            return int.Parse(result.Rows[0]["admin_id"].ToString());
+        }
     }
 }
 

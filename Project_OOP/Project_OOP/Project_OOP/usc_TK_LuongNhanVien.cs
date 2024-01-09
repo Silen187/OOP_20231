@@ -1,4 +1,5 @@
 ﻿using Project_OOP.DAO;
+using Project_OOP.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,23 +14,29 @@ namespace Project_OOP
 {
     public partial class usc_TK_LuongNhanVien : UserControl
     {
-        public usc_TK_LuongNhanVien()
+        public usc_TK_LuongNhanVien(int user_admin_id)
         {
             InitializeComponent();
+            Admin_id = AccountDAO.Instance.GetAdmin_ID_By_UserID(user_admin_id);
         }
-
+        private DataTable data;
+        private int admin_id;
+        public DataTable Data { get => data; set => data = value; }
+        public int Admin_id { get => admin_id; set => admin_id = value; }
         private void panel14_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
-        {
+        {  
             DateTime ngay_bat_dau = guna2DateTimePicker2.Value;
             DateTime ngay_ket_thuc = guna2DateTimePicker1.Value;
             if (guna2TextBox13.Text == "")
             {
+                guna2Button2.Visible = true;
                 DataTable dt = AccountDAO.Instance.Get_AllSalaryByDate(ngay_bat_dau, ngay_ket_thuc);
+                Data = dt;
                 dataGridView1.DataSource = dt;
                 string totalSalaryAdmin = dt.AsEnumerable()
                 .Where(row => row.Field<string>("Chức vụ") == "Quản lý")
@@ -64,6 +71,7 @@ namespace Project_OOP
             }
             else
             {
+                guna2Button2.Visible = false;
                 try
                 {
                     int user_id = int.Parse(guna2TextBox13.Text);
@@ -84,6 +92,21 @@ namespace Project_OOP
         {
             DataTable result = DataProvider.Instance.ExecuteQuery("ADD_SALARYPASS_DATE");
             DataTable result2 = DataProvider.Instance.ExecuteQuery("UPDATE_SALARYPASS_DATE");
+        }
+
+        private void guna2TextBox13_MouseLeave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            string start_date = guna2DateTimePicker2.Text;
+            string end_date = guna2DateTimePicker1.Text;
+            string luong_string = "Thống kê lương trả nhân viên từ " + start_date + " đến " + end_date;
+
+            Excel_Export.Instance.ExportLuong(data, "Báo cáo lương", luong_string);
+            DataProvider.Instance.ExecuteQuery("INSERT INTO reports (start_date, end_date, admin_id, report_description) VALUES ( @start_date , @end_date , @admin_id , N'" + luong_string + "');", new object[] { start_date, end_date, Admin_id });
         }
     }
 }

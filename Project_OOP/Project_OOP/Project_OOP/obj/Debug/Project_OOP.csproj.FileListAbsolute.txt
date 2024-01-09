@@ -229,3 +229,11 @@ E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\o
 E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.CopyComplete
 E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.exe
 E:\đã sửa giao diện\OOP_20231-master\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.pdb
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\EPPlus.dll
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\EPPlus.Interfaces.dll
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\EPPlus.System.Drawing.dll
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\System.ComponentModel.Annotations.dll
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\EPPlus.xml
+E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.ResolveComReference.cache

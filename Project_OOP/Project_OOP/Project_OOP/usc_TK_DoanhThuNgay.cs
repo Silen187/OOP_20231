@@ -8,15 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml;
+using Guna.UI2.WinForms;
+using Project_OOP.DTO;
 
 namespace Project_OOP
 {
     public partial class usc_TK_DoanhThuNgay : UserControl
     {
-        public usc_TK_DoanhThuNgay()
+        public usc_TK_DoanhThuNgay(int user_admin_id)
         {
             InitializeComponent();
+            Admin_id = AccountDAO.Instance.GetAdmin_ID_By_UserID(user_admin_id);
         }
+        private DataTable data;
+        private int admin_id;
+
+        public DataTable Data { get => data; set => data = value; }
+        public int Admin_id { get => admin_id; set => admin_id = value; }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -25,6 +34,7 @@ namespace Project_OOP
             DateTime endOfDay = startOfDay.AddDays(1).AddMilliseconds(-1);
            
             DataTable result = ZoneDAO.Instance.GetHistoryByDay(startOfDay, endOfDay);
+            Data = result;
             dataGridView1.DataSource = result;
 
             int totalRenueveForOnceTimeTicket = result.AsEnumerable()
@@ -63,6 +73,14 @@ namespace Project_OOP
             guna2TextBox6.Text = totalrowCountWithCarCustomer.ToString();
             guna2TextBox9.Text = totalrowCountWithBikeCustomer.ToString();
             guna2TextBox12.Text = totalrowCountWithBicycleCustomer.ToString();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            string start_date = guna2DateTimePicker2.Text;
+            string doanhthu_string = "Thống kê doanh thu ngày " + start_date;
+            Excel_Export.Instance.ExportDoanhThu(data, "Báo cáo doanh thu ngày", doanhthu_string);
+            DataProvider.Instance.ExecuteQuery("INSERT INTO reports (start_date, end_date, admin_id, report_description) VALUES ( @start_date , @end_date , @admin_id , N'" + doanhthu_string + "');", new object[] { start_date, start_date, Admin_id });
         }
     }
 }

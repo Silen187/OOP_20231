@@ -283,7 +283,7 @@ namespace Project_OOP
 
         private void guna2Button15_Click(object sender, EventArgs e)
         {
-            usc_TK_DoanhThuNgay f = new usc_TK_DoanhThuNgay();
+            usc_TK_DoanhThuNgay f = new usc_TK_DoanhThuNgay(int.Parse(loginAccount.ID1));
             guna2Button15.FillColor = Color.Red;
             ResetOtherButtonFillColors(guna2Button15);
             f.Dock = DockStyle.Fill;
@@ -293,7 +293,7 @@ namespace Project_OOP
 
         private void guna2Button16_Click(object sender, EventArgs e)
         {
-            usc_TK_DoanhThuThang f = new usc_TK_DoanhThuThang();
+            usc_TK_DoanhThuThang f = new usc_TK_DoanhThuThang(int.Parse(loginAccount.ID1));
             guna2Button16.FillColor = Color.Red;
             ResetOtherButtonFillColors(guna2Button16);
             f.Dock = DockStyle.Fill;
@@ -303,7 +303,7 @@ namespace Project_OOP
 
         private void guna2Button17_Click(object sender, EventArgs e)
         {
-            usc_TK_LuongNhanVien f = new usc_TK_LuongNhanVien();
+            usc_TK_LuongNhanVien f = new usc_TK_LuongNhanVien(int.Parse(loginAccount.ID1));
             guna2Button17.FillColor = Color.Red;
             ResetOtherButtonFillColors(guna2Button17);
             f.Dock = DockStyle.Fill;
@@ -323,7 +323,7 @@ namespace Project_OOP
 
         private void guna2Button18_Click(object sender, EventArgs e)
         {
-            usc_TK_SuCo f = new usc_TK_SuCo();
+            usc_TK_SuCo f = new usc_TK_SuCo(int.Parse(loginAccount.ID1));
             guna2Button18.FillColor = Color.Red;
             ResetOtherButtonFillColors(guna2Button18);
             f.Dock = DockStyle.Fill;
