@@ -27,38 +27,38 @@ namespace Project_OOP
 
         void ChangeAccount(InfoDTO acc)
         {
-            guna2TextBox1.Text = acc.ID1;
-            guna2TextBox2.Text = acc.Name1;
-            guna2DateTimePicker1.Value = (DateTime)acc.Birth1;
+            tb_MaNguoiDung.Text = acc.ID1;
+            tb_HoVaTen.Text = acc.Name1;
+            DateTime_NgaySinh.Value = (DateTime)acc.Birth1;
             if (acc.Sex == "female")
             {
-                comboBox1.Text = "Nữ";
+                cb_Sex.Text = "Nữ";
             }
             else if (acc.Sex == "male")
             {
-                comboBox1.Text = "Nam";
+                cb_Sex.Text = "Nam";
             }
             else
             {
-                comboBox1.Text = "Khác";
+                cb_Sex.Text = "Khác";
             }
-            comboBox2.Text = acc.City1;
-            guna2TextBox6.Text = acc.SDT1;
-            comboBox3.Text = acc.Role_name;
+            cb_City.Text = acc.City1;
+            tb_SDT.Text = acc.SDT1;
+            cb_MaChucVu.Text = acc.Role_name;
             if (acc.Role_name == "admin")
             {
-                comboBox4.Text = "Quản lý";
+                cb_ChucVu.Text = "Quản lý";
             }
             else if (acc.Role_name == "employee")
             {
-                comboBox4.Text = "Nhân viên";
+                cb_ChucVu.Text = "Nhân viên";
             }
             else if (acc.Role_name == "customer")
             {
-                comboBox4.Text = "Người dùng";
+                cb_ChucVu.Text = "Người dùng";
             }
-            guna2TextBox4.Text = acc.CCCD1;
-            guna2TextBox5.Text = acc.STK1;
+            tb_CCCD.Text = acc.CCCD1;
+            tb_STK.Text = acc.STK1;
         }
         public usc_HT_ThongTin_Tk(InfoDTO acc)
         {
@@ -68,14 +68,14 @@ namespace Project_OOP
         }
         void UpdateAccountInfo(string role_name)
         {
-            DateTime Birth = guna2DateTimePicker1.Value;
-            string displayName = guna2TextBox2.Text;
-            string sex = comboBox1.Text;
-            string city = comboBox2.Text;
-            string SDT = guna2TextBox6.Text;
-            string CCCD = guna2TextBox4.Text;
-            string STK = guna2TextBox5.Text;
-            string Bank = comboBox5.Text;
+            DateTime Birth = DateTime_NgaySinh.Value;
+            string displayName = tb_HoVaTen.Text;
+            string sex = cb_Sex.Text;
+            string city = cb_City.Text;
+            string SDT = tb_SDT.Text;
+            string CCCD = tb_CCCD.Text;
+            string STK = tb_STK.Text;
+            string Bank = cb_Bank.Text;
             fXacNhan f = new fXacNhan(role_name, this.user_id, displayName, sex, city, SDT, CCCD, Birth, STK, Bank);
             f.ShowDialog();
         }
@@ -104,8 +104,8 @@ namespace Project_OOP
 
         private void usc_HT_ThongTin_Tk_Load(object sender, EventArgs e)
         {
-            comboBox5.DataSource = AccountDAO.Instance.GetBank();
-            comboBox5.Text = loginAccount.Bank1;
+            cb_Bank.DataSource = AccountDAO.Instance.GetBank();
+            cb_Bank.Text = loginAccount.Bank1;
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -121,6 +121,7 @@ namespace Project_OOP
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             UpdateAccountInfo(loginAccount.Role_name);
+            Application.Restart();
         }
 
 

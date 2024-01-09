@@ -20,8 +20,8 @@ namespace Project_OOP
             InitializeComponent();
             if (permission == "3" ) 
             {
-                guna2Button2.Visible = true;
-                guna2Button3.Visible = true;
+                btn_NapTien.Visible = true;
+                btn_DangKyThang.Visible = true;
                 User_admin_id = user_admin_id;
             }
         }
@@ -72,25 +72,25 @@ namespace Project_OOP
 
         void Load_Info(TicketInfoDTO ticketAccount)
         {
-            guna2TextBox9.Text = ticketAccount.User_id.ToString();
-            guna2TextBox12.Text = ticketAccount.Name;
-            guna2TextBox6.Text = ticketAccount.Ticket_id.ToString();
+            tb_MaNguoiDung.Text = ticketAccount.User_id.ToString();
+            tb_TenNguoiDung.Text = ticketAccount.Name;
+            tb_MaVe.Text = ticketAccount.Ticket_id.ToString();
             try
             {
-                guna2DateTimePicker1.Visible = true;
-                guna2DateTimePicker4.Visible = true;
-                guna2DateTimePicker1.Value = DateTime.Parse(ticketAccount.Start_date);
-                guna2DateTimePicker4.Value = DateTime.Parse(ticketAccount.End_date);
-                guna2DateTimePicker1.Text = ticketAccount.Start_date;
-                guna2DateTimePicker4.Text = ticketAccount.End_date;
+                DateTime_Start.Visible = true;
+                DateTime_End.Visible = true;
+                DateTime_Start.Value = DateTime.Parse(ticketAccount.Start_date);
+                DateTime_End.Value = DateTime.Parse(ticketAccount.End_date);
+                DateTime_Start.Text = ticketAccount.Start_date;
+                DateTime_End.Text = ticketAccount.End_date;
             }
             catch
             {
-                guna2DateTimePicker1.Visible = false;
-                guna2DateTimePicker4.Visible = false;
+                DateTime_Start.Visible = false;
+                DateTime_End.Visible = false;
             }
-            guna2TextBox4.Text = ticketAccount.Money.ToString();
-            guna2TextBox15.Text = ticketAccount.Type_card.ToString();
+            tb_Money.Text = ticketAccount.Money.ToString();
+            tb_LoaiVe.Text = ticketAccount.Type_card.ToString();
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
@@ -138,9 +138,9 @@ namespace Project_OOP
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string ticket_id = guna2TextBox6.Text;
-            string name = guna2TextBox12.Text;
-            string type_card = guna2TextBox15.Text;
+            string ticket_id = tb_MaVe.Text;
+            string name = tb_TenNguoiDung.Text;
+            string type_card = tb_LoaiVe.Text;
             usc_QL_NapTienVe f = new usc_QL_NapTienVe(ticket_id, name, type_card, User_admin_id);
             this.Controls.Add(f);
             f.Dock = DockStyle.Fill;
@@ -151,8 +151,8 @@ namespace Project_OOP
         {
             try
             {
-                int money = int.Parse(guna2TextBox4.Text);
-                string ticket_id = guna2TextBox6.Text;
+                int money = int.Parse(tb_Money.Text);
+                string ticket_id = tb_MaVe.Text;
                 if (money > 100000)
                 {
                     DialogResult result = MessageBox.Show("Đăng ký vé tháng ?", "Xác nhận", MessageBoxButtons.YesNo);
@@ -187,7 +187,7 @@ namespace Project_OOP
 
         private void guna2TextBox4_TextChanged(object sender, EventArgs e)
         {
-            int user_id = int.Parse(guna2TextBox9.Text);
+            int user_id = int.Parse(tb_MaNguoiDung.Text);
             ShowTicket(user_id);
         }
     }

@@ -38,7 +38,7 @@ namespace Project_OOP
         {
             List<string> list_level_name = new List<string>();
             list_level_name = ZoneDAO.Instance.level_name_list();
-            comboBox3.DataSource = list_level_name;
+            cb_levelname.DataSource = list_level_name;
         }
 
         private void btnThemNV_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace Project_OOP
         {
             try
             {
-                usc_SuaNhanVien f = new usc_SuaNhanVien(guna2TextBox9.Text, guna2TextBox6.Text, User_admin_id);
+                usc_SuaNhanVien f = new usc_SuaNhanVien(tb_MaNhanVien.Text, tb_ticketid.Text, User_admin_id);
                 this.Controls.Add(f);
                 f.Dock = DockStyle.Fill;
                 f.BringToFront();
@@ -77,9 +77,9 @@ namespace Project_OOP
         {
             try
             {
-                string name = comboBox1.Text;
-                string employee_id = comboBox2.Text;
-                string level_name = comboBox3.Text;
+                string name = cb_HoTen.Text;
+                string employee_id = cb_MaNhanVien.Text;
+                string level_name = cb_levelname.Text;
                 Show_Employee(int.Parse(employee_id));
             }
             catch (Exception ex)
@@ -90,14 +90,14 @@ namespace Project_OOP
 
         private void comboBox3_SelectedValueChanged(object sender, EventArgs e)
         {
-            flowLayoutPanel2.Controls.Clear();
+            flp_DanhSachNhanVien.Controls.Clear();
             ComboBox cb = sender as ComboBox;
             string level_name = cb.Text;
             List<EmployeeInfoDTO> employee_list = AccountDAO.Instance.GetEmployeeInFoByLevel(level_name);
-            comboBox1.DataSource = employee_list;
-            comboBox1.DisplayMember = "employee_name";
-            comboBox2.DataSource = employee_list;
-            comboBox2.DisplayMember = "employee_id";
+            cb_HoTen.DataSource = employee_list;
+            cb_HoTen.DisplayMember = "employee_name";
+            cb_MaNhanVien.DataSource = employee_list;
+            cb_MaNhanVien.DisplayMember = "employee_id";
             foreach (EmployeeInfoDTO item in employee_list)
             {
                 Button btn = new Button() { Width = 375, Height = 47 };
@@ -106,7 +106,7 @@ namespace Project_OOP
                 btn.Tag = item;
                 btn.BackColor = Color.DarkViolet;
 
-                flowLayoutPanel2.Controls.Add(btn);
+                flp_DanhSachNhanVien.Controls.Add(btn);
             }
         }
         void btn_Click(object sender, EventArgs e)
@@ -117,15 +117,15 @@ namespace Project_OOP
         void Show_Employee(int employee_id)
         {
             EmployeeInfoDTO info = AccountDAO.Instance.GetEmployeeInFoByEmployeeID(employee_id);
-            guna2TextBox9.Text = info.Employee_id.ToString();
-            guna2TextBox12.Text = info.Employee_name.ToString();
-            guna2TextBox6.Text = info.Ticket_id.ToString();
-            guna2DateTimePicker1.Value = info.Register_date;
-            guna2TextBox8.Text = info.SDT1.ToString();
-            guna2TextBox4.Text = info.Salary_level.ToString();
-            guna2TextBox1.Text = info.STK1.ToString();
-            guna2TextBox14.Text = info.Bank.ToString();
-            guna2TextBox15.Text = info.CCCD1.ToString();
+            tb_MaNhanVien.Text = info.Employee_id.ToString();
+            tb_TenNhanVien.Text = info.Employee_name.ToString();
+            tb_ticketid.Text = info.Ticket_id.ToString();
+            DateTime_NgayBatDau.Value = info.Register_date;
+            tb_SDT.Text = info.SDT1.ToString();
+            tb_salary_level.Text = info.Salary_level.ToString();
+            tb_STK.Text = info.STK1.ToString();
+            tb_Bank.Text = info.Bank.ToString();
+            tb_CCCD.Text = info.CCCD1.ToString();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -137,8 +137,8 @@ namespace Project_OOP
             {
                 try
                 {
-                    string ticket_id = guna2TextBox6.Text;
-                    User_id = DataProvider.Instance.ExecuteQuery("SELECT user_id AS uid FROM employees WHERE employee_id = " + guna2TextBox9.Text).Rows[0]["uid"].ToString();
+                    string ticket_id = tb_ticketid.Text;
+                    User_id = DataProvider.Instance.ExecuteQuery("SELECT user_id AS uid FROM employees WHERE employee_id = " + tb_MaNhanVien.Text).Rows[0]["uid"].ToString();
                     // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien
                     AccountDAO.Instance.DeleteEmployee(User_id);
                     DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , N'Xóa nhân viên', 4 , @user_id_did );", new object[] {ticket_id, DateTime.Now, User_admin_id});

@@ -28,15 +28,15 @@ namespace Project_OOP
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DateTime ngay_bat_dau = guna2DateTimePicker2.Value;
-            DateTime ngay_ket_thuc = guna2DateTimePicker1.Value;
+            DateTime ngay_bat_dau = DateTime_Start.Value;
+            DateTime ngay_ket_thuc = DateTime_End.Value;
             DateTime start_Day = ngay_bat_dau.Date;
             DateTime end_Day = ngay_ket_thuc.Date;
             
             DataTable result = ZoneDAO.Instance.GetHistoryByDay(start_Day, end_Day);
             Dt = result;
 
-            dataGridView1.DataSource = result;
+            dgv_TongHopVaoRaThang.DataSource = result;
 
             int totalRenueveForOnceTimeTicket = result.AsEnumerable()
             .Where(row => row.Field<string>("Loại vé") == "Vé dùng một lần")
@@ -59,21 +59,21 @@ namespace Project_OOP
             int totalrowCountWithBicycleCustomer = result.Select("[Loại xe] = 'Bicycle' AND ([Loại vé] = 'Vé tháng' OR [Loại vé] = 'Vé khách hàng')").Length;
 
             int totalRenueve = result.AsEnumerable().Sum(row => row.Field<int>("Số tiền"));
-            guna2TextBox4.Text = totalRenueve.ToString();
-            guna2TextBox1.Text = totalRenueveForOnceTimeTicket.ToString();
-            guna2TextBox2.Text = totalRenueveForCustomerTicket.ToString();
+            tb_DoanhThu_all.Text = totalRenueve.ToString();
+            tb_DoanhThu_once.Text = totalRenueveForOnceTimeTicket.ToString();
+            tb_DoanhThu.Text = totalRenueveForCustomerTicket.ToString();
 
-            guna2TextBox3.Text = totalrowCountWithCar.ToString();
-            guna2TextBox7.Text = totalrowCountWithBike.ToString();
-            guna2TextBox10.Text = totalrowCountWithBicycle.ToString();
+            tb_car_all.Text = totalrowCountWithCar.ToString();
+            tb_bike_all.Text = totalrowCountWithBike.ToString();
+            tb_bicycle_all.Text = totalrowCountWithBicycle.ToString();
 
-            guna2TextBox5.Text = totalrowCountWithCarOnce.ToString();
-            guna2TextBox8.Text = totalrowCountWithBikeOnce.ToString();
-            guna2TextBox11.Text = totalrowCountWithBicycleCustomer.ToString();
+            tb_car_once.Text = totalrowCountWithCarOnce.ToString();
+            tb_bike_once.Text = totalrowCountWithBikeOnce.ToString();
+            tb_bicycle_once.Text = totalrowCountWithBicycleCustomer.ToString();
 
-            guna2TextBox6.Text = totalrowCountWithCarCustomer.ToString();
-            guna2TextBox9.Text = totalrowCountWithBikeCustomer.ToString();
-            guna2TextBox12.Text = totalrowCountWithBicycleCustomer.ToString();
+            tb_car.Text = totalrowCountWithCarCustomer.ToString();
+            tb_bike.Text = totalrowCountWithBikeCustomer.ToString();
+            tb_bicycle.Text = totalrowCountWithBicycleCustomer.ToString();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -83,8 +83,8 @@ namespace Project_OOP
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            string start_date = guna2DateTimePicker2.Text;
-            string end_date = guna2DateTimePicker1.Text;
+            string start_date = DateTime_Start.Text;
+            string end_date = DateTime_End.Text;
             DataTable data = Dt;
             int admin_id = AccountDAO.Instance.GetAdmin_ID_By_UserID(User_admin_id);
             string doanhthu_string = "Thống kê doanh thu từ " + start_date + " đến " + end_date;

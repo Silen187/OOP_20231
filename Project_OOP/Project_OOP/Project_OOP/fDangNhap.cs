@@ -22,11 +22,11 @@ namespace Project_OOP
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void login_button_Click(object sender, EventArgs e)
         {
             {
-                string userName = guna2TextBox1.Text;
-                string passWord = guna2TextBox2.Text;
+                string userName = username_text.Text;
+                string passWord = pw.Text;
                 int userID = Login(userName, passWord);
 
                 InfoDTO loginAccount = AccountDAO.Instance.GetAccountByUserID(userID);
@@ -68,7 +68,7 @@ namespace Project_OOP
         {
             return AccountDAO.Instance.permission(user_id);
         }
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -78,23 +78,15 @@ namespace Project_OOP
 
         }
 
-        private void fDangNhap_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
-            {
-                e.Cancel = true;
-            }
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        private void username_text_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            guna2TextBox2.UseSystemPasswordChar = !guna2TextBox2.UseSystemPasswordChar;
-            guna2TextBox2.PasswordChar = '\0';
+            pw.UseSystemPasswordChar = !pw.UseSystemPasswordChar;
+            pw.PasswordChar = '\0';
         }
     }
 }

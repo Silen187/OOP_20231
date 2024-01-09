@@ -30,12 +30,12 @@ namespace Project_OOP
 
         private void btnThemNV_Click(object sender, EventArgs e)
         {
-            string STK = guna2TextBox7.Text;
-            string Bank = guna2TextBox8.Text;
-            string CCCD = guna2TextBox5.Text;
-            string name = guna2TextBox2.Text;
-            DateTime Birth = guna2DateTimePicker1.Value;
-            string sex = comboBox1.Text;
+            string STK = tb_STK.Text;
+            string Bank = tb_Bank.Text;
+            string CCCD = tb_CCCD.Text;
+            string name = tb_Name.Text;
+            DateTime Birth = DateTime_NgaySinh.Value;
+            string sex = cb_Sex.Text;
             if (sex == "Nam")
             {
                 sex = "male";
@@ -48,13 +48,13 @@ namespace Project_OOP
             {
                 sex = "Unknow";
             }
-            string city = comboBox2.Text;
-            string contact_number = guna2TextBox6.Text;
-            string permission_name = comboBox4.Text;
-            DateTime register_date = guna2DateTimePicker2.Value;
-            string ticket_id = guna2TextBox3.Text;
-            string salary_level = guna2TextBox4.Text;
-            string level_name = comboBox3.Text;
+            string city = cb_City.Text;
+            string contact_number = tb_SDT.Text;
+            string permission_name = cb_permission.Text;
+            DateTime register_date = DateTime_NgayDangKy.Value;
+            string ticket_id = tb_MaVe.Text;
+            string salary_level = tb_BacLuong.Text;
+            string level_name = cb_KhuVucLamViec.Text;
             bool check_CCCD = AccountDAO.Instance.CHECK_TRUNGLAP_CCCD(CCCD);
 
             if (STK == "")
@@ -85,15 +85,15 @@ namespace Project_OOP
             {
                 MessageBox.Show("Hãy chọn chức vụ cho người dùng");
             }
-            else if (ticket_id == "" && guna2TextBox3.Enabled == true)
+            else if (ticket_id == "" && tb_MaVe.Enabled == true)
             {
                 MessageBox.Show("Hãy nhập mã vé");
             }
-            else if (string.IsNullOrWhiteSpace(salary_level) && guna2TextBox4.Enabled)
+            else if (string.IsNullOrWhiteSpace(salary_level) && tb_BacLuong.Enabled)
             {
                 MessageBox.Show("Hãy nhập bậc lương");
             }
-            else if (level_name == "" && comboBox3.Enabled == true)
+            else if (level_name == "" && cb_KhuVucLamViec.Enabled == true)
             {
                 MessageBox.Show("Hãy chọn khu vực làm việc");
             }
@@ -156,29 +156,29 @@ namespace Project_OOP
             ComboBox cb = sender as ComboBox;
             if (cb.Text == "Quản lý")
             {
-                comboBox3.Text = "";
-                guna2TextBox1.Text = "Admin";
-                guna2TextBox3.Enabled = false;
-                guna2Button2.Enabled = false;
-                guna2TextBox4.Enabled = true;
-                comboBox3.Enabled = false;
+                cb_KhuVucLamViec.Text = "";
+                tb_MaChucVu.Text = "Admin";
+                tb_MaVe.Enabled = false;
+                check.Enabled = false;
+                tb_BacLuong.Enabled = true;
+                cb_KhuVucLamViec.Enabled = false;
             }
             else if (cb.Text == "Nhân viên")
             {
-                guna2TextBox1.Text = "Employee";
-                guna2TextBox3.Enabled = true;
-                guna2Button2.Enabled = true;
-                guna2TextBox4.Enabled = true;
-                comboBox3.Enabled = true;
+                tb_MaChucVu.Text = "Employee";
+                tb_MaVe.Enabled = true;
+                check.Enabled = true;
+                tb_BacLuong.Enabled = true;
+                cb_KhuVucLamViec.Enabled = true;
             }
             else if (cb.Text == "Người dùng")
             {
-                comboBox3.Text = "";
-                guna2TextBox1.Text = "Customer";
-                guna2TextBox3.Enabled = true;
-                guna2Button2.Enabled = true;
-                guna2TextBox4.Enabled = false;
-                comboBox3.Enabled = false;
+                cb_KhuVucLamViec.Text = "";
+                tb_MaChucVu.Text = "Customer";
+                tb_MaVe.Enabled = true;
+                check.Enabled = true;
+                tb_BacLuong.Enabled = false;
+                cb_KhuVucLamViec.Enabled = false;
             }
         }
 
@@ -189,7 +189,7 @@ namespace Project_OOP
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string ticket_id = guna2TextBox3.Text;
+            string ticket_id = tb_MaVe.Text;
             bool check_user_name = AccountDAO.Instance.CHECK_TRUNGLAP_TICKET(ticket_id);
             if (check_user_name == true)
             {
@@ -209,7 +209,7 @@ namespace Project_OOP
         {
             List<string> list_level_name = new List<string>();
             list_level_name = ZoneDAO.Instance.level_name_list();
-            comboBox3.DataSource = list_level_name;
+            cb_KhuVucLamViec.DataSource = list_level_name;
         }
     }
 }

@@ -31,49 +31,49 @@
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_DoanhThu_all = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_car_all = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_bike_all = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_bicycle_all = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_DoanhThu_once = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_car_once = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_bike_once = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_bicycle_once = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_DoanhThu = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_car = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_bike = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.guna2TextBox12 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_bicycle = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DateTime_End = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btn_SinhBaoCao = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_ThongKe = new Guna.UI2.WinForms.Guna2Button();
+            this.DateTime_Start = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dgv_TongHopVaoRaThang = new System.Windows.Forms.DataGridView();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GroupBox2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -90,7 +90,7 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TongHopVaoRaThang)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,7 +131,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2TextBox4);
+            this.panel1.Controls.Add(this.tb_DoanhThu_all);
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
             this.panel1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -139,27 +139,27 @@
             this.panel1.Size = new System.Drawing.Size(297, 29);
             this.panel1.TabIndex = 16;
             // 
-            // guna2TextBox4
+            // tb_DoanhThu_all
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.Enabled = false;
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(145, 3);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(104, 15);
-            this.guna2TextBox4.TabIndex = 4;
+            this.tb_DoanhThu_all.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_DoanhThu_all.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_DoanhThu_all.DefaultText = "";
+            this.tb_DoanhThu_all.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_DoanhThu_all.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_DoanhThu_all.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_DoanhThu_all.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_DoanhThu_all.Enabled = false;
+            this.tb_DoanhThu_all.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_DoanhThu_all.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_DoanhThu_all.ForeColor = System.Drawing.Color.Black;
+            this.tb_DoanhThu_all.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_DoanhThu_all.Location = new System.Drawing.Point(145, 3);
+            this.tb_DoanhThu_all.Name = "tb_DoanhThu_all";
+            this.tb_DoanhThu_all.PasswordChar = '\0';
+            this.tb_DoanhThu_all.PlaceholderText = "";
+            this.tb_DoanhThu_all.SelectedText = "";
+            this.tb_DoanhThu_all.Size = new System.Drawing.Size(104, 15);
+            this.tb_DoanhThu_all.TabIndex = 4;
             // 
             // guna2HtmlLabel1
             // 
@@ -173,7 +173,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.guna2TextBox3);
+            this.panel2.Controls.Add(this.tb_car_all);
             this.panel2.Controls.Add(this.guna2HtmlLabel4);
             this.panel2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(306, 3);
@@ -181,27 +181,27 @@
             this.panel2.Size = new System.Drawing.Size(144, 29);
             this.panel2.TabIndex = 17;
             // 
-            // guna2TextBox3
+            // tb_car_all
             // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.Enabled = false;
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(57, 3);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox3.TabIndex = 5;
+            this.tb_car_all.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_car_all.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_car_all.DefaultText = "";
+            this.tb_car_all.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_car_all.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_car_all.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_car_all.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_car_all.Enabled = false;
+            this.tb_car_all.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_car_all.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_car_all.ForeColor = System.Drawing.Color.Black;
+            this.tb_car_all.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_car_all.Location = new System.Drawing.Point(57, 3);
+            this.tb_car_all.Name = "tb_car_all";
+            this.tb_car_all.PasswordChar = '\0';
+            this.tb_car_all.PlaceholderText = "";
+            this.tb_car_all.SelectedText = "";
+            this.tb_car_all.Size = new System.Drawing.Size(67, 15);
+            this.tb_car_all.TabIndex = 5;
             // 
             // guna2HtmlLabel4
             // 
@@ -215,7 +215,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.guna2TextBox7);
+            this.panel3.Controls.Add(this.tb_bike_all);
             this.panel3.Controls.Add(this.guna2HtmlLabel6);
             this.panel3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(456, 3);
@@ -223,27 +223,27 @@
             this.panel3.Size = new System.Drawing.Size(144, 29);
             this.panel3.TabIndex = 18;
             // 
-            // guna2TextBox7
+            // tb_bike_all
             // 
-            this.guna2TextBox7.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.Enabled = false;
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox7.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(63, 3);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox7.TabIndex = 6;
+            this.tb_bike_all.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_bike_all.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_bike_all.DefaultText = "";
+            this.tb_bike_all.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_bike_all.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_bike_all.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bike_all.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bike_all.Enabled = false;
+            this.tb_bike_all.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bike_all.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_bike_all.ForeColor = System.Drawing.Color.Black;
+            this.tb_bike_all.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bike_all.Location = new System.Drawing.Point(63, 3);
+            this.tb_bike_all.Name = "tb_bike_all";
+            this.tb_bike_all.PasswordChar = '\0';
+            this.tb_bike_all.PlaceholderText = "";
+            this.tb_bike_all.SelectedText = "";
+            this.tb_bike_all.Size = new System.Drawing.Size(67, 15);
+            this.tb_bike_all.TabIndex = 6;
             // 
             // guna2HtmlLabel6
             // 
@@ -257,7 +257,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.guna2TextBox10);
+            this.panel4.Controls.Add(this.tb_bicycle_all);
             this.panel4.Controls.Add(this.guna2HtmlLabel8);
             this.panel4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(606, 3);
@@ -265,27 +265,27 @@
             this.panel4.Size = new System.Drawing.Size(144, 29);
             this.panel4.TabIndex = 19;
             // 
-            // guna2TextBox10
+            // tb_bicycle_all
             // 
-            this.guna2TextBox10.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox10.DefaultText = "";
-            this.guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.Enabled = false;
-            this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox10.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Location = new System.Drawing.Point(62, 3);
-            this.guna2TextBox10.Name = "guna2TextBox10";
-            this.guna2TextBox10.PasswordChar = '\0';
-            this.guna2TextBox10.PlaceholderText = "";
-            this.guna2TextBox10.SelectedText = "";
-            this.guna2TextBox10.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox10.TabIndex = 6;
+            this.tb_bicycle_all.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_bicycle_all.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_bicycle_all.DefaultText = "";
+            this.tb_bicycle_all.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_bicycle_all.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_bicycle_all.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bicycle_all.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bicycle_all.Enabled = false;
+            this.tb_bicycle_all.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bicycle_all.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_bicycle_all.ForeColor = System.Drawing.Color.Black;
+            this.tb_bicycle_all.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bicycle_all.Location = new System.Drawing.Point(62, 3);
+            this.tb_bicycle_all.Name = "tb_bicycle_all";
+            this.tb_bicycle_all.PasswordChar = '\0';
+            this.tb_bicycle_all.PlaceholderText = "";
+            this.tb_bicycle_all.SelectedText = "";
+            this.tb_bicycle_all.Size = new System.Drawing.Size(67, 15);
+            this.tb_bicycle_all.TabIndex = 6;
             // 
             // guna2HtmlLabel8
             // 
@@ -299,7 +299,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.guna2TextBox1);
+            this.panel5.Controls.Add(this.tb_DoanhThu_once);
             this.panel5.Controls.Add(this.guna2HtmlLabel10);
             this.panel5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.Location = new System.Drawing.Point(3, 38);
@@ -307,27 +307,27 @@
             this.panel5.Size = new System.Drawing.Size(297, 29);
             this.panel5.TabIndex = 20;
             // 
-            // guna2TextBox1
+            // tb_DoanhThu_once
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.Enabled = false;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(145, 3);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(104, 15);
-            this.guna2TextBox1.TabIndex = 5;
+            this.tb_DoanhThu_once.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_DoanhThu_once.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_DoanhThu_once.DefaultText = "";
+            this.tb_DoanhThu_once.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_DoanhThu_once.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_DoanhThu_once.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_DoanhThu_once.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_DoanhThu_once.Enabled = false;
+            this.tb_DoanhThu_once.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_DoanhThu_once.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_DoanhThu_once.ForeColor = System.Drawing.Color.Black;
+            this.tb_DoanhThu_once.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_DoanhThu_once.Location = new System.Drawing.Point(145, 3);
+            this.tb_DoanhThu_once.Name = "tb_DoanhThu_once";
+            this.tb_DoanhThu_once.PasswordChar = '\0';
+            this.tb_DoanhThu_once.PlaceholderText = "";
+            this.tb_DoanhThu_once.SelectedText = "";
+            this.tb_DoanhThu_once.Size = new System.Drawing.Size(104, 15);
+            this.tb_DoanhThu_once.TabIndex = 5;
             // 
             // guna2HtmlLabel10
             // 
@@ -341,7 +341,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.guna2TextBox5);
+            this.panel6.Controls.Add(this.tb_car_once);
             this.panel6.Controls.Add(this.guna2HtmlLabel12);
             this.panel6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.Location = new System.Drawing.Point(306, 38);
@@ -349,27 +349,27 @@
             this.panel6.Size = new System.Drawing.Size(144, 29);
             this.panel6.TabIndex = 21;
             // 
-            // guna2TextBox5
+            // tb_car_once
             // 
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.Enabled = false;
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(57, 4);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox5.TabIndex = 5;
+            this.tb_car_once.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_car_once.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_car_once.DefaultText = "";
+            this.tb_car_once.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_car_once.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_car_once.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_car_once.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_car_once.Enabled = false;
+            this.tb_car_once.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_car_once.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_car_once.ForeColor = System.Drawing.Color.Black;
+            this.tb_car_once.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_car_once.Location = new System.Drawing.Point(57, 4);
+            this.tb_car_once.Name = "tb_car_once";
+            this.tb_car_once.PasswordChar = '\0';
+            this.tb_car_once.PlaceholderText = "";
+            this.tb_car_once.SelectedText = "";
+            this.tb_car_once.Size = new System.Drawing.Size(67, 15);
+            this.tb_car_once.TabIndex = 5;
             // 
             // guna2HtmlLabel12
             // 
@@ -383,7 +383,7 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.guna2TextBox8);
+            this.panel7.Controls.Add(this.tb_bike_once);
             this.panel7.Controls.Add(this.guna2HtmlLabel14);
             this.panel7.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel7.Location = new System.Drawing.Point(456, 38);
@@ -391,27 +391,27 @@
             this.panel7.Size = new System.Drawing.Size(144, 29);
             this.panel7.TabIndex = 22;
             // 
-            // guna2TextBox8
+            // tb_bike_once
             // 
-            this.guna2TextBox8.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "";
-            this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.Enabled = false;
-            this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox8.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(63, 4);
-            this.guna2TextBox8.Name = "guna2TextBox8";
-            this.guna2TextBox8.PasswordChar = '\0';
-            this.guna2TextBox8.PlaceholderText = "";
-            this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox8.TabIndex = 6;
+            this.tb_bike_once.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_bike_once.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_bike_once.DefaultText = "";
+            this.tb_bike_once.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_bike_once.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_bike_once.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bike_once.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bike_once.Enabled = false;
+            this.tb_bike_once.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bike_once.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_bike_once.ForeColor = System.Drawing.Color.Black;
+            this.tb_bike_once.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bike_once.Location = new System.Drawing.Point(63, 4);
+            this.tb_bike_once.Name = "tb_bike_once";
+            this.tb_bike_once.PasswordChar = '\0';
+            this.tb_bike_once.PlaceholderText = "";
+            this.tb_bike_once.SelectedText = "";
+            this.tb_bike_once.Size = new System.Drawing.Size(67, 15);
+            this.tb_bike_once.TabIndex = 6;
             // 
             // guna2HtmlLabel14
             // 
@@ -425,7 +425,7 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.guna2TextBox11);
+            this.panel8.Controls.Add(this.tb_bicycle_once);
             this.panel8.Controls.Add(this.guna2HtmlLabel16);
             this.panel8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel8.Location = new System.Drawing.Point(606, 38);
@@ -433,27 +433,27 @@
             this.panel8.Size = new System.Drawing.Size(144, 29);
             this.panel8.TabIndex = 23;
             // 
-            // guna2TextBox11
+            // tb_bicycle_once
             // 
-            this.guna2TextBox11.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox11.DefaultText = "";
-            this.guna2TextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.Enabled = false;
-            this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox11.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Location = new System.Drawing.Point(62, 3);
-            this.guna2TextBox11.Name = "guna2TextBox11";
-            this.guna2TextBox11.PasswordChar = '\0';
-            this.guna2TextBox11.PlaceholderText = "";
-            this.guna2TextBox11.SelectedText = "";
-            this.guna2TextBox11.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox11.TabIndex = 6;
+            this.tb_bicycle_once.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_bicycle_once.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_bicycle_once.DefaultText = "";
+            this.tb_bicycle_once.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_bicycle_once.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_bicycle_once.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bicycle_once.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bicycle_once.Enabled = false;
+            this.tb_bicycle_once.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bicycle_once.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_bicycle_once.ForeColor = System.Drawing.Color.Black;
+            this.tb_bicycle_once.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bicycle_once.Location = new System.Drawing.Point(62, 3);
+            this.tb_bicycle_once.Name = "tb_bicycle_once";
+            this.tb_bicycle_once.PasswordChar = '\0';
+            this.tb_bicycle_once.PlaceholderText = "";
+            this.tb_bicycle_once.SelectedText = "";
+            this.tb_bicycle_once.Size = new System.Drawing.Size(67, 15);
+            this.tb_bicycle_once.TabIndex = 6;
             // 
             // guna2HtmlLabel16
             // 
@@ -467,7 +467,7 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.guna2TextBox2);
+            this.panel9.Controls.Add(this.tb_DoanhThu);
             this.panel9.Controls.Add(this.guna2HtmlLabel18);
             this.panel9.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel9.Location = new System.Drawing.Point(3, 73);
@@ -475,27 +475,27 @@
             this.panel9.Size = new System.Drawing.Size(297, 29);
             this.panel9.TabIndex = 24;
             // 
-            // guna2TextBox2
+            // tb_DoanhThu
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.Enabled = false;
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(145, 3);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(104, 15);
-            this.guna2TextBox2.TabIndex = 5;
+            this.tb_DoanhThu.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_DoanhThu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_DoanhThu.DefaultText = "";
+            this.tb_DoanhThu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_DoanhThu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_DoanhThu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_DoanhThu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_DoanhThu.Enabled = false;
+            this.tb_DoanhThu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_DoanhThu.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_DoanhThu.ForeColor = System.Drawing.Color.Black;
+            this.tb_DoanhThu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_DoanhThu.Location = new System.Drawing.Point(145, 3);
+            this.tb_DoanhThu.Name = "tb_DoanhThu";
+            this.tb_DoanhThu.PasswordChar = '\0';
+            this.tb_DoanhThu.PlaceholderText = "";
+            this.tb_DoanhThu.SelectedText = "";
+            this.tb_DoanhThu.Size = new System.Drawing.Size(104, 15);
+            this.tb_DoanhThu.TabIndex = 5;
             // 
             // guna2HtmlLabel18
             // 
@@ -509,7 +509,7 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.guna2TextBox6);
+            this.panel10.Controls.Add(this.tb_car);
             this.panel10.Controls.Add(this.guna2HtmlLabel20);
             this.panel10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel10.Location = new System.Drawing.Point(306, 73);
@@ -517,27 +517,27 @@
             this.panel10.Size = new System.Drawing.Size(144, 29);
             this.panel10.TabIndex = 25;
             // 
-            // guna2TextBox6
+            // tb_car
             // 
-            this.guna2TextBox6.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.Enabled = false;
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox6.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(57, 3);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox6.TabIndex = 5;
+            this.tb_car.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_car.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_car.DefaultText = "";
+            this.tb_car.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_car.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_car.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_car.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_car.Enabled = false;
+            this.tb_car.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_car.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_car.ForeColor = System.Drawing.Color.Black;
+            this.tb_car.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_car.Location = new System.Drawing.Point(57, 3);
+            this.tb_car.Name = "tb_car";
+            this.tb_car.PasswordChar = '\0';
+            this.tb_car.PlaceholderText = "";
+            this.tb_car.SelectedText = "";
+            this.tb_car.Size = new System.Drawing.Size(67, 15);
+            this.tb_car.TabIndex = 5;
             // 
             // guna2HtmlLabel20
             // 
@@ -551,7 +551,7 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.guna2TextBox9);
+            this.panel11.Controls.Add(this.tb_bike);
             this.panel11.Controls.Add(this.guna2HtmlLabel22);
             this.panel11.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel11.Location = new System.Drawing.Point(456, 73);
@@ -559,27 +559,27 @@
             this.panel11.Size = new System.Drawing.Size(144, 29);
             this.panel11.TabIndex = 26;
             // 
-            // guna2TextBox9
+            // tb_bike
             // 
-            this.guna2TextBox9.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.Enabled = false;
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox9.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(63, 3);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PasswordChar = '\0';
-            this.guna2TextBox9.PlaceholderText = "";
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox9.TabIndex = 6;
+            this.tb_bike.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_bike.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_bike.DefaultText = "";
+            this.tb_bike.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_bike.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_bike.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bike.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bike.Enabled = false;
+            this.tb_bike.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bike.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_bike.ForeColor = System.Drawing.Color.Black;
+            this.tb_bike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bike.Location = new System.Drawing.Point(63, 3);
+            this.tb_bike.Name = "tb_bike";
+            this.tb_bike.PasswordChar = '\0';
+            this.tb_bike.PlaceholderText = "";
+            this.tb_bike.SelectedText = "";
+            this.tb_bike.Size = new System.Drawing.Size(67, 15);
+            this.tb_bike.TabIndex = 6;
             // 
             // guna2HtmlLabel22
             // 
@@ -593,7 +593,7 @@
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.guna2TextBox12);
+            this.panel12.Controls.Add(this.tb_bicycle);
             this.panel12.Controls.Add(this.guna2HtmlLabel24);
             this.panel12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel12.Location = new System.Drawing.Point(606, 73);
@@ -601,27 +601,27 @@
             this.panel12.Size = new System.Drawing.Size(144, 29);
             this.panel12.TabIndex = 27;
             // 
-            // guna2TextBox12
+            // tb_bicycle
             // 
-            this.guna2TextBox12.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox12.DefaultText = "";
-            this.guna2TextBox12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox12.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox12.Enabled = false;
-            this.guna2TextBox12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox12.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox12.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Location = new System.Drawing.Point(62, 3);
-            this.guna2TextBox12.Name = "guna2TextBox12";
-            this.guna2TextBox12.PasswordChar = '\0';
-            this.guna2TextBox12.PlaceholderText = "";
-            this.guna2TextBox12.SelectedText = "";
-            this.guna2TextBox12.Size = new System.Drawing.Size(67, 15);
-            this.guna2TextBox12.TabIndex = 6;
+            this.tb_bicycle.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_bicycle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_bicycle.DefaultText = "";
+            this.tb_bicycle.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_bicycle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_bicycle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bicycle.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_bicycle.Enabled = false;
+            this.tb_bicycle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bicycle.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_bicycle.ForeColor = System.Drawing.Color.Black;
+            this.tb_bicycle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_bicycle.Location = new System.Drawing.Point(62, 3);
+            this.tb_bicycle.Name = "tb_bicycle";
+            this.tb_bicycle.PasswordChar = '\0';
+            this.tb_bicycle.PlaceholderText = "";
+            this.tb_bicycle.SelectedText = "";
+            this.tb_bicycle.Size = new System.Drawing.Size(67, 15);
+            this.tb_bicycle.TabIndex = 6;
             // 
             // guna2HtmlLabel24
             // 
@@ -638,10 +638,10 @@
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.guna2HtmlLabel2);
             this.groupBox1.Controls.Add(this.guna2HtmlLabel25);
-            this.groupBox1.Controls.Add(this.guna2DateTimePicker1);
-            this.groupBox1.Controls.Add(this.guna2Button3);
-            this.groupBox1.Controls.Add(this.guna2Button1);
-            this.groupBox1.Controls.Add(this.guna2DateTimePicker2);
+            this.groupBox1.Controls.Add(this.DateTime_End);
+            this.groupBox1.Controls.Add(this.btn_SinhBaoCao);
+            this.groupBox1.Controls.Add(this.btn_ThongKe);
+            this.groupBox1.Controls.Add(this.DateTime_Start);
             this.groupBox1.Location = new System.Drawing.Point(18, 43);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(817, 60);
@@ -669,92 +669,92 @@
             this.guna2HtmlLabel25.TabIndex = 23;
             this.guna2HtmlLabel25.Text = "Từ";
             // 
-            // guna2DateTimePicker1
+            // DateTime_End
             // 
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(246, 33);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(135, 21);
-            this.guna2DateTimePicker1.TabIndex = 22;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2003, 2, 6, 0, 0, 0, 0);
+            this.DateTime_End.BorderColor = System.Drawing.Color.DarkGray;
+            this.DateTime_End.Checked = true;
+            this.DateTime_End.FillColor = System.Drawing.Color.White;
+            this.DateTime_End.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTime_End.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateTime_End.Location = new System.Drawing.Point(246, 33);
+            this.DateTime_End.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTime_End.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTime_End.Name = "DateTime_End";
+            this.DateTime_End.Size = new System.Drawing.Size(135, 21);
+            this.DateTime_End.TabIndex = 22;
+            this.DateTime_End.Value = new System.DateTime(2003, 2, 6, 0, 0, 0, 0);
             // 
-            // guna2Button3
+            // btn_SinhBaoCao
             // 
-            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button3.BorderRadius = 5;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(653, 33);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(108, 21);
-            this.guna2Button3.TabIndex = 21;
-            this.guna2Button3.Text = "Sinh báo cáo";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btn_SinhBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SinhBaoCao.BorderRadius = 5;
+            this.btn_SinhBaoCao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SinhBaoCao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SinhBaoCao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_SinhBaoCao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_SinhBaoCao.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn_SinhBaoCao.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SinhBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btn_SinhBaoCao.Location = new System.Drawing.Point(653, 33);
+            this.btn_SinhBaoCao.Name = "btn_SinhBaoCao";
+            this.btn_SinhBaoCao.Size = new System.Drawing.Size(108, 21);
+            this.btn_SinhBaoCao.TabIndex = 21;
+            this.btn_SinhBaoCao.Text = "Sinh báo cáo";
+            this.btn_SinhBaoCao.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
-            // guna2Button1
+            // btn_ThongKe
             // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(454, 33);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(108, 21);
-            this.guna2Button1.TabIndex = 19;
-            this.guna2Button1.Text = "Thống kê";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_ThongKe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_ThongKe.BorderRadius = 5;
+            this.btn_ThongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThongKe.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn_ThongKe.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThongKe.ForeColor = System.Drawing.Color.White;
+            this.btn_ThongKe.Location = new System.Drawing.Point(454, 33);
+            this.btn_ThongKe.Name = "btn_ThongKe";
+            this.btn_ThongKe.Size = new System.Drawing.Size(108, 21);
+            this.btn_ThongKe.TabIndex = 19;
+            this.btn_ThongKe.Text = "Thống kê";
+            this.btn_ThongKe.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2DateTimePicker2
+            // DateTime_Start
             // 
-            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(60, 33);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(135, 21);
-            this.guna2DateTimePicker2.TabIndex = 6;
-            this.guna2DateTimePicker2.Value = new System.DateTime(1996, 2, 6, 0, 0, 0, 0);
+            this.DateTime_Start.BorderColor = System.Drawing.Color.DarkGray;
+            this.DateTime_Start.Checked = true;
+            this.DateTime_Start.FillColor = System.Drawing.Color.White;
+            this.DateTime_Start.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTime_Start.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateTime_Start.Location = new System.Drawing.Point(60, 33);
+            this.DateTime_Start.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTime_Start.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTime_Start.Name = "DateTime_Start";
+            this.DateTime_Start.Size = new System.Drawing.Size(135, 21);
+            this.DateTime_Start.TabIndex = 6;
+            this.DateTime_Start.Value = new System.DateTime(1996, 2, 6, 0, 0, 0, 0);
             // 
-            // dataGridView1
+            // dgv_TongHopVaoRaThang
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgv_TongHopVaoRaThang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 44);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(853, 342);
-            this.dataGridView1.TabIndex = 26;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgv_TongHopVaoRaThang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_TongHopVaoRaThang.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dgv_TongHopVaoRaThang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TongHopVaoRaThang.Location = new System.Drawing.Point(5, 44);
+            this.dgv_TongHopVaoRaThang.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dgv_TongHopVaoRaThang.Name = "dgv_TongHopVaoRaThang";
+            this.dgv_TongHopVaoRaThang.ReadOnly = true;
+            this.dgv_TongHopVaoRaThang.Size = new System.Drawing.Size(853, 342);
+            this.dgv_TongHopVaoRaThang.TabIndex = 26;
+            this.dgv_TongHopVaoRaThang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // guna2GroupBox1
             // 
             this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GroupBox1.Controls.Add(this.dataGridView1);
+            this.guna2GroupBox1.Controls.Add(this.dgv_TongHopVaoRaThang);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.Location = new System.Drawing.Point(27, 234);
@@ -801,7 +801,7 @@
             this.panel12.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TongHopVaoRaThang)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -811,49 +811,49 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox tb_DoanhThu_all;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox tb_car_all;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2TextBox tb_bike_all;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox10;
+        private Guna.UI2.WinForms.Guna2TextBox tb_bicycle_all;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private System.Windows.Forms.Panel panel5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox tb_DoanhThu_once;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private System.Windows.Forms.Panel panel6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox tb_car_once;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private System.Windows.Forms.Panel panel7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
+        private Guna.UI2.WinForms.Guna2TextBox tb_bike_once;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
         private System.Windows.Forms.Panel panel8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
+        private Guna.UI2.WinForms.Guna2TextBox tb_bicycle_once;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
         private System.Windows.Forms.Panel panel9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox tb_DoanhThu;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
         private System.Windows.Forms.Panel panel10;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2TextBox tb_car;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
         private System.Windows.Forms.Panel panel11;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
+        private Guna.UI2.WinForms.Guna2TextBox tb_bike;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
         private System.Windows.Forms.Panel panel12;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox12;
+        private Guna.UI2.WinForms.Guna2TextBox tb_bicycle;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2Button btn_SinhBaoCao;
+        private Guna.UI2.WinForms.Guna2Button btn_ThongKe;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTime_Start;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTime_End;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_TongHopVaoRaThang;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
     }
 }

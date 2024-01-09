@@ -31,24 +31,24 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_TDN = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_Name = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_PW = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_NewPW = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_ReNewPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Change = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -88,7 +88,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2TextBox1);
+            this.panel1.Controls.Add(this.tb_TDN);
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
@@ -96,28 +96,28 @@
             this.panel1.Size = new System.Drawing.Size(433, 47);
             this.panel1.TabIndex = 1;
             // 
-            // guna2TextBox1
+            // tb_TDN
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "QL2021688";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.Enabled = false;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(183, 7);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(219, 30);
-            this.guna2TextBox1.TabIndex = 3;
+            this.tb_TDN.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_TDN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_TDN.DefaultText = "QL2021688";
+            this.tb_TDN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_TDN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_TDN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_TDN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_TDN.Enabled = false;
+            this.tb_TDN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_TDN.Font = new System.Drawing.Font("Verdana", 12F);
+            this.tb_TDN.ForeColor = System.Drawing.Color.Black;
+            this.tb_TDN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_TDN.Location = new System.Drawing.Point(183, 7);
+            this.tb_TDN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_TDN.Name = "tb_TDN";
+            this.tb_TDN.PasswordChar = '\0';
+            this.tb_TDN.PlaceholderText = "";
+            this.tb_TDN.SelectedText = "";
+            this.tb_TDN.Size = new System.Drawing.Size(219, 30);
+            this.tb_TDN.TabIndex = 3;
             // 
             // guna2HtmlLabel1
             // 
@@ -132,7 +132,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.guna2TextBox2);
+            this.panel2.Controls.Add(this.tb_Name);
             this.panel2.Controls.Add(this.guna2HtmlLabel2);
             this.panel2.Location = new System.Drawing.Point(0, 47);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
@@ -140,28 +140,28 @@
             this.panel2.Size = new System.Drawing.Size(433, 47);
             this.panel2.TabIndex = 4;
             // 
-            // guna2TextBox2
+            // tb_Name
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "Lê Đình Thi";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.Enabled = false;
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(183, 7);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(219, 30);
-            this.guna2TextBox2.TabIndex = 3;
+            this.tb_Name.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_Name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_Name.DefaultText = "Lê Đình Thi";
+            this.tb_Name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_Name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_Name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_Name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_Name.Enabled = false;
+            this.tb_Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_Name.Font = new System.Drawing.Font("Verdana", 12F);
+            this.tb_Name.ForeColor = System.Drawing.Color.Black;
+            this.tb_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_Name.Location = new System.Drawing.Point(183, 7);
+            this.tb_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Name.Name = "tb_Name";
+            this.tb_Name.PasswordChar = '\0';
+            this.tb_Name.PlaceholderText = "";
+            this.tb_Name.SelectedText = "";
+            this.tb_Name.Size = new System.Drawing.Size(219, 30);
+            this.tb_Name.TabIndex = 3;
             // 
             // guna2HtmlLabel2
             // 
@@ -177,7 +177,7 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.guna2Button3);
-            this.panel5.Controls.Add(this.guna2TextBox5);
+            this.panel5.Controls.Add(this.tb_PW);
             this.panel5.Controls.Add(this.guna2HtmlLabel5);
             this.panel5.Location = new System.Drawing.Point(0, 94);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
@@ -202,28 +202,28 @@
             this.guna2Button3.TabIndex = 13;
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
-            // guna2TextBox5
+            // tb_PW
             // 
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(183, 7);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '●';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(219, 30);
-            this.guna2TextBox5.TabIndex = 3;
-            this.guna2TextBox5.UseSystemPasswordChar = true;
+            this.tb_PW.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_PW.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_PW.DefaultText = "";
+            this.tb_PW.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_PW.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_PW.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_PW.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_PW.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_PW.Font = new System.Drawing.Font("Verdana", 12F);
+            this.tb_PW.ForeColor = System.Drawing.Color.Black;
+            this.tb_PW.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_PW.Location = new System.Drawing.Point(183, 7);
+            this.tb_PW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_PW.Name = "tb_PW";
+            this.tb_PW.PasswordChar = '●';
+            this.tb_PW.PlaceholderText = "";
+            this.tb_PW.SelectedText = "";
+            this.tb_PW.Size = new System.Drawing.Size(219, 30);
+            this.tb_PW.TabIndex = 3;
+            this.tb_PW.UseSystemPasswordChar = true;
             // 
             // guna2HtmlLabel5
             // 
@@ -239,7 +239,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.guna2Button2);
-            this.panel3.Controls.Add(this.guna2TextBox3);
+            this.panel3.Controls.Add(this.tb_NewPW);
             this.panel3.Controls.Add(this.guna2HtmlLabel3);
             this.panel3.Location = new System.Drawing.Point(0, 141);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
@@ -264,28 +264,28 @@
             this.guna2Button2.TabIndex = 13;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // guna2TextBox3
+            // tb_NewPW
             // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(183, 7);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '●';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(219, 30);
-            this.guna2TextBox3.TabIndex = 3;
-            this.guna2TextBox3.UseSystemPasswordChar = true;
+            this.tb_NewPW.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_NewPW.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_NewPW.DefaultText = "";
+            this.tb_NewPW.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_NewPW.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_NewPW.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_NewPW.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_NewPW.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_NewPW.Font = new System.Drawing.Font("Verdana", 12F);
+            this.tb_NewPW.ForeColor = System.Drawing.Color.Black;
+            this.tb_NewPW.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_NewPW.Location = new System.Drawing.Point(183, 7);
+            this.tb_NewPW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_NewPW.Name = "tb_NewPW";
+            this.tb_NewPW.PasswordChar = '●';
+            this.tb_NewPW.PlaceholderText = "";
+            this.tb_NewPW.SelectedText = "";
+            this.tb_NewPW.Size = new System.Drawing.Size(219, 30);
+            this.tb_NewPW.TabIndex = 3;
+            this.tb_NewPW.UseSystemPasswordChar = true;
             // 
             // guna2HtmlLabel3
             // 
@@ -301,7 +301,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.guna2Button4);
-            this.panel4.Controls.Add(this.guna2TextBox4);
+            this.panel4.Controls.Add(this.tb_ReNewPass);
             this.panel4.Controls.Add(this.guna2HtmlLabel4);
             this.panel4.Location = new System.Drawing.Point(0, 188);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
@@ -326,28 +326,28 @@
             this.guna2Button4.TabIndex = 13;
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2TextBox4
+            // tb_ReNewPass
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(183, 7);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '●';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(219, 30);
-            this.guna2TextBox4.TabIndex = 3;
-            this.guna2TextBox4.UseSystemPasswordChar = true;
+            this.tb_ReNewPass.BorderColor = System.Drawing.Color.DarkGray;
+            this.tb_ReNewPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_ReNewPass.DefaultText = "";
+            this.tb_ReNewPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_ReNewPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_ReNewPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_ReNewPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_ReNewPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_ReNewPass.Font = new System.Drawing.Font("Verdana", 12F);
+            this.tb_ReNewPass.ForeColor = System.Drawing.Color.Black;
+            this.tb_ReNewPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_ReNewPass.Location = new System.Drawing.Point(183, 7);
+            this.tb_ReNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_ReNewPass.Name = "tb_ReNewPass";
+            this.tb_ReNewPass.PasswordChar = '●';
+            this.tb_ReNewPass.PlaceholderText = "";
+            this.tb_ReNewPass.SelectedText = "";
+            this.tb_ReNewPass.Size = new System.Drawing.Size(219, 30);
+            this.tb_ReNewPass.TabIndex = 3;
+            this.tb_ReNewPass.UseSystemPasswordChar = true;
             // 
             // guna2HtmlLabel4
             // 
@@ -360,24 +360,24 @@
             this.guna2HtmlLabel4.TabIndex = 0;
             this.guna2HtmlLabel4.Text = "Nhập lại :";
             // 
-            // guna2Button1
+            // btn_Change
             // 
-            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = global::Project_OOP.Properties.Resources.icons8_save_30;
-            this.guna2Button1.Location = new System.Drawing.Point(658, 464);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(120, 41);
-            this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "Cập nhật";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_Change.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Change.BorderRadius = 5;
+            this.btn_Change.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Change.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Change.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Change.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Change.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Change.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Change.ForeColor = System.Drawing.Color.White;
+            this.btn_Change.Image = global::Project_OOP.Properties.Resources.icons8_save_30;
+            this.btn_Change.Location = new System.Drawing.Point(658, 464);
+            this.btn_Change.Name = "btn_Change";
+            this.btn_Change.Size = new System.Drawing.Size(120, 41);
+            this.btn_Change.TabIndex = 10;
+            this.btn_Change.Text = "Cập nhật";
+            this.btn_Change.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // pictureBox1
             // 
@@ -395,7 +395,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btn_Change);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2HtmlLabel9);
@@ -427,21 +427,21 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox tb_TDN;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox tb_Name;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.Panel panel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox tb_NewPW;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox tb_ReNewPass;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2Button btn_Change;
+        private Guna.UI2.WinForms.Guna2TextBox tb_PW;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;

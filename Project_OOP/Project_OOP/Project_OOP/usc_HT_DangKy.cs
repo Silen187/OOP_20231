@@ -24,7 +24,7 @@ namespace Project_OOP
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string user_name = guna2TextBox1.Text;
+            string user_name = tb_username.Text;
             bool check_user_name = AccountDAO.Instance.CHECK_TRUNGLAP_USERNAME(user_name);
             if (check_user_name == true)
             {
@@ -47,7 +47,7 @@ namespace Project_OOP
             }
             else
             {
-                string user_name = guna2TextBox1.Text;
+                string user_name = tb_username.Text;
                 bool check_user_name = AccountDAO.Instance.CHECK_TRUNGLAP_USERNAME(user_name);
                 if (check_user_name == true)
                 {
@@ -55,9 +55,9 @@ namespace Project_OOP
                 }
                 else
                 {
-                    if (guna2TextBox4.Text == guna2TextBox5.Text && guna2TextBox5.Text != "")
+                    if (tb_repw.Text == tb_pw.Text && tb_pw.Text != "")
                     {
-                        string password = guna2TextBox5.Text;
+                        string password = tb_pw.Text;
                         usc_DM_ThemUser f = new usc_DM_ThemUser(user_name, password);
                         this.Controls.Add(f);
                         f.Dock = DockStyle.Fill;
@@ -84,8 +84,8 @@ namespace Project_OOP
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            guna2TextBox5.UseSystemPasswordChar = !guna2TextBox5.UseSystemPasswordChar;
-            guna2TextBox5.PasswordChar = '\0';
+            tb_pw.UseSystemPasswordChar = !tb_pw.UseSystemPasswordChar;
+            tb_pw.PasswordChar = '\0';
             
         }
 
@@ -96,8 +96,8 @@ namespace Project_OOP
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            guna2TextBox4.UseSystemPasswordChar = !guna2TextBox4.UseSystemPasswordChar;
-            guna2TextBox4.PasswordChar = '\0';
+            tb_repw.UseSystemPasswordChar = !tb_repw.UseSystemPasswordChar;
+            tb_repw.PasswordChar = '\0';
         }
     }
 }

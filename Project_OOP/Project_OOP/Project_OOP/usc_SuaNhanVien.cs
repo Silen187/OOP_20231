@@ -43,25 +43,25 @@ namespace Project_OOP
 
         private void usc_SuaNhanVien_Load(object sender, EventArgs e)
         {
-            guna2TextBox9.Text = employeeid;
-            comboBox5.DataSource = AccountDAO.Instance.GetBank();
-            guna2TextBox19.Text = user_name;
-            guna2TextBox6.Text = pass_word;
-            comboBox1.DataSource = ZoneDAO.Instance.level_name_list();
+            tb_MaNhanVien.Text = employeeid;
+            cb_Bank.DataSource = AccountDAO.Instance.GetBank();
+            tb_TenDangNhap.Text = user_name;
+            tb_PW.Text = pass_word;
+            cb_KhuVuc.DataSource = ZoneDAO.Instance.level_name_list();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
             {
-            string name = guna2TextBox12.Text;
-            string SDT = guna2TextBox8.Text;
-            string salary_level = guna2TextBox4.Text;
-            string STK = guna2TextBox1.Text;
-            string Bank = comboBox5.Text;
-            string CCCD = guna2TextBox15.Text;
-            string level_name = comboBox1.Text;
-            string password = guna2TextBox6.Text;
+            string name = tb_TenNhanVien.Text;
+            string SDT = tb_SDT.Text;
+            string salary_level = tb_BacLuong.Text;
+            string STK = tb_STK.Text;
+            string Bank = cb_Bank.Text;
+            string CCCD = tb_CCCD.Text;
+            string level_name = cb_KhuVuc.Text;
+            string password = tb_PW.Text;
             AccountDAO.Instance.UpdateEmployeeByEmployeeID(employeeid, name, SDT, salary_level, STK, Bank, CCCD, level_name, password);
             DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , N'Thay đổi thông tin nhân viên' , 4 , @user_id_did );", new object[] {Ticket_id, DateTime.Now, Admin_id});
             MessageBox.Show("Cập nhật thành công");

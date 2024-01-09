@@ -31,7 +31,7 @@ namespace Project_OOP
             DataTable data = AccountDAO.Instance.Salary_Pass(user_id);
             if (data.Rows.Count > 0)
             {
-                dataGridView1.DataSource = data;
+                dgv_LichSuNhanLuong.DataSource = data;
             }
             else
             {

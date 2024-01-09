@@ -23,13 +23,13 @@ namespace Project_OOP
 
         void Load_Info(TicketInfoDTO ticketAccount)
         {
-            guna2TextBox1.Text = ticketAccount.User_id.ToString();
-            guna2TextBox2.Text = ticketAccount.Name;
-            guna2TextBox6.Text = ticketAccount.Ticket_id.ToString();
-            guna2TextBox5.Text = ticketAccount.Start_date;
-            guna2TextBox8.Text = ticketAccount.End_date;
-            guna2TextBox4.Text = ticketAccount.Money.ToString();
-            guna2TextBox10.Text = ticketAccount.Type_card.ToString();
+            tb_MaNguoiDung.Text = ticketAccount.User_id.ToString();
+            tb_TenNguoiDung.Text = ticketAccount.Name;
+            tb_MaVe.Text = ticketAccount.Ticket_id.ToString();
+            tb_VeThang_Start.Text = ticketAccount.Start_date;
+            tb_VeThang_End.Text = ticketAccount.End_date;
+            tb_Money.Text = ticketAccount.Money.ToString();
+            tb_LoaiVe.Text = ticketAccount.Type_card.ToString();
         }
 
         private void guna2HtmlLabel4_Click(object sender, EventArgs e)

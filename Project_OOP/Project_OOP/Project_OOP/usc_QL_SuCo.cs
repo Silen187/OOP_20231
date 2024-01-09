@@ -18,7 +18,7 @@ namespace Project_OOP
             InitializeComponent();
             if (user_id != null)
             {
-                guna2Button1.Visible = true;
+                btn_Add.Visible = true;
                 User_id = user_id;
             }
         }
@@ -28,7 +28,7 @@ namespace Project_OOP
 
         private void btnThemSuCo_Click(object sender, EventArgs e)
         {
-            string transaction_id = guna2TextBox6.Text;
+            string transaction_id = tb_MaSuCo.Text;
             if (transaction_id == "")
             {
                 MessageBox.Show("Vui lòng nhập mã sự cố");
@@ -38,16 +38,16 @@ namespace Project_OOP
                 DataRow row = ZoneDAO.Instance.Tim_SuCo(transaction_id);
                 if (row != null)
                 {
-                    guna2TextBox9.Text = System.Text.RegularExpressions.Regex.Split(row["level_name"].ToString(), @"([^\d]+)")[1];
-                    guna2TextBox8.Text = System.Text.RegularExpressions.Regex.Split(row["level_name"].ToString(), @"([^\d]+)")[2];
-                    guna2TextBox1.Text = row["ticket_id"].ToString();
-                    guna2TextBox4.Text = row["name"].ToString();
-                    guna2TextBox10.Text = row["vehicle_name"].ToString();
-                    guna2TextBox2.Text = row["vehicle_id"].ToString();
-                    guna2TextBox3.Text = row["renueve"].ToString();
-                    guna2DateTimePicker2.Value = (DateTime)row["transaction_time"];
-                    guna2TextBox7.Text = row["user_id_did"].ToString();
-                    guna2TextBox5.Text = row["description"].ToString();
+                    tb_KhuVuc.Text = System.Text.RegularExpressions.Regex.Split(row["level_name"].ToString(), @"([^\d]+)")[1];
+                    tb_Tang.Text = System.Text.RegularExpressions.Regex.Split(row["level_name"].ToString(), @"([^\d]+)")[2];
+                    tb_MaVe.Text = row["ticket_id"].ToString();
+                    tb_ChuVe.Text = row["name"].ToString();
+                    tb_LoaiXe.Text = row["vehicle_name"].ToString();
+                    tb_BienSoXe.Text = row["vehicle_id"].ToString();
+                    tb_ThietHai.Text = row["renueve"].ToString();
+                    DateTime_SuCo.Value = (DateTime)row["transaction_time"];
+                    tb_MaQuanLy.Text = row["user_id_did"].ToString();
+                    tb_MoTaSuCo.Text = row["description"].ToString();
                 }
                 else
                 {

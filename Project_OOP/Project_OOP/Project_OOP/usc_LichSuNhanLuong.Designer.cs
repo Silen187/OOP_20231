@@ -31,25 +31,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_LichSuNhanLuong = new System.Windows.Forms.DataGridView();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Btn_ThongKe = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_LichSuNhanLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_LichSuNhanLuong
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgv_LichSuNhanLuong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 14);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(856, 545);
-            this.dataGridView1.TabIndex = 25;
+            this.dgv_LichSuNhanLuong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_LichSuNhanLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_LichSuNhanLuong.Location = new System.Drawing.Point(20, 14);
+            this.dgv_LichSuNhanLuong.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dgv_LichSuNhanLuong.Name = "dgv_LichSuNhanLuong";
+            this.dgv_LichSuNhanLuong.ReadOnly = true;
+            this.dgv_LichSuNhanLuong.Size = new System.Drawing.Size(856, 545);
+            this.dgv_LichSuNhanLuong.TabIndex = 25;
             // 
             // guna2DataGridView1
             // 
@@ -102,38 +102,38 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2Button1
+            // Btn_ThongKe
             // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Btn_ThongKe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(338, 567);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(202, 30);
-            this.guna2Button1.TabIndex = 19;
-            this.guna2Button1.Text = "Thống kê";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.Btn_ThongKe.BorderRadius = 5;
+            this.Btn_ThongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_ThongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_ThongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_ThongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_ThongKe.FillColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_ThongKe.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ThongKe.ForeColor = System.Drawing.Color.White;
+            this.Btn_ThongKe.Location = new System.Drawing.Point(338, 567);
+            this.Btn_ThongKe.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Btn_ThongKe.Name = "Btn_ThongKe";
+            this.Btn_ThongKe.Size = new System.Drawing.Size(202, 30);
+            this.Btn_ThongKe.TabIndex = 19;
+            this.Btn_ThongKe.Text = "Thống kê";
+            this.Btn_ThongKe.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // usc_LichSuNhanLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_LichSuNhanLuong);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.Btn_ThongKe);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "usc_LichSuNhanLuong";
             this.Size = new System.Drawing.Size(904, 627);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_LichSuNhanLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -141,8 +141,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_LichSuNhanLuong;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button Btn_ThongKe;
     }
 }

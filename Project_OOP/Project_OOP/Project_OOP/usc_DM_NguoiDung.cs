@@ -54,7 +54,7 @@ namespace Project_OOP
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            string user_id = guna2TextBox16.Text;
+            string user_id = tb_MaNguoiDung.Text;
             try
             {
                 if (user_id == "")
@@ -66,30 +66,30 @@ namespace Project_OOP
                     Ticket = AccountDAO.Instance.GetTicketInfoByUserID(int.Parse(user_id));
                     Account = AccountDAO.Instance.GetAccountByUserID(int.Parse(user_id));
 
-                    guna2TextBox5.Text = Account.Name1;
-                    guna2TextBox12.Text = Account.Name1;
-                    guna2TextBox23.Text = Account.Username;
+                    tb_HovaTen.Text = Account.Name1;
+                    tb_TenKhachHang.Text = Account.Name1;
+                    tb_username.Text = Account.Username;
                     if (Account.Sex == "male")
                     {
-                        comboBox1.Text = "Nam";
+                        cb_Sex.Text = "Nam";
                     }    
                     else if (Account.Sex == "female")
                     {
-                        comboBox1.Text = "Nữ";
+                        cb_Sex.Text = "Nữ";
                     }
                     else
                     {
-                        comboBox1.Text = "Khác";
+                        cb_Sex.Text = "Khác";
                     }
-                    guna2TextBox20.Text = Account.Password;
-                    guna2DateTimePicker1.Value = Account.Birth1;
-                    guna2TextBox18.Text = Ticket.Ticket_id;
-                    comboBox2.Text = Account.City1;
-                    guna2DateTimePicker4.Text = Ticket.Start_date;
-                    guna2TextBox4.Text = Account.SDT1;
-                    guna2TextBox28.Text = Account.CCCD1;
-                    guna2TextBox1.Text = Account.STK1;
-                    comboBox3.Text = Account.Bank1;
+                    tb_pw.Text = Account.Password;
+                    DateTime_NgaySinh.Value = Account.Birth1;
+                    tb_Ticketid.Text = Ticket.Ticket_id;
+                    cb_QueQuan.Text = Account.City1;
+                    DateTime_NgayDangKy.Text = Ticket.Start_date;
+                    tb_SDT.Text = Account.SDT1;
+                    tb_CCCD.Text = Account.CCCD1;
+                    tb_STK.Text = Account.STK1;
+                    cb_Bank.Text = Account.Bank1;
                 }
             }
             catch
@@ -116,7 +116,7 @@ namespace Project_OOP
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn xóa người dùng này ?", "Xác nhận", MessageBoxButtons.YesNo);
-            int user_id = int.Parse(guna2TextBox16.Text);
+            int user_id = int.Parse(tb_MaNguoiDung.Text);
             // Kiểm tra kết quả từ MessageBox
             if (result == DialogResult.Yes)
             {

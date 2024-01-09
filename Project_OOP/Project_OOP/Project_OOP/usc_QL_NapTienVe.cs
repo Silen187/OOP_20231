@@ -33,16 +33,16 @@ namespace Project_OOP
 
         private void usc_QL_NapTienVe_Load(object sender, EventArgs e)
         {
-            guna2TextBox4.Text = ticket_id;
-            guna2TextBox4.Text = name;
-            guna2TextBox3.Text = type_card;
+            tb_ChuVe.Text = ticket_id;
+            tb_ChuVe.Text = name;
+            tb_LoaiVe.Text = type_card;
         }
 
         private void btnDangKyVeXe_Click(object sender, EventArgs e)
         {
             try
             {
-                int money = int.Parse(comboBox4.Text);
+                int money = int.Parse(cb_SoTienNap.Text);
                 AccountDAO.Instance.UpdateTicketMoney(Ticket_id, money);
                 DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, renueve, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , @renueve , N'Nạp tiền', 4, @user_id_did );", new object[] {ticket_id, DateTime.Now, money, User_admin_id });
                 MessageBox.Show("Nạp tiền thành công");

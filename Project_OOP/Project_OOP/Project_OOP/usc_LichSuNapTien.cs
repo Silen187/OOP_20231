@@ -28,14 +28,14 @@ namespace Project_OOP
         }
         void Show_History_Money()
         {
-            DateTime start_date = guna2DateTimePicker2.Value;
-            DateTime end_date = guna2DateTimePicker1.Value;
+            DateTime start_date = DateTime_Start.Value;
+            DateTime end_date = DateTime_End.Value;
             if (start_date.Date <= end_date.Date)
             {
                 DataTable data = AccountDAO.Instance.History_Money(user_id, start_date, end_date);
                 if (data.Rows.Count > 0)
                 {
-                    dataGridView1.DataSource = data;
+                    dgv_LichSuNapTien.DataSource = data;
                 }
             }
             else

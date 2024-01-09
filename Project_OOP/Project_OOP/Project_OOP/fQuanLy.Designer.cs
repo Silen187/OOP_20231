@@ -35,23 +35,23 @@
             this.btnHeThong = new Guna.UI2.WinForms.Guna2Button();
             this.btnThongTinTK = new Guna.UI2.WinForms.Guna2Button();
             this.btnDoiMK = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button19 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDangKyNguoiDung = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
             this.menuDanhMuc = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhMuc = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhSachNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhSachNhaXe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhSachVeXe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhSachNguoiDung = new Guna.UI2.WinForms.Guna2Button();
             this.menuQuanLy = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuanLy = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuanLySuCo = new Guna.UI2.WinForms.Guna2Button();
             this.menuThongKe = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button17 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button18 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TK_DoanhThuNgay = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TK_DoanhThuThang = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_ThongKe_LuongNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TK_SuCo = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panelTitleBar = new System.Windows.Forms.Panel();
@@ -104,11 +104,11 @@
             this.menuHeThong.Controls.Add(this.btnHeThong);
             this.menuHeThong.Controls.Add(this.btnThongTinTK);
             this.menuHeThong.Controls.Add(this.btnDoiMK);
-            this.menuHeThong.Controls.Add(this.guna2Button11);
-            this.menuHeThong.Controls.Add(this.guna2Button19);
+            this.menuHeThong.Controls.Add(this.btnDangKyNguoiDung);
+            this.menuHeThong.Controls.Add(this.btnDangXuat);
             this.menuHeThong.Location = new System.Drawing.Point(3, 3);
             this.menuHeThong.Name = "menuHeThong";
-            this.menuHeThong.Size = new System.Drawing.Size(230, 35);
+            this.menuHeThong.Size = new System.Drawing.Size(230, 175);
             this.menuHeThong.TabIndex = 5;
             // 
             // btnHeThong
@@ -169,312 +169,312 @@
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
-            // guna2Button11
+            // btnDangKyNguoiDung
             // 
-            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button11.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button11.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button11.ForeColor = System.Drawing.Color.White;
-            this.guna2Button11.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button11.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button11.Location = new System.Drawing.Point(0, 105);
-            this.guna2Button11.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button11.TabIndex = 8;
-            this.guna2Button11.Text = "Đăng ký người dùng";
-            this.guna2Button11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
+            this.btnDangKyNguoiDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangKyNguoiDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangKyNguoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangKyNguoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDangKyNguoiDung.FillColor = System.Drawing.Color.DimGray;
+            this.btnDangKyNguoiDung.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnDangKyNguoiDung.ForeColor = System.Drawing.Color.White;
+            this.btnDangKyNguoiDung.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnDangKyNguoiDung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDangKyNguoiDung.Location = new System.Drawing.Point(0, 105);
+            this.btnDangKyNguoiDung.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDangKyNguoiDung.Name = "btnDangKyNguoiDung";
+            this.btnDangKyNguoiDung.Size = new System.Drawing.Size(230, 35);
+            this.btnDangKyNguoiDung.TabIndex = 8;
+            this.btnDangKyNguoiDung.Text = "Đăng ký người dùng";
+            this.btnDangKyNguoiDung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnDangKyNguoiDung.Click += new System.EventHandler(this.guna2Button11_Click);
             // 
-            // guna2Button19
+            // btnDangXuat
             // 
-            this.guna2Button19.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button19.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button19.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button19.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button19.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button19.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button19.ForeColor = System.Drawing.Color.White;
-            this.guna2Button19.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button19.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button19.Location = new System.Drawing.Point(0, 140);
-            this.guna2Button19.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button19.Name = "guna2Button19";
-            this.guna2Button19.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button19.TabIndex = 10;
-            this.guna2Button19.Text = "Đăng xuất";
-            this.guna2Button19.Click += new System.EventHandler(this.guna2Button19_Click);
+            this.btnDangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDangXuat.FillColor = System.Drawing.Color.DimGray;
+            this.btnDangXuat.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnDangXuat.ForeColor = System.Drawing.Color.White;
+            this.btnDangXuat.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnDangXuat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 140);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(230, 35);
+            this.btnDangXuat.TabIndex = 10;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.Click += new System.EventHandler(this.guna2Button19_Click);
             // 
             // menuDanhMuc
             // 
             this.menuDanhMuc.BackColor = System.Drawing.Color.Black;
-            this.menuDanhMuc.Controls.Add(this.guna2Button2);
-            this.menuDanhMuc.Controls.Add(this.guna2Button3);
-            this.menuDanhMuc.Controls.Add(this.guna2Button4);
-            this.menuDanhMuc.Controls.Add(this.guna2Button5);
-            this.menuDanhMuc.Controls.Add(this.guna2Button6);
-            this.menuDanhMuc.Location = new System.Drawing.Point(3, 44);
+            this.menuDanhMuc.Controls.Add(this.btnDanhMuc);
+            this.menuDanhMuc.Controls.Add(this.btnDanhSachNhanVien);
+            this.menuDanhMuc.Controls.Add(this.btnDanhSachNhaXe);
+            this.menuDanhMuc.Controls.Add(this.btnDanhSachVeXe);
+            this.menuDanhMuc.Controls.Add(this.btnDanhSachNguoiDung);
+            this.menuDanhMuc.Location = new System.Drawing.Point(3, 184);
             this.menuDanhMuc.Name = "menuDanhMuc";
-            this.menuDanhMuc.Size = new System.Drawing.Size(230, 35);
+            this.menuDanhMuc.Size = new System.Drawing.Size(230, 175);
             this.menuDanhMuc.TabIndex = 6;
             // 
-            // guna2Button2
+            // btnDanhMuc
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Black;
-            this.guna2Button2.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::Project_OOP.Properties.Resources.icons8_category_50;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Danh mục";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
+            this.btnDanhMuc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhMuc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhMuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDanhMuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDanhMuc.FillColor = System.Drawing.Color.Black;
+            this.btnDanhMuc.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnDanhMuc.ForeColor = System.Drawing.Color.White;
+            this.btnDanhMuc.Image = global::Project_OOP.Properties.Resources.icons8_category_50;
+            this.btnDanhMuc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDanhMuc.Location = new System.Drawing.Point(0, 0);
+            this.btnDanhMuc.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDanhMuc.Name = "btnDanhMuc";
+            this.btnDanhMuc.Size = new System.Drawing.Size(230, 35);
+            this.btnDanhMuc.TabIndex = 1;
+            this.btnDanhMuc.Text = "Danh mục";
+            this.btnDanhMuc.Click += new System.EventHandler(this.guna2Button2_Click_1);
             // 
-            // guna2Button3
+            // btnDanhSachNhanVien
             // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button3.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Image = global::Project_OOP.Properties.Resources.icons8_circle_301;
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 35);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button3.TabIndex = 7;
-            this.guna2Button3.Text = "Danh sách nhân viên";
-            this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btnDanhSachNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhSachNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhSachNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDanhSachNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDanhSachNhanVien.FillColor = System.Drawing.Color.DimGray;
+            this.btnDanhSachNhanVien.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnDanhSachNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnDanhSachNhanVien.Image = global::Project_OOP.Properties.Resources.icons8_circle_301;
+            this.btnDanhSachNhanVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDanhSachNhanVien.Location = new System.Drawing.Point(0, 35);
+            this.btnDanhSachNhanVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDanhSachNhanVien.Name = "btnDanhSachNhanVien";
+            this.btnDanhSachNhanVien.Size = new System.Drawing.Size(230, 35);
+            this.btnDanhSachNhanVien.TabIndex = 7;
+            this.btnDanhSachNhanVien.Text = "Danh sách nhân viên";
+            this.btnDanhSachNhanVien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnDanhSachNhanVien.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
-            // guna2Button4
+            // btnDanhSachNhaXe
             // 
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button4.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 70);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button4.TabIndex = 6;
-            this.guna2Button4.Text = " Danh sách nhà xe";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.btnDanhSachNhaXe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhSachNhaXe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhSachNhaXe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDanhSachNhaXe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDanhSachNhaXe.FillColor = System.Drawing.Color.DimGray;
+            this.btnDanhSachNhaXe.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnDanhSachNhaXe.ForeColor = System.Drawing.Color.White;
+            this.btnDanhSachNhaXe.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnDanhSachNhaXe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDanhSachNhaXe.Location = new System.Drawing.Point(0, 70);
+            this.btnDanhSachNhaXe.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDanhSachNhaXe.Name = "btnDanhSachNhaXe";
+            this.btnDanhSachNhaXe.Size = new System.Drawing.Size(230, 35);
+            this.btnDanhSachNhaXe.TabIndex = 6;
+            this.btnDanhSachNhaXe.Text = " Danh sách nhà xe";
+            this.btnDanhSachNhaXe.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2Button5
+            // btnDanhSachVeXe
             // 
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button5.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 105);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button5.TabIndex = 8;
-            this.guna2Button5.Text = "Danh sách vé xe";
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            this.btnDanhSachVeXe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhSachVeXe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhSachVeXe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDanhSachVeXe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDanhSachVeXe.FillColor = System.Drawing.Color.DimGray;
+            this.btnDanhSachVeXe.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnDanhSachVeXe.ForeColor = System.Drawing.Color.White;
+            this.btnDanhSachVeXe.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnDanhSachVeXe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDanhSachVeXe.Location = new System.Drawing.Point(0, 105);
+            this.btnDanhSachVeXe.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDanhSachVeXe.Name = "btnDanhSachVeXe";
+            this.btnDanhSachVeXe.Size = new System.Drawing.Size(230, 35);
+            this.btnDanhSachVeXe.TabIndex = 8;
+            this.btnDanhSachVeXe.Text = "Danh sách vé xe";
+            this.btnDanhSachVeXe.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
-            // guna2Button6
+            // btnDanhSachNguoiDung
             // 
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button6.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button6.Location = new System.Drawing.Point(0, 140);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button6.TabIndex = 9;
-            this.guna2Button6.Text = "Danh sách người dùng";
-            this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click_1);
+            this.btnDanhSachNguoiDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhSachNguoiDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhSachNguoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDanhSachNguoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDanhSachNguoiDung.FillColor = System.Drawing.Color.DimGray;
+            this.btnDanhSachNguoiDung.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnDanhSachNguoiDung.ForeColor = System.Drawing.Color.White;
+            this.btnDanhSachNguoiDung.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnDanhSachNguoiDung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDanhSachNguoiDung.Location = new System.Drawing.Point(0, 140);
+            this.btnDanhSachNguoiDung.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDanhSachNguoiDung.Name = "btnDanhSachNguoiDung";
+            this.btnDanhSachNguoiDung.Size = new System.Drawing.Size(230, 35);
+            this.btnDanhSachNguoiDung.TabIndex = 9;
+            this.btnDanhSachNguoiDung.Text = "Danh sách người dùng";
+            this.btnDanhSachNguoiDung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnDanhSachNguoiDung.Click += new System.EventHandler(this.guna2Button6_Click_1);
             // 
             // menuQuanLy
             // 
             this.menuQuanLy.BackColor = System.Drawing.Color.Black;
-            this.menuQuanLy.Controls.Add(this.guna2Button8);
-            this.menuQuanLy.Controls.Add(this.guna2Button13);
-            this.menuQuanLy.Location = new System.Drawing.Point(3, 85);
+            this.menuQuanLy.Controls.Add(this.btnQuanLy);
+            this.menuQuanLy.Controls.Add(this.btnQuanLySuCo);
+            this.menuQuanLy.Location = new System.Drawing.Point(3, 365);
             this.menuQuanLy.Name = "menuQuanLy";
-            this.menuQuanLy.Size = new System.Drawing.Size(230, 35);
+            this.menuQuanLy.Size = new System.Drawing.Size(230, 70);
             this.menuQuanLy.TabIndex = 7;
             // 
-            // guna2Button8
+            // btnQuanLy
             // 
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.Black;
-            this.guna2Button8.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Image = global::Project_OOP.Properties.Resources.icons8_manage_50;
-            this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button8.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button8.TabIndex = 1;
-            this.guna2Button8.Text = "Quản lý";
-            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
+            this.btnQuanLy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuanLy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuanLy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnQuanLy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnQuanLy.FillColor = System.Drawing.Color.Black;
+            this.btnQuanLy.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnQuanLy.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLy.Image = global::Project_OOP.Properties.Resources.icons8_manage_50;
+            this.btnQuanLy.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnQuanLy.Location = new System.Drawing.Point(0, 0);
+            this.btnQuanLy.Margin = new System.Windows.Forms.Padding(0);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(230, 35);
+            this.btnQuanLy.TabIndex = 1;
+            this.btnQuanLy.Text = "Quản lý";
+            this.btnQuanLy.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
-            // guna2Button13
+            // btnQuanLySuCo
             // 
-            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button13.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button13.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button13.ForeColor = System.Drawing.Color.White;
-            this.guna2Button13.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button13.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button13.Location = new System.Drawing.Point(0, 35);
-            this.guna2Button13.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button13.TabIndex = 8;
-            this.guna2Button13.Text = "Quản lý sự cố";
-            this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
+            this.btnQuanLySuCo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuanLySuCo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuanLySuCo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnQuanLySuCo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnQuanLySuCo.FillColor = System.Drawing.Color.DimGray;
+            this.btnQuanLySuCo.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnQuanLySuCo.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLySuCo.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnQuanLySuCo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnQuanLySuCo.Location = new System.Drawing.Point(0, 35);
+            this.btnQuanLySuCo.Margin = new System.Windows.Forms.Padding(0);
+            this.btnQuanLySuCo.Name = "btnQuanLySuCo";
+            this.btnQuanLySuCo.Size = new System.Drawing.Size(230, 35);
+            this.btnQuanLySuCo.TabIndex = 8;
+            this.btnQuanLySuCo.Text = "Quản lý sự cố";
+            this.btnQuanLySuCo.Click += new System.EventHandler(this.guna2Button13_Click);
             // 
             // menuThongKe
             // 
             this.menuThongKe.BackColor = System.Drawing.Color.Black;
-            this.menuThongKe.Controls.Add(this.guna2Button14);
-            this.menuThongKe.Controls.Add(this.guna2Button15);
-            this.menuThongKe.Controls.Add(this.guna2Button16);
-            this.menuThongKe.Controls.Add(this.guna2Button17);
-            this.menuThongKe.Controls.Add(this.guna2Button18);
-            this.menuThongKe.Location = new System.Drawing.Point(3, 126);
+            this.menuThongKe.Controls.Add(this.btnThongKe);
+            this.menuThongKe.Controls.Add(this.btn_TK_DoanhThuNgay);
+            this.menuThongKe.Controls.Add(this.btn_TK_DoanhThuThang);
+            this.menuThongKe.Controls.Add(this.btn_ThongKe_LuongNhanVien);
+            this.menuThongKe.Controls.Add(this.btn_TK_SuCo);
+            this.menuThongKe.Location = new System.Drawing.Point(3, 441);
             this.menuThongKe.Name = "menuThongKe";
-            this.menuThongKe.Size = new System.Drawing.Size(230, 35);
+            this.menuThongKe.Size = new System.Drawing.Size(230, 181);
             this.menuThongKe.TabIndex = 8;
             // 
-            // guna2Button14
+            // btnThongKe
             // 
-            this.guna2Button14.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button14.FillColor = System.Drawing.Color.Black;
-            this.guna2Button14.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button14.ForeColor = System.Drawing.Color.White;
-            this.guna2Button14.Image = global::Project_OOP.Properties.Resources.icons8_graph_report_script_50;
-            this.guna2Button14.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button14.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button14.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button14.Name = "guna2Button14";
-            this.guna2Button14.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button14.TabIndex = 1;
-            this.guna2Button14.Text = "Thống kê";
-            this.guna2Button14.Click += new System.EventHandler(this.guna2Button14_Click);
+            this.btnThongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThongKe.FillColor = System.Drawing.Color.Black;
+            this.btnThongKe.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Image = global::Project_OOP.Properties.Resources.icons8_graph_report_script_50;
+            this.btnThongKe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThongKe.Location = new System.Drawing.Point(0, 0);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(0);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(230, 35);
+            this.btnThongKe.TabIndex = 1;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Click += new System.EventHandler(this.guna2Button14_Click);
             // 
-            // guna2Button15
+            // btn_TK_DoanhThuNgay
             // 
-            this.guna2Button15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button15.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button15.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button15.ForeColor = System.Drawing.Color.White;
-            this.guna2Button15.Image = global::Project_OOP.Properties.Resources.icons8_circle_301;
-            this.guna2Button15.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button15.Location = new System.Drawing.Point(0, 35);
-            this.guna2Button15.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button15.Name = "guna2Button15";
-            this.guna2Button15.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button15.TabIndex = 7;
-            this.guna2Button15.Text = "Doanh thu theo ngày";
-            this.guna2Button15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button15.Click += new System.EventHandler(this.guna2Button15_Click);
+            this.btn_TK_DoanhThuNgay.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TK_DoanhThuNgay.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TK_DoanhThuNgay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TK_DoanhThuNgay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TK_DoanhThuNgay.FillColor = System.Drawing.Color.DimGray;
+            this.btn_TK_DoanhThuNgay.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btn_TK_DoanhThuNgay.ForeColor = System.Drawing.Color.White;
+            this.btn_TK_DoanhThuNgay.Image = global::Project_OOP.Properties.Resources.icons8_circle_301;
+            this.btn_TK_DoanhThuNgay.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_TK_DoanhThuNgay.Location = new System.Drawing.Point(0, 35);
+            this.btn_TK_DoanhThuNgay.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_TK_DoanhThuNgay.Name = "btn_TK_DoanhThuNgay";
+            this.btn_TK_DoanhThuNgay.Size = new System.Drawing.Size(230, 35);
+            this.btn_TK_DoanhThuNgay.TabIndex = 7;
+            this.btn_TK_DoanhThuNgay.Text = "Doanh thu theo ngày";
+            this.btn_TK_DoanhThuNgay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_TK_DoanhThuNgay.Click += new System.EventHandler(this.guna2Button15_Click);
             // 
-            // guna2Button16
+            // btn_TK_DoanhThuThang
             // 
-            this.guna2Button16.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button16.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button16.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button16.ForeColor = System.Drawing.Color.White;
-            this.guna2Button16.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button16.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button16.Location = new System.Drawing.Point(0, 70);
-            this.guna2Button16.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button16.Name = "guna2Button16";
-            this.guna2Button16.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button16.TabIndex = 6;
-            this.guna2Button16.Text = "Doanh thu theo tháng";
-            this.guna2Button16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
+            this.btn_TK_DoanhThuThang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TK_DoanhThuThang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TK_DoanhThuThang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TK_DoanhThuThang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TK_DoanhThuThang.FillColor = System.Drawing.Color.DimGray;
+            this.btn_TK_DoanhThuThang.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btn_TK_DoanhThuThang.ForeColor = System.Drawing.Color.White;
+            this.btn_TK_DoanhThuThang.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btn_TK_DoanhThuThang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_TK_DoanhThuThang.Location = new System.Drawing.Point(0, 70);
+            this.btn_TK_DoanhThuThang.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_TK_DoanhThuThang.Name = "btn_TK_DoanhThuThang";
+            this.btn_TK_DoanhThuThang.Size = new System.Drawing.Size(230, 35);
+            this.btn_TK_DoanhThuThang.TabIndex = 6;
+            this.btn_TK_DoanhThuThang.Text = "Doanh thu theo tháng";
+            this.btn_TK_DoanhThuThang.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_TK_DoanhThuThang.Click += new System.EventHandler(this.guna2Button16_Click);
             // 
-            // guna2Button17
+            // btn_ThongKe_LuongNhanVien
             // 
-            this.guna2Button17.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button17.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button17.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button17.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button17.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button17.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button17.ForeColor = System.Drawing.Color.White;
-            this.guna2Button17.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button17.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button17.Location = new System.Drawing.Point(0, 105);
-            this.guna2Button17.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button17.Name = "guna2Button17";
-            this.guna2Button17.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button17.TabIndex = 8;
-            this.guna2Button17.Text = "Lương nhân viên";
-            this.guna2Button17.Click += new System.EventHandler(this.guna2Button17_Click);
+            this.btn_ThongKe_LuongNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKe_LuongNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKe_LuongNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThongKe_LuongNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThongKe_LuongNhanVien.FillColor = System.Drawing.Color.DimGray;
+            this.btn_ThongKe_LuongNhanVien.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btn_ThongKe_LuongNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btn_ThongKe_LuongNhanVien.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btn_ThongKe_LuongNhanVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_ThongKe_LuongNhanVien.Location = new System.Drawing.Point(0, 105);
+            this.btn_ThongKe_LuongNhanVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_ThongKe_LuongNhanVien.Name = "btn_ThongKe_LuongNhanVien";
+            this.btn_ThongKe_LuongNhanVien.Size = new System.Drawing.Size(230, 35);
+            this.btn_ThongKe_LuongNhanVien.TabIndex = 8;
+            this.btn_ThongKe_LuongNhanVien.Text = "Lương nhân viên";
+            this.btn_ThongKe_LuongNhanVien.Click += new System.EventHandler(this.guna2Button17_Click);
             // 
-            // guna2Button18
+            // btn_TK_SuCo
             // 
-            this.guna2Button18.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button18.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button18.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button18.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button18.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button18.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button18.ForeColor = System.Drawing.Color.White;
-            this.guna2Button18.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button18.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button18.Location = new System.Drawing.Point(0, 140);
-            this.guna2Button18.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button18.Name = "guna2Button18";
-            this.guna2Button18.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button18.TabIndex = 9;
-            this.guna2Button18.Text = "Sự cố";
-            this.guna2Button18.Click += new System.EventHandler(this.guna2Button18_Click);
+            this.btn_TK_SuCo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TK_SuCo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TK_SuCo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TK_SuCo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TK_SuCo.FillColor = System.Drawing.Color.DimGray;
+            this.btn_TK_SuCo.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btn_TK_SuCo.ForeColor = System.Drawing.Color.White;
+            this.btn_TK_SuCo.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btn_TK_SuCo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_TK_SuCo.Location = new System.Drawing.Point(0, 140);
+            this.btn_TK_SuCo.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_TK_SuCo.Name = "btn_TK_SuCo";
+            this.btn_TK_SuCo.Size = new System.Drawing.Size(230, 35);
+            this.btn_TK_SuCo.TabIndex = 9;
+            this.btn_TK_SuCo.Text = "Sự cố";
+            this.btn_TK_SuCo.Click += new System.EventHandler(this.guna2Button18_Click);
             // 
             // panel1
             // 
@@ -612,28 +612,28 @@
         private Guna.UI2.WinForms.Guna2Button btnDoiMK;
         private System.Windows.Forms.Timer menuHTTransition;
         private System.Windows.Forms.FlowLayoutPanel menuDanhMuc;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnDanhMuc;
+        private Guna.UI2.WinForms.Guna2Button btnDanhSachNhanVien;
+        private Guna.UI2.WinForms.Guna2Button btnDanhSachNhaXe;
+        private Guna.UI2.WinForms.Guna2Button btnDanhSachVeXe;
+        private Guna.UI2.WinForms.Guna2Button btnDanhSachNguoiDung;
         private System.Windows.Forms.Timer menuDMTransition;
         private System.Windows.Forms.FlowLayoutPanel menuQuanLy;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button13;
+        private Guna.UI2.WinForms.Guna2Button btnQuanLy;
+        private Guna.UI2.WinForms.Guna2Button btnQuanLySuCo;
         private System.Windows.Forms.Timer menuQLTransition;
         private System.Windows.Forms.FlowLayoutPanel menuThongKe;
-        private Guna.UI2.WinForms.Guna2Button guna2Button14;
-        private Guna.UI2.WinForms.Guna2Button guna2Button15;
+        private Guna.UI2.WinForms.Guna2Button btnThongKe;
+        private Guna.UI2.WinForms.Guna2Button btn_TK_DoanhThuNgay;
         private System.Windows.Forms.Timer menuTKTransition;
         private System.Windows.Forms.Timer sidebarTransition;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button19;
-        private Guna.UI2.WinForms.Guna2Button guna2Button11;
-        private Guna.UI2.WinForms.Guna2Button guna2Button16;
-        private Guna.UI2.WinForms.Guna2Button guna2Button17;
-        private Guna.UI2.WinForms.Guna2Button guna2Button18;
+        private Guna.UI2.WinForms.Guna2Button btnDangXuat;
+        private Guna.UI2.WinForms.Guna2Button btnDangKyNguoiDung;
+        private Guna.UI2.WinForms.Guna2Button btn_TK_DoanhThuThang;
+        private Guna.UI2.WinForms.Guna2Button btn_ThongKe_LuongNhanVien;
+        private Guna.UI2.WinForms.Guna2Button btn_TK_SuCo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel pnlMain;
     }

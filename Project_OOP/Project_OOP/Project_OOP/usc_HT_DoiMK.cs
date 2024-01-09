@@ -30,8 +30,8 @@ namespace Project_OOP
 
         void ChangeAccount(InfoDTO acc)
         {
-            guna2TextBox1.Text = acc.Username;
-            guna2TextBox2.Text = acc.Name1;
+            tb_TDN.Text = acc.Username;
+            tb_Name.Text = acc.Name1;
         }
 
         private void usc_HT_DoiMK_Load(object sender, EventArgs e)
@@ -46,9 +46,9 @@ namespace Project_OOP
         }
         void UpdatePassWord()
         {
-            string oldPass = guna2TextBox5.Text;
-            string newPass = guna2TextBox3.Text;
-            string reNewPass = guna2TextBox4.Text;
+            string oldPass = tb_PW.Text;
+            string newPass = tb_NewPW.Text;
+            string reNewPass = tb_ReNewPass.Text;
             if (oldPass != loginAccount.Password)
             {
                 MessageBox.Show("Mật khẩu sai.");
@@ -101,40 +101,40 @@ namespace Project_OOP
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            guna2TextBox3.UseSystemPasswordChar = false;
+            tb_NewPW.UseSystemPasswordChar = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            guna2TextBox5.UseSystemPasswordChar = false;
+            tb_PW.UseSystemPasswordChar = false;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            guna2TextBox4.UseSystemPasswordChar = false;
+            tb_ReNewPass.UseSystemPasswordChar = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            guna2TextBox5.UseSystemPasswordChar = false;
+            tb_PW.UseSystemPasswordChar = false;
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            guna2TextBox5.UseSystemPasswordChar = !guna2TextBox5.UseSystemPasswordChar;
-            guna2TextBox5.PasswordChar = '\0';
+            tb_PW.UseSystemPasswordChar = !tb_PW.UseSystemPasswordChar;
+            tb_PW.PasswordChar = '\0';
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            guna2TextBox3.UseSystemPasswordChar = !guna2TextBox3.UseSystemPasswordChar;
-            guna2TextBox3.PasswordChar = '\0';
+            tb_NewPW.UseSystemPasswordChar = !tb_NewPW.UseSystemPasswordChar;
+            tb_NewPW.PasswordChar = '\0';
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            guna2TextBox4.UseSystemPasswordChar = !guna2TextBox4.UseSystemPasswordChar;
-            guna2TextBox4.PasswordChar = '\0';
+            tb_ReNewPass.UseSystemPasswordChar = !tb_ReNewPass.UseSystemPasswordChar;
+            tb_ReNewPass.PasswordChar = '\0';
         }
     }
 }

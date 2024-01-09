@@ -30,14 +30,14 @@ namespace Project_OOP
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {  
-            DateTime ngay_bat_dau = guna2DateTimePicker2.Value;
-            DateTime ngay_ket_thuc = guna2DateTimePicker1.Value;
-            if (guna2TextBox13.Text == "")
+            DateTime ngay_bat_dau = DateTime_Start.Value;
+            DateTime ngay_ket_thuc = DateTime_End.Value;
+            if (tb_MaNguoiDung.Text == "")
             {
-                guna2Button2.Visible = true;
+                btn_SinhBaoCao.Visible = true;
                 DataTable dt = AccountDAO.Instance.Get_AllSalaryByDate(ngay_bat_dau, ngay_ket_thuc);
                 Data = dt;
-                dataGridView1.DataSource = dt;
+                dgv_ThongKeLuong.DataSource = dt;
                 string totalSalaryAdmin = dt.AsEnumerable()
                 .Where(row => row.Field<string>("Chức vụ") == "Quản lý")
                 .Sum(row => row.Field<int>("Lương")/1000000).ToString();
@@ -54,31 +54,31 @@ namespace Project_OOP
                 {
                     string Average_admin_salary = (int.Parse(totalSalaryAdmin) / totalrowCountAdmin).ToString();
                     string Average_Employee_Salary = (int.Parse(totalSalaryEmployee) / totalrowCountEmployee).ToString();
-                    guna2TextBox5.Text = Average_admin_salary + " Triệu";
-                    guna2TextBox6.Text = Average_Employee_Salary + " Triệu";
+                    tb_avg_admin_income.Text = Average_admin_salary + " Triệu";
+                    tb_avg_employee_income.Text = Average_Employee_Salary + " Triệu";
                 }
                 catch
                 {
 
                 }
                  
-                guna2TextBox4.Text = totalSalary.ToString() + " Triệu";
-                guna2TextBox3.Text = totalSalaryAdmin.ToString() + " Triệu";
-                guna2TextBox7.Text = totalSalaryEmployee.ToString() + " Triệu";
+                tb_total_income.Text = totalSalary.ToString() + " Triệu";
+                tb_total_admin.Text = totalSalaryAdmin.ToString() + " Triệu";
+                tb_total_employee.Text = totalSalaryEmployee.ToString() + " Triệu";
 
-                guna2TextBox1.Text = totalrowCountAdmin.ToString();
-                guna2TextBox2.Text = totalrowCountEmployee.ToString();
+                tb_admin_income.Text = totalrowCountAdmin.ToString();
+                tb_employee_income.Text = totalrowCountEmployee.ToString();
             }
             else
             {
-                guna2Button2.Visible = false;
+                btn_SinhBaoCao.Visible = false;
                 try
                 {
-                    int user_id = int.Parse(guna2TextBox13.Text);
+                    int user_id = int.Parse(tb_MaNguoiDung.Text);
                     DataTable dt = AccountDAO.Instance.Get_AllSalaryByDateUserID(ngay_bat_dau, ngay_ket_thuc, user_id);
-                    dataGridView1.DataSource = dt;
+                    dgv_ThongKeLuong.DataSource = dt;
                     string totalSalary = dt.AsEnumerable().Sum(row => row.Field<int>("Lương") / 1000000).ToString();
-                    guna2TextBox4.Text = totalSalary + " Triệu";
+                    tb_total_income.Text = totalSalary + " Triệu";
                 }
                 catch 
                 { 
@@ -101,8 +101,8 @@ namespace Project_OOP
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string start_date = guna2DateTimePicker2.Text;
-            string end_date = guna2DateTimePicker1.Text;
+            string start_date = DateTime_Start.Text;
+            string end_date = DateTime_End.Text;
             string luong_string = "Thống kê lương trả nhân viên từ " + start_date + " đến " + end_date;
 
             Excel_Export.Instance.ExportLuong(data, "Báo cáo lương", luong_string);

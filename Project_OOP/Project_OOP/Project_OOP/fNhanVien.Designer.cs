@@ -31,20 +31,22 @@
             this.components = new System.ComponentModel.Container();
             this.sidebar = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.menuHeThong = new System.Windows.Forms.FlowLayoutPanel();
             this.btnHeThong = new Guna.UI2.WinForms.Guna2Button();
             this.btnThongTinTK = new Guna.UI2.WinForms.Guna2Button();
             this.btnDoiMK = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button19 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXemVe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
+            this.menuQuanLy = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXemToanBoVe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXemHamDeXe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXemSuCo = new Guna.UI2.WinForms.Guna2Button();
             this.menuThongKe = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button17 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLichSuNhanLuong = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.menuHTTransition = new System.Windows.Forms.Timer(this.components);
             this.menuTKTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
@@ -52,16 +54,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.menuQuanLy = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.menuQLTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.menuHeThong.SuspendLayout();
-            this.menuThongKe.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
             this.menuQuanLy.SuspendLayout();
+            this.menuThongKe.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -79,41 +79,13 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Black;
             this.flowLayoutPanel1.Controls.Add(this.menuHeThong);
-            this.flowLayoutPanel1.Controls.Add(this.menuQuanLy);
             this.flowLayoutPanel1.Controls.Add(this.menuThongKe);
+            this.flowLayoutPanel1.Controls.Add(this.menuQuanLy);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 60);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(230, 627);
             this.flowLayoutPanel1.TabIndex = 9;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.guna2Button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 60);
-            this.panel1.TabIndex = 0;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Black;
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Black;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Image = global::Project_OOP.Properties.Resources.icons8_bars_50__1_;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(45, 45);
-            this.guna2Button1.Location = new System.Drawing.Point(3, 12);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // menuHeThong
             // 
@@ -121,11 +93,11 @@
             this.menuHeThong.Controls.Add(this.btnHeThong);
             this.menuHeThong.Controls.Add(this.btnThongTinTK);
             this.menuHeThong.Controls.Add(this.btnDoiMK);
-            this.menuHeThong.Controls.Add(this.guna2Button5);
-            this.menuHeThong.Controls.Add(this.guna2Button19);
+            this.menuHeThong.Controls.Add(this.btnXemVe);
+            this.menuHeThong.Controls.Add(this.btnDangXuat);
             this.menuHeThong.Location = new System.Drawing.Point(3, 3);
             this.menuHeThong.Name = "menuHeThong";
-            this.menuHeThong.Size = new System.Drawing.Size(230, 35);
+            this.menuHeThong.Size = new System.Drawing.Size(230, 176);
             this.menuHeThong.TabIndex = 6;
             // 
             // btnHeThong
@@ -186,52 +158,140 @@
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
-            // guna2Button5
+            // btnXemVe
             // 
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button5.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 105);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button5.TabIndex = 10;
-            this.guna2Button5.Text = "Xem vé bản thân";
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            this.btnXemVe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemVe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemVe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXemVe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXemVe.FillColor = System.Drawing.Color.DimGray;
+            this.btnXemVe.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnXemVe.ForeColor = System.Drawing.Color.White;
+            this.btnXemVe.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnXemVe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnXemVe.Location = new System.Drawing.Point(0, 105);
+            this.btnXemVe.Margin = new System.Windows.Forms.Padding(0);
+            this.btnXemVe.Name = "btnXemVe";
+            this.btnXemVe.Size = new System.Drawing.Size(230, 35);
+            this.btnXemVe.TabIndex = 10;
+            this.btnXemVe.Text = "Xem vé bản thân";
+            this.btnXemVe.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
-            // guna2Button19
+            // btnDangXuat
             // 
-            this.guna2Button19.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button19.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button19.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button19.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button19.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button19.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button19.ForeColor = System.Drawing.Color.White;
-            this.guna2Button19.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button19.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button19.Location = new System.Drawing.Point(0, 140);
-            this.guna2Button19.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button19.Name = "guna2Button19";
-            this.guna2Button19.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button19.TabIndex = 10;
-            this.guna2Button19.Text = "Đăng xuất";
-            this.guna2Button19.Click += new System.EventHandler(this.guna2Button19_Click);
+            this.btnDangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDangXuat.FillColor = System.Drawing.Color.DimGray;
+            this.btnDangXuat.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnDangXuat.ForeColor = System.Drawing.Color.White;
+            this.btnDangXuat.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnDangXuat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 140);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(230, 35);
+            this.btnDangXuat.TabIndex = 10;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.Click += new System.EventHandler(this.guna2Button19_Click);
+            // 
+            // menuQuanLy
+            // 
+            this.menuQuanLy.BackColor = System.Drawing.Color.Black;
+            this.menuQuanLy.Controls.Add(this.guna2Button8);
+            this.menuQuanLy.Controls.Add(this.btnXemToanBoVe);
+            this.menuQuanLy.Controls.Add(this.btnXemHamDeXe);
+            this.menuQuanLy.Controls.Add(this.btnXemSuCo);
+            this.menuQuanLy.Location = new System.Drawing.Point(3, 261);
+            this.menuQuanLy.Name = "menuQuanLy";
+            this.menuQuanLy.Size = new System.Drawing.Size(230, 144);
+            this.menuQuanLy.TabIndex = 10;
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button8.FillColor = System.Drawing.Color.Black;
+            this.guna2Button8.Font = new System.Drawing.Font("Verdana", 12F);
+            this.guna2Button8.ForeColor = System.Drawing.Color.White;
+            this.guna2Button8.Image = global::Project_OOP.Properties.Resources.icons8_manage_50;
+            this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button8.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.Size = new System.Drawing.Size(230, 35);
+            this.guna2Button8.TabIndex = 1;
+            this.guna2Button8.Text = "Danh mục";
+            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
+            // 
+            // btnXemToanBoVe
+            // 
+            this.btnXemToanBoVe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemToanBoVe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemToanBoVe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXemToanBoVe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXemToanBoVe.FillColor = System.Drawing.Color.DimGray;
+            this.btnXemToanBoVe.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnXemToanBoVe.ForeColor = System.Drawing.Color.White;
+            this.btnXemToanBoVe.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnXemToanBoVe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnXemToanBoVe.Location = new System.Drawing.Point(0, 35);
+            this.btnXemToanBoVe.Margin = new System.Windows.Forms.Padding(0);
+            this.btnXemToanBoVe.Name = "btnXemToanBoVe";
+            this.btnXemToanBoVe.Size = new System.Drawing.Size(230, 35);
+            this.btnXemToanBoVe.TabIndex = 11;
+            this.btnXemToanBoVe.Text = "Xem toàn bộ vé";
+            this.btnXemToanBoVe.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // btnXemHamDeXe
+            // 
+            this.btnXemHamDeXe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemHamDeXe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemHamDeXe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXemHamDeXe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXemHamDeXe.FillColor = System.Drawing.Color.DimGray;
+            this.btnXemHamDeXe.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnXemHamDeXe.ForeColor = System.Drawing.Color.White;
+            this.btnXemHamDeXe.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnXemHamDeXe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnXemHamDeXe.Location = new System.Drawing.Point(0, 70);
+            this.btnXemHamDeXe.Margin = new System.Windows.Forms.Padding(0);
+            this.btnXemHamDeXe.Name = "btnXemHamDeXe";
+            this.btnXemHamDeXe.Size = new System.Drawing.Size(230, 35);
+            this.btnXemHamDeXe.TabIndex = 10;
+            this.btnXemHamDeXe.Text = "Xem hầm để xe";
+            this.btnXemHamDeXe.Click += new System.EventHandler(this.guna2Button4_Click);
+            // 
+            // btnXemSuCo
+            // 
+            this.btnXemSuCo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemSuCo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemSuCo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXemSuCo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXemSuCo.FillColor = System.Drawing.Color.DimGray;
+            this.btnXemSuCo.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnXemSuCo.ForeColor = System.Drawing.Color.White;
+            this.btnXemSuCo.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnXemSuCo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnXemSuCo.Location = new System.Drawing.Point(0, 105);
+            this.btnXemSuCo.Margin = new System.Windows.Forms.Padding(0);
+            this.btnXemSuCo.Name = "btnXemSuCo";
+            this.btnXemSuCo.Size = new System.Drawing.Size(230, 35);
+            this.btnXemSuCo.TabIndex = 12;
+            this.btnXemSuCo.Text = "Xem sự cố";
+            this.btnXemSuCo.Click += new System.EventHandler(this.guna2Button13_Click);
             // 
             // menuThongKe
             // 
             this.menuThongKe.BackColor = System.Drawing.Color.Black;
             this.menuThongKe.Controls.Add(this.guna2Button14);
-            this.menuThongKe.Controls.Add(this.guna2Button17);
-            this.menuThongKe.Location = new System.Drawing.Point(3, 85);
+            this.menuThongKe.Controls.Add(this.btnLichSuNhanLuong);
+            this.menuThongKe.Location = new System.Drawing.Point(3, 185);
             this.menuThongKe.Name = "menuThongKe";
-            this.menuThongKe.Size = new System.Drawing.Size(230, 35);
+            this.menuThongKe.Size = new System.Drawing.Size(230, 70);
             this.menuThongKe.TabIndex = 9;
             // 
             // guna2Button14
@@ -253,81 +313,52 @@
             this.guna2Button14.Text = "Thống kê";
             this.guna2Button14.Click += new System.EventHandler(this.guna2Button14_Click);
             // 
-            // guna2Button17
+            // btnLichSuNhanLuong
             // 
-            this.guna2Button17.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button17.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button17.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button17.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button17.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button17.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button17.ForeColor = System.Drawing.Color.White;
-            this.guna2Button17.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button17.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button17.Location = new System.Drawing.Point(0, 38);
-            this.guna2Button17.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button17.Name = "guna2Button17";
-            this.guna2Button17.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button17.TabIndex = 8;
-            this.guna2Button17.Text = "Lịch sử nhận lương";
-            this.guna2Button17.Click += new System.EventHandler(this.guna2Button17_Click);
+            this.btnLichSuNhanLuong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuNhanLuong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuNhanLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSuNhanLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLichSuNhanLuong.FillColor = System.Drawing.Color.DimGray;
+            this.btnLichSuNhanLuong.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnLichSuNhanLuong.ForeColor = System.Drawing.Color.White;
+            this.btnLichSuNhanLuong.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
+            this.btnLichSuNhanLuong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLichSuNhanLuong.Location = new System.Drawing.Point(0, 38);
+            this.btnLichSuNhanLuong.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLichSuNhanLuong.Name = "btnLichSuNhanLuong";
+            this.btnLichSuNhanLuong.Size = new System.Drawing.Size(230, 35);
+            this.btnLichSuNhanLuong.TabIndex = 8;
+            this.btnLichSuNhanLuong.Text = "Lịch sử nhận lương";
+            this.btnLichSuNhanLuong.Click += new System.EventHandler(this.guna2Button17_Click);
             // 
-            // guna2Button2
+            // panel1
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button2.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 35);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button2.TabIndex = 11;
-            this.guna2Button2.Text = "Xem toàn bộ vé";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(230, 60);
+            this.panel1.TabIndex = 0;
             // 
-            // guna2Button4
+            // guna2Button1
             // 
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button4.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 70);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button4.TabIndex = 10;
-            this.guna2Button4.Text = "Xem hầm để xe";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
-            // 
-            // guna2Button13
-            // 
-            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button13.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Button13.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button13.ForeColor = System.Drawing.Color.White;
-            this.guna2Button13.Image = global::Project_OOP.Properties.Resources.icons8_circle_30;
-            this.guna2Button13.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button13.Location = new System.Drawing.Point(0, 105);
-            this.guna2Button13.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button13.TabIndex = 12;
-            this.guna2Button13.Text = "Xem sự cố";
-            this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
+            this.guna2Button1.BackColor = System.Drawing.Color.Black;
+            this.guna2Button1.BorderRadius = 20;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Black;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Image = global::Project_OOP.Properties.Resources.icons8_bars_50__1_;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(45, 45);
+            this.guna2Button1.Location = new System.Drawing.Point(3, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(40, 40);
+            this.guna2Button1.TabIndex = 2;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // menuHTTransition
             // 
@@ -385,37 +416,6 @@
             this.pnlMain.TabIndex = 4;
             this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
-            // menuQuanLy
-            // 
-            this.menuQuanLy.BackColor = System.Drawing.Color.Black;
-            this.menuQuanLy.Controls.Add(this.guna2Button8);
-            this.menuQuanLy.Controls.Add(this.guna2Button2);
-            this.menuQuanLy.Controls.Add(this.guna2Button4);
-            this.menuQuanLy.Controls.Add(this.guna2Button13);
-            this.menuQuanLy.Location = new System.Drawing.Point(3, 44);
-            this.menuQuanLy.Name = "menuQuanLy";
-            this.menuQuanLy.Size = new System.Drawing.Size(230, 35);
-            this.menuQuanLy.TabIndex = 10;
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.Black;
-            this.guna2Button8.Font = new System.Drawing.Font("Verdana", 12F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Image = global::Project_OOP.Properties.Resources.icons8_manage_50;
-            this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button8.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(230, 35);
-            this.guna2Button8.TabIndex = 1;
-            this.guna2Button8.Text = "Danh mục";
-            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
-            // 
             // menuQLTransition
             // 
             this.menuQLTransition.Interval = 5;
@@ -437,12 +437,12 @@
             this.Load += new System.EventHandler(this.fNhanVien_Load);
             this.sidebar.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.menuHeThong.ResumeLayout(false);
+            this.menuQuanLy.ResumeLayout(false);
             this.menuThongKe.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
-            this.menuQuanLy.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -459,17 +459,17 @@
         private Guna.UI2.WinForms.Guna2Button btnHeThong;
         private Guna.UI2.WinForms.Guna2Button btnThongTinTK;
         private Guna.UI2.WinForms.Guna2Button btnDoiMK;
-        private Guna.UI2.WinForms.Guna2Button guna2Button19;
+        private Guna.UI2.WinForms.Guna2Button btnDangXuat;
         private System.Windows.Forms.FlowLayoutPanel menuThongKe;
         private Guna.UI2.WinForms.Guna2Button guna2Button14;
-        private Guna.UI2.WinForms.Guna2Button guna2Button17;
+        private Guna.UI2.WinForms.Guna2Button btnLichSuNhanLuong;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button13;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnXemHamDeXe;
+        private Guna.UI2.WinForms.Guna2Button btnXemVe;
+        private Guna.UI2.WinForms.Guna2Button btnXemSuCo;
+        private Guna.UI2.WinForms.Guna2Button btnXemToanBoVe;
         private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.FlowLayoutPanel menuQuanLy;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;

@@ -80,7 +80,7 @@ namespace Project_OOP
                         DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(transaction_time, description, type, user_id_did) VALUES( @transaction_time , N'Thay đổi thông tin quản lý', 4 , @user_id );", new object[] { DateTime.Now, user_id });
                     }    
 
-                        MessageBox.Show("Cập nhật thành công");
+                        MessageBox.Show("Cập nhật thành công");    
                 }
                 this.Close();
             }

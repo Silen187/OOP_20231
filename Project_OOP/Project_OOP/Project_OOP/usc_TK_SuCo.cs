@@ -43,31 +43,31 @@ namespace Project_OOP
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            DateTime start = guna2DateTimePicker2.Value;
-            DateTime end = guna2DateTimePicker1.Value;
-            if(guna2TextBox13.Text == "")
+            DateTime start = DateTime_Start.Value;
+            DateTime end = DateTime_End.Value;
+            if(tb_admin_id.Text == "")
             {
-                guna2Button2.Visible = true;
+                btn_SinhBaoCao.Visible = true;
                 DataTable dt = AccountDAO.Instance.Get_AllSuCo(start, end);
                 Data = dt;
-                dataGridView1.DataSource = dt;
+                dgv_ThongKeSuCo.DataSource = dt;
                 string totalCompensation = ((dt.AsEnumerable().Sum(row => row.Field<int>("Thiệt hại")))/1000000).ToString();
                 string totalissue = dt.Rows.Count.ToString();
-                guna2TextBox4.Text = totalCompensation + " Triệu";
-                guna2TextBox1.Text = totalissue;
+                tb_total_compensation.Text = totalCompensation + " Triệu";
+                tb_SoLuong.Text = totalissue;
             }
             else
             {
-                guna2Button2.Visible=false;
+                btn_SinhBaoCao.Visible=false;
                 try
                 {
-                    int user_admin_id = int.Parse(guna2TextBox13.Text);
+                    int user_admin_id = int.Parse(tb_admin_id.Text);
                     DataTable dt = AccountDAO.Instance.Get_AllSuCo_UserID( start, end, user_admin_id);
-                    dataGridView1.DataSource = dt;
+                    dgv_ThongKeSuCo.DataSource = dt;
                     string totalCompensation = ((dt.AsEnumerable().Sum(row => row.Field<int>("Thiệt hại"))) / 1000000).ToString();
                     string totalissue = dt.Rows.Count.ToString();
-                    guna2TextBox4.Text = totalCompensation + " Triệu";
-                    guna2TextBox1.Text = totalissue;
+                    tb_total_compensation.Text = totalCompensation + " Triệu";
+                    tb_SoLuong.Text = totalissue;
                 }
                 catch (Exception ex)
                 {
@@ -78,8 +78,8 @@ namespace Project_OOP
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string start_date = guna2DateTimePicker2.Text;
-            string end_date = guna2DateTimePicker1.Text;
+            string start_date = DateTime_Start.Text;
+            string end_date = DateTime_End.Text;
             string suco_string = "Thống kê sự cố từ " + start_date + " đến " + end_date;
 
             Excel_Export.Instance.ExportSuCo(Data, "Báo cáo sự cố", suco_string);

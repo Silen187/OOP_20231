@@ -1,4 +1,5 @@
-﻿using Project_OOP.DTO;
+﻿using Guna.UI2.WinForms;
+using Project_OOP.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,7 +32,7 @@ namespace Project_OOP
         private void ResetOtherButtonFillColors(Guna.UI2.WinForms.Guna2Button currentButton)
         {
             // Danh sách các tên nút cần bỏ qua
-            List<string> excludedButtonNames = new List<string> { "btnHeThong", "guna2Button14" };
+            List<string> excludedButtonNames = new List<string> { "btnHeThong", "btnThongKe" };
 
             foreach (Control ctrl in flowLayoutPanel1.Controls)
             {
@@ -168,8 +169,8 @@ namespace Project_OOP
         private void guna2Button15_Click(object sender, EventArgs e)
         {
             usc_LichSuNapTien f = new usc_LichSuNapTien(int.Parse(loginAccount.ID1));
-            guna2Button15.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button15);
+            btnLichSuNapTien.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnLichSuNapTien);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -178,8 +179,8 @@ namespace Project_OOP
         private void guna2Button11_Click(object sender, EventArgs e)
         {
             usc_LichSuRaVao f = new usc_LichSuRaVao(int.Parse(loginAccount.ID1));
-            guna2Button11.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button11);
+            btnLichSuRaVao.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnLichSuRaVao);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -195,6 +196,16 @@ namespace Project_OOP
                 // Nếu người dùng chọn Yes, hiển thị UserControl usc_DM_NhanVien
                 this.Close();
             }
+        }
+
+        private void btnXemVe_Click(object sender, EventArgs e)
+        {
+            usc_ThongTinVe f = new usc_ThongTinVe(int.Parse(loginAccount.ID1));
+            btnXemVe.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnXemVe);
+            f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
+            f.BringToFront();
         }
     }
 }

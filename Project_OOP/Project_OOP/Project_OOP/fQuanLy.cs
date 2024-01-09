@@ -205,8 +205,8 @@ namespace Project_OOP
         private void guna2Button11_Click(object sender, EventArgs e)
         {
             usc_HT_DangKy f = new usc_HT_DangKy();
-            guna2Button11.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button11);
+            btnDangKyNguoiDung.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnDangKyNguoiDung);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -215,8 +215,8 @@ namespace Project_OOP
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             usc_DM_NhanVien f = new usc_DM_NhanVien(loginAccount.ID1);
-            guna2Button3.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button3);
+            btnDanhSachNhanVien.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnDanhSachNhanVien);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -226,8 +226,8 @@ namespace Project_OOP
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             usc_XemToanBoVe f = new usc_XemToanBoVe( int.Parse(loginAccount.ID1), "3");
-            guna2Button5.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button5);
+            btnDanhSachVeXe.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnDanhSachVeXe);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -236,8 +236,8 @@ namespace Project_OOP
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             usc_DM_NhaXe f = new usc_DM_NhaXe();
-            guna2Button4.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button4);
+            btnDanhSachNhaXe.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnDanhSachNhaXe);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -246,8 +246,8 @@ namespace Project_OOP
         private void guna2Button6_Click_1(object sender, EventArgs e)
         {
             usc_DM_NguoiDung f = new usc_DM_NguoiDung(loginAccount.ID1);
-            guna2Button6.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button6);
+            btnDanhSachNguoiDung.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnDanhSachNguoiDung);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -260,7 +260,7 @@ namespace Project_OOP
         private void ResetOtherButtonFillColors(Guna.UI2.WinForms.Guna2Button currentButton)
         {
             // Danh sách các tên nút cần bỏ qua
-            List<string> excludedButtonNames = new List<string> { "guna2Button14", "btnHeThong", "guna2Button2","guna2Button8" };
+            List<string> excludedButtonNames = new List<string> { "btnDanhMuc", "btnHeThong", "btnQuanLy", "btnThongKe" };
 
             foreach (Control ctrl in flowLayoutPanel1.Controls)
             {
@@ -284,8 +284,8 @@ namespace Project_OOP
         private void guna2Button15_Click(object sender, EventArgs e)
         {
             usc_TK_DoanhThuNgay f = new usc_TK_DoanhThuNgay(int.Parse(loginAccount.ID1));
-            guna2Button15.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button15);
+            btn_TK_DoanhThuNgay.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btn_TK_DoanhThuNgay);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -294,8 +294,8 @@ namespace Project_OOP
         private void guna2Button16_Click(object sender, EventArgs e)
         {
             usc_TK_DoanhThuThang f = new usc_TK_DoanhThuThang(int.Parse(loginAccount.ID1));
-            guna2Button16.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button16);
+            btn_TK_DoanhThuThang.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btn_TK_DoanhThuThang);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -304,8 +304,8 @@ namespace Project_OOP
         private void guna2Button17_Click(object sender, EventArgs e)
         {
             usc_TK_LuongNhanVien f = new usc_TK_LuongNhanVien(int.Parse(loginAccount.ID1));
-            guna2Button17.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button17);
+            btn_ThongKe_LuongNhanVien.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btn_ThongKe_LuongNhanVien);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -314,8 +314,8 @@ namespace Project_OOP
         private void guna2Button13_Click(object sender, EventArgs e)
         {
             usc_QL_SuCo f = new usc_QL_SuCo(loginAccount.ID1.ToString());
-            guna2Button13.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button13);
+            btnQuanLySuCo.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnQuanLySuCo);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -324,8 +324,8 @@ namespace Project_OOP
         private void guna2Button18_Click(object sender, EventArgs e)
         {
             usc_TK_SuCo f = new usc_TK_SuCo(int.Parse(loginAccount.ID1));
-            guna2Button18.FillColor = Color.Red;
-            ResetOtherButtonFillColors(guna2Button18);
+            btn_TK_SuCo.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btn_TK_SuCo);
             f.Dock = DockStyle.Fill;
             this.pnlMain.Controls.Add(f);
             f.BringToFront();
@@ -364,7 +364,7 @@ namespace Project_OOP
 
         private void guna2Button15_MouseClick(object sender, MouseEventArgs e)
         {
-            guna2Button15.FillColor = Color.White;
+            btn_TK_DoanhThuNgay.FillColor = Color.White;
         }
 
         private void btnHeThong_MouseClick(object sender, MouseEventArgs e)
@@ -379,12 +379,12 @@ namespace Project_OOP
 
         private void guna2Button17_MouseClick(object sender, MouseEventArgs e)
         {
-            guna2Button17.FillColor = Color.Red;
+            btn_ThongKe_LuongNhanVien.FillColor = Color.Red;
         }
 
         private void guna2Button17_MouseLeave(object sender, EventArgs e)
         {
-            guna2Button17.FillColor = Color.DimGray;
+            btn_ThongKe_LuongNhanVien.FillColor = Color.DimGray;
         }
     }
 }

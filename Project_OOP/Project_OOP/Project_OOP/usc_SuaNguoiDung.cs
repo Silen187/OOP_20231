@@ -36,21 +36,21 @@ namespace Project_OOP
 
         private void usc_SuaNguoiDung_Load(object sender, EventArgs e)
         {
-            comboBox5.DataSource = AccountDAO.Instance.GetBank();
+            cb_Bank.DataSource = AccountDAO.Instance.GetBank();
         }
         void Load_info(TicketInfoDTO ticket, InfoDTO account) 
         {
-            guna2DateTimePicker1.Value = account.Birth1;
-            guna2TextBox9.Text = account.ID1;
-            guna2TextBox12.Text = account.Name1;
-            comboBox1.Text = account.City1;
-            guna2TextBox4.Text = account.SDT1;
-            guna2TextBox1.Text = account.STK1;
-            guna2TextBox6.Text = account.Username;
-            guna2TextBox15.Text = account.Password;
-            comboBox2.Text = account.Sex;
-            guna2TextBox19.Text = account.CCCD1;
-            comboBox5.Text = account.Bank1;
+            DateTime_NgaySinh.Value = account.Birth1;
+            tb_MaNguoiDung.Text = account.ID1;
+            tb_TenKhachHang.Text = account.Name1;
+            cb_City.Text = account.City1;
+            tb_SDT.Text = account.SDT1;
+            tb_STK.Text = account.STK1;
+            tb_TenDangNhap.Text = account.Username;
+            tb_PW.Text = account.Password;
+            cb_Sex.Text = account.Sex;
+            tb_CCCD.Text = account.CCCD1;
+            cb_Bank.Text = account.Bank1;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -69,19 +69,19 @@ namespace Project_OOP
         {
             try
             {
-                if (guna2TextBox19.Text == Old_CCCD || AccountDAO.Instance.CHECK_TRUNGLAP_CCCD(guna2TextBox19.Text) == false)
+                if (tb_CCCD.Text == Old_CCCD || AccountDAO.Instance.CHECK_TRUNGLAP_CCCD(tb_CCCD.Text) == false)
                 {
-                    int user_id = int.Parse(guna2TextBox9.Text);
-                    string username = guna2TextBox6.Text;
-                    string name = guna2TextBox12.Text;
-                    string city = comboBox1.Text;
-                    string SDT = guna2TextBox4.Text;
-                    string STK = guna2TextBox1.Text;
-                    string password = guna2TextBox15.Text;
-                    string CCCD = guna2TextBox19.Text;
-                    string Bank = comboBox5.Text;
-                    string sex = comboBox2.Text;
-                    DateTime birth = guna2DateTimePicker1.Value;
+                    int user_id = int.Parse(tb_MaNguoiDung.Text);
+                    string username = tb_TenDangNhap.Text;
+                    string name = tb_TenKhachHang.Text;
+                    string city = cb_City.Text;
+                    string SDT = tb_SDT.Text;
+                    string STK = tb_STK.Text;
+                    string password = tb_PW.Text;
+                    string CCCD = tb_CCCD.Text;
+                    string Bank = cb_Bank.Text;
+                    string sex = cb_Sex.Text;
+                    DateTime birth = DateTime_NgaySinh.Value;
                     AccountDAO.Instance.UpdateAccount(user_id, name, sex, city, SDT, CCCD, birth, STK, Bank);
                     AccountDAO.Instance.UpdatePassWordAccount(username, Old_pass, password);
                     DataProvider.Instance.ExecuteQuery("INSERT INTO transactions(ticket_id, transaction_time, description, type, user_id_did) VALUES( @ticket_id , @transaction_time , N'Thay đổi thông tin người dùng' , 4 , @user_id_did );", new object[] {Ticket.Ticket_id, DateTime.Now, User_admin_id });
