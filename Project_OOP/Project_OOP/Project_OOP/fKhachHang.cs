@@ -92,7 +92,7 @@ namespace Project_OOP
             if (menuExpand1 == false)
             {
                 menuHeThong.Height += 10;
-                if (menuHeThong.Height >= 140)
+                if (menuHeThong.Height >= 175)
                 {
                     menuHTTransition.Stop();
                     menuExpand1 = true;
@@ -119,7 +119,7 @@ namespace Project_OOP
             if (menuExpand4 == false)
             {
                 menuThongKe.Height += 10;
-                if (menuThongKe.Height >= 175)
+                if (menuThongKe.Height >= 105)
                 {
                     menuTKTransition.Stop();
                     menuExpand4 = true;
