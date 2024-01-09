@@ -162,6 +162,12 @@
     <Compile Include="usc_HT_ThongTin_Tk.Designer.cs">
       <DependentUpon>usc_HT_ThongTin_Tk.cs</DependentUpon>
     </Compile>
+    <Compile Include="usc_LichSuChinhSua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_LichSuChinhSua.Designer.cs">
+      <DependentUpon>usc_LichSuChinhSua.cs</DependentUpon>
+    </Compile>
     <Compile Include="usc_LichSuNapTien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,6 +253,9 @@
       <DependentUpon>usc_XemToanBoVe.cs</DependentUpon>
     </Compile>
     <None Include="Resources\icons8-check-50.png" />
+    <EmbeddedResource Include="usc_LichSuChinhSua.resx">
+      <DependentUpon>usc_LichSuChinhSua.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usc_SuaNguoiDung.resx">
       <DependentUpon>usc_SuaNguoiDung.cs</DependentUpon>
     </EmbeddedResource>

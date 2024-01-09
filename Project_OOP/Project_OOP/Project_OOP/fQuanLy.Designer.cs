@@ -32,28 +32,10 @@
             this.sidebar = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.menuHeThong = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnHeThong = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThongTinTK = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDoiMK = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDangKyNguoiDung = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
             this.menuDanhMuc = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnDanhMuc = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDanhSachNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDanhSachNhaXe = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDanhSachVeXe = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDanhSachNguoiDung = new Guna.UI2.WinForms.Guna2Button();
             this.menuQuanLy = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnQuanLy = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQuanLySuCo = new Guna.UI2.WinForms.Guna2Button();
             this.menuThongKe = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_TK_DoanhThuNgay = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_TK_DoanhThuThang = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_ThongKe_LuongNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_TK_SuCo = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -63,6 +45,25 @@
             this.menuTKTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnHeThong = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThongTinTK = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDoiMK = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDangKyNguoiDung = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhMuc = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhSachNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhSachNhaXe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhSachVeXe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDanhSachNguoiDung = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuanLy = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuanLySuCo = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TK_DoanhThuNgay = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TK_DoanhThuThang = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_ThongKe_LuongNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TK_SuCo = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLichSuChinhSua = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.sidebar.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuHeThong.SuspendLayout();
@@ -91,6 +92,7 @@
             this.flowLayoutPanel1.Controls.Add(this.menuDanhMuc);
             this.flowLayoutPanel1.Controls.Add(this.menuQuanLy);
             this.flowLayoutPanel1.Controls.Add(this.menuThongKe);
+            this.flowLayoutPanel1.Controls.Add(this.btnLichSuChinhSua);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 60);
@@ -110,6 +112,121 @@
             this.menuHeThong.Name = "menuHeThong";
             this.menuHeThong.Size = new System.Drawing.Size(230, 175);
             this.menuHeThong.TabIndex = 5;
+            // 
+            // menuDanhMuc
+            // 
+            this.menuDanhMuc.BackColor = System.Drawing.Color.Black;
+            this.menuDanhMuc.Controls.Add(this.btnDanhMuc);
+            this.menuDanhMuc.Controls.Add(this.btnDanhSachNhanVien);
+            this.menuDanhMuc.Controls.Add(this.btnDanhSachNhaXe);
+            this.menuDanhMuc.Controls.Add(this.btnDanhSachVeXe);
+            this.menuDanhMuc.Controls.Add(this.btnDanhSachNguoiDung);
+            this.menuDanhMuc.Location = new System.Drawing.Point(3, 184);
+            this.menuDanhMuc.Name = "menuDanhMuc";
+            this.menuDanhMuc.Size = new System.Drawing.Size(230, 175);
+            this.menuDanhMuc.TabIndex = 6;
+            // 
+            // menuQuanLy
+            // 
+            this.menuQuanLy.BackColor = System.Drawing.Color.Black;
+            this.menuQuanLy.Controls.Add(this.btnQuanLy);
+            this.menuQuanLy.Controls.Add(this.btnQuanLySuCo);
+            this.menuQuanLy.Location = new System.Drawing.Point(3, 365);
+            this.menuQuanLy.Name = "menuQuanLy";
+            this.menuQuanLy.Size = new System.Drawing.Size(230, 70);
+            this.menuQuanLy.TabIndex = 7;
+            // 
+            // menuThongKe
+            // 
+            this.menuThongKe.BackColor = System.Drawing.Color.Black;
+            this.menuThongKe.Controls.Add(this.btnThongKe);
+            this.menuThongKe.Controls.Add(this.btn_TK_DoanhThuNgay);
+            this.menuThongKe.Controls.Add(this.btn_TK_DoanhThuThang);
+            this.menuThongKe.Controls.Add(this.btn_ThongKe_LuongNhanVien);
+            this.menuThongKe.Controls.Add(this.btn_TK_SuCo);
+            this.menuThongKe.Location = new System.Drawing.Point(3, 441);
+            this.menuThongKe.Name = "menuThongKe";
+            this.menuThongKe.Size = new System.Drawing.Size(230, 181);
+            this.menuThongKe.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(230, 60);
+            this.panel1.TabIndex = 0;
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.Controls.Add(this.label1);
+            this.panelTitleBar.Controls.Add(this.guna2HtmlLabel1);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(904, 60);
+            this.panelTitleBar.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(537, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(270, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Xin chào: Quản Lý - Lê Đình Thi";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Maroon;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(17, 19);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(355, 34);
+            this.guna2HtmlLabel1.TabIndex = 0;
+            this.guna2HtmlLabel1.Text = "HỆ THỐNG NHÀ GỬI XE";
+            // 
+            // menuHTTransition
+            // 
+            this.menuHTTransition.Interval = 5;
+            this.menuHTTransition.Tick += new System.EventHandler(this.menuHTTransition_Tick);
+            // 
+            // menuDMTransition
+            // 
+            this.menuDMTransition.Interval = 5;
+            this.menuDMTransition.Tick += new System.EventHandler(this.menuDMTransistion_Tick);
+            // 
+            // menuQLTransition
+            // 
+            this.menuQLTransition.Interval = 5;
+            this.menuQLTransition.Tick += new System.EventHandler(this.menuQLTransition_Tick);
+            // 
+            // menuTKTransition
+            // 
+            this.menuTKTransition.Interval = 5;
+            this.menuTKTransition.Tick += new System.EventHandler(this.menuTKTransition_Tick);
+            // 
+            // sidebarTransition
+            // 
+            this.sidebarTransition.Interval = 1;
+            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.BackColor = System.Drawing.Color.White;
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlMain.Location = new System.Drawing.Point(230, 60);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(904, 710);
+            this.pnlMain.TabIndex = 2;
+            this.pnlMain.SizeChanged += new System.EventHandler(this.pnlMain_SizeChanged);
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
             // btnHeThong
             // 
@@ -208,19 +325,6 @@
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.Click += new System.EventHandler(this.guna2Button19_Click);
             // 
-            // menuDanhMuc
-            // 
-            this.menuDanhMuc.BackColor = System.Drawing.Color.Black;
-            this.menuDanhMuc.Controls.Add(this.btnDanhMuc);
-            this.menuDanhMuc.Controls.Add(this.btnDanhSachNhanVien);
-            this.menuDanhMuc.Controls.Add(this.btnDanhSachNhaXe);
-            this.menuDanhMuc.Controls.Add(this.btnDanhSachVeXe);
-            this.menuDanhMuc.Controls.Add(this.btnDanhSachNguoiDung);
-            this.menuDanhMuc.Location = new System.Drawing.Point(3, 184);
-            this.menuDanhMuc.Name = "menuDanhMuc";
-            this.menuDanhMuc.Size = new System.Drawing.Size(230, 175);
-            this.menuDanhMuc.TabIndex = 6;
-            // 
             // btnDanhMuc
             // 
             this.btnDanhMuc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -318,16 +422,6 @@
             this.btnDanhSachNguoiDung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnDanhSachNguoiDung.Click += new System.EventHandler(this.guna2Button6_Click_1);
             // 
-            // menuQuanLy
-            // 
-            this.menuQuanLy.BackColor = System.Drawing.Color.Black;
-            this.menuQuanLy.Controls.Add(this.btnQuanLy);
-            this.menuQuanLy.Controls.Add(this.btnQuanLySuCo);
-            this.menuQuanLy.Location = new System.Drawing.Point(3, 365);
-            this.menuQuanLy.Name = "menuQuanLy";
-            this.menuQuanLy.Size = new System.Drawing.Size(230, 70);
-            this.menuQuanLy.TabIndex = 7;
-            // 
             // btnQuanLy
             // 
             this.btnQuanLy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -365,19 +459,6 @@
             this.btnQuanLySuCo.TabIndex = 8;
             this.btnQuanLySuCo.Text = "Quản lý sự cố";
             this.btnQuanLySuCo.Click += new System.EventHandler(this.guna2Button13_Click);
-            // 
-            // menuThongKe
-            // 
-            this.menuThongKe.BackColor = System.Drawing.Color.Black;
-            this.menuThongKe.Controls.Add(this.btnThongKe);
-            this.menuThongKe.Controls.Add(this.btn_TK_DoanhThuNgay);
-            this.menuThongKe.Controls.Add(this.btn_TK_DoanhThuThang);
-            this.menuThongKe.Controls.Add(this.btn_ThongKe_LuongNhanVien);
-            this.menuThongKe.Controls.Add(this.btn_TK_SuCo);
-            this.menuThongKe.Location = new System.Drawing.Point(3, 441);
-            this.menuThongKe.Name = "menuThongKe";
-            this.menuThongKe.Size = new System.Drawing.Size(230, 181);
-            this.menuThongKe.TabIndex = 8;
             // 
             // btnThongKe
             // 
@@ -476,15 +557,24 @@
             this.btn_TK_SuCo.Text = "Sự cố";
             this.btn_TK_SuCo.Click += new System.EventHandler(this.guna2Button18_Click);
             // 
-            // panel1
+            // btnLichSuChinhSua
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.guna2Button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 60);
-            this.panel1.TabIndex = 0;
+            this.btnLichSuChinhSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuChinhSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuChinhSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSuChinhSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLichSuChinhSua.FillColor = System.Drawing.Color.DimGray;
+            this.btnLichSuChinhSua.Font = new System.Drawing.Font("Verdana", 12F);
+            this.btnLichSuChinhSua.ForeColor = System.Drawing.Color.White;
+            this.btnLichSuChinhSua.Image = global::Project_OOP.Properties.Resources.icons8_circle_301;
+            this.btnLichSuChinhSua.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLichSuChinhSua.Location = new System.Drawing.Point(0, 625);
+            this.btnLichSuChinhSua.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLichSuChinhSua.Name = "btnLichSuChinhSua";
+            this.btnLichSuChinhSua.Size = new System.Drawing.Size(230, 35);
+            this.btnLichSuChinhSua.TabIndex = 9;
+            this.btnLichSuChinhSua.Text = "Lịch sử chỉnh sửa";
+            this.btnLichSuChinhSua.Click += new System.EventHandler(this.btnLichSuChinhSua_Click);
             // 
             // guna2Button1
             // 
@@ -504,75 +594,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(40, 40);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.Controls.Add(this.label1);
-            this.panelTitleBar.Controls.Add(this.guna2HtmlLabel1);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(904, 60);
-            this.panelTitleBar.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(537, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Xin chào: Quản Lý - Lê Đình Thi";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Maroon;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(17, 19);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(355, 34);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "HỆ THỐNG NHÀ GỬI XE";
-            // 
-            // menuHTTransition
-            // 
-            this.menuHTTransition.Interval = 5;
-            this.menuHTTransition.Tick += new System.EventHandler(this.menuHTTransition_Tick);
-            // 
-            // menuDMTransition
-            // 
-            this.menuDMTransition.Interval = 5;
-            this.menuDMTransition.Tick += new System.EventHandler(this.menuDMTransistion_Tick);
-            // 
-            // menuQLTransition
-            // 
-            this.menuQLTransition.Interval = 5;
-            this.menuQLTransition.Tick += new System.EventHandler(this.menuQLTransition_Tick);
-            // 
-            // menuTKTransition
-            // 
-            this.menuTKTransition.Interval = 5;
-            this.menuTKTransition.Tick += new System.EventHandler(this.menuTKTransition_Tick);
-            // 
-            // sidebarTransition
-            // 
-            this.sidebarTransition.Interval = 1;
-            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
-            // 
-            // pnlMain
-            // 
-            this.pnlMain.BackColor = System.Drawing.Color.White;
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlMain.Location = new System.Drawing.Point(230, 60);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(904, 710);
-            this.pnlMain.TabIndex = 2;
-            this.pnlMain.SizeChanged += new System.EventHandler(this.pnlMain_SizeChanged);
-            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
             // fQuanLy
             // 
@@ -636,6 +657,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_TK_SuCo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel pnlMain;
+        private Guna.UI2.WinForms.Guna2Button btnLichSuChinhSua;
     }
 }
 

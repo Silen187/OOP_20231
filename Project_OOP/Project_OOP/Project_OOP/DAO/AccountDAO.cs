@@ -291,6 +291,12 @@ namespace Project_OOP.DAO
             DataTable result = DataProvider.Instance.ExecuteQuery(" SELECT * FROM admin WHERE user_id = @user_id ", new object[] { user_id });
             return int.Parse(result.Rows[0]["admin_id"].ToString());
         }
+
+        public DataTable transaction(int user_id)
+        {
+            DataTable result = DataProvider.Instance.ExecuteQuery("GET_TRANSACTION_4 @user_id ", new object[] { user_id });
+            return result;
+        }
     }
 }
 

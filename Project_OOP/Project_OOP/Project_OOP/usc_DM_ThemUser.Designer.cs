@@ -49,7 +49,6 @@
             this.cb_KhuVucLamViec = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.tb_Bank = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tb_Name = new Guna.UI2.WinForms.Guna2TextBox();
@@ -76,6 +75,7 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.tb_STK = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cb_Bank = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -355,35 +355,13 @@
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.tb_Bank);
+            this.panel14.Controls.Add(this.cb_Bank);
             this.panel14.Controls.Add(this.guna2HtmlLabel15);
             this.panel14.Location = new System.Drawing.Point(0, 282);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(385, 47);
             this.panel14.TabIndex = 20;
-            // 
-            // tb_Bank
-            // 
-            this.tb_Bank.BorderColor = System.Drawing.Color.DarkGray;
-            this.tb_Bank.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_Bank.DefaultText = "";
-            this.tb_Bank.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tb_Bank.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tb_Bank.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_Bank.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_Bank.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_Bank.Font = new System.Drawing.Font("Verdana", 12F);
-            this.tb_Bank.ForeColor = System.Drawing.Color.Black;
-            this.tb_Bank.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_Bank.Location = new System.Drawing.Point(183, 7);
-            this.tb_Bank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tb_Bank.Name = "tb_Bank";
-            this.tb_Bank.PasswordChar = '\0';
-            this.tb_Bank.PlaceholderText = "";
-            this.tb_Bank.SelectedText = "";
-            this.tb_Bank.Size = new System.Drawing.Size(186, 30);
-            this.tb_Bank.TabIndex = 3;
             // 
             // guna2HtmlLabel15
             // 
@@ -804,6 +782,14 @@
             this.guna2HtmlLabel14.TabIndex = 0;
             this.guna2HtmlLabel14.Text = "Số tài khoản :";
             // 
+            // cb_Bank
+            // 
+            this.cb_Bank.FormattingEnabled = true;
+            this.cb_Bank.Location = new System.Drawing.Point(183, 7);
+            this.cb_Bank.Name = "cb_Bank";
+            this.cb_Bank.Size = new System.Drawing.Size(186, 26);
+            this.cb_Bank.TabIndex = 13;
+            // 
             // usc_DM_ThemUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -899,10 +885,10 @@
         private Guna.UI2.WinForms.Guna2TextBox tb_CCCD;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private System.Windows.Forms.Panel panel14;
-        private Guna.UI2.WinForms.Guna2TextBox tb_Bank;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private System.Windows.Forms.Panel panel13;
         private Guna.UI2.WinForms.Guna2TextBox tb_STK;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
+        private System.Windows.Forms.ComboBox cb_Bank;
     }
 }

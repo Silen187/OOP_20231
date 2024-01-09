@@ -386,5 +386,15 @@ namespace Project_OOP
         {
             btn_ThongKe_LuongNhanVien.FillColor = Color.DimGray;
         }
+
+        private void btnLichSuChinhSua_Click(object sender, EventArgs e)
+        {
+            usc_LichSuChinhSua f = new usc_LichSuChinhSua(int.Parse(loginAccount.ID1));
+            btnLichSuChinhSua.FillColor = Color.Red;
+            ResetOtherButtonFillColors(btnLichSuChinhSua);
+            f.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(f);
+            f.BringToFront();
+        }
     }
 }

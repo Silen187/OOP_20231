@@ -235,3 +235,4 @@ E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\System.ComponentModel.Annot
 E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\EPPlus.xml
 E:\oop\Project_OOP\Project_OOP\Project_OOP\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
 E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.csproj.ResolveComReference.cache
+E:\oop\Project_OOP\Project_OOP\Project_OOP\obj\Debug\Project_OOP.usc_LichSuChinhSua.resources

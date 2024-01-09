@@ -50,9 +50,13 @@ namespace Project_OOP
         }
         private void guna2TextBox1_Leave(object sender, EventArgs e)
         {
-            string ticket_id = tb_MaVe.Text;
-            DataTable result = DataProvider.Instance.ExecuteQuery("SELECT * FROM monthly_subscription LEFT JOIN info ON monthly_subscription.person_id = info.user_id WHERE ticket_id = '" + ticket_id + "'");
-            tb_ChuVe.Text = result.Rows[0]["name"].ToString();
+            try
+            {
+                string ticket_id = tb_MaVe.Text;
+                DataTable result = DataProvider.Instance.ExecuteQuery("SELECT * FROM monthly_subscription LEFT JOIN info ON monthly_subscription.person_id = info.user_id WHERE ticket_id = '" + ticket_id + "'");
+                tb_ChuVe.Text = result.Rows[0]["name"].ToString();
+            }
+            catch { }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

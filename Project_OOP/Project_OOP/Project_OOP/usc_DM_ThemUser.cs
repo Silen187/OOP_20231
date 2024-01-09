@@ -31,7 +31,7 @@ namespace Project_OOP
         private void btnThemNV_Click(object sender, EventArgs e)
         {
             string STK = tb_STK.Text;
-            string Bank = tb_Bank.Text;
+            string Bank = cb_Bank.Text;
             string CCCD = tb_CCCD.Text;
             string name = tb_Name.Text;
             DateTime Birth = DateTime_NgaySinh.Value;
@@ -204,6 +204,7 @@ namespace Project_OOP
         private void usc_DM_ThemNhanVien_Load(object sender, EventArgs e)
         {
             Get_level_name();
+            cb_Bank.DataSource = AccountDAO.Instance.GetBank();
         }
         void Get_level_name()
         {
